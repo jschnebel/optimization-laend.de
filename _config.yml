@@ -11,19 +11,21 @@ url: "https://jschnebel.github.io"   # GitHub Pages root
 baseurl: "/optimization-laend.de"    # repo name for project site
 
 # Theme
-theme: hydejack
+theme: jekyll-theme-hydejack
 
 # Navigation
 nav:
+menu:
   - title: Home
     url: /
-  - title: Schedule
-    url: /schedule/
-  - title: Speakers
-    url: /speakers/
-  - title: Contact
-    url: /contact/
+  - title: Program
+    url: /program/
+  - title: Registration
+    url: /registration/
+  - title: Venue
+    url: /venue/
 
 # Optional features
 markdown: kramdown
 highlighter: rouge
+katex: true
