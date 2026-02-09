@@ -29,3 +29,6 @@ menu:
 markdown: kramdown
 highlighter: rouge
 katex: true
+
+
+accent_image:          /assets/img/schloss_mannheim.jpg
