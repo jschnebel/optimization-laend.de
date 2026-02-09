@@ -16,7 +16,7 @@ theme: jekyll-theme-hydejack
 # Navigation
 nav:
 menu:
-  - title:
+  - title: Welcome to the official Website of the Optimization-Länd Workshop 2026
     url: /
   - title: Program
     url: /program/
