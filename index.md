@@ -1,13 +1,11 @@
 
 ---
 layout: home
-title: Welcome to my personal website!
-description: >
-  Welcome to the website of Johannes-Carl Schnebel
+title: Welcome to the official Website of the Optimization-Länd Workshop 2026
 hide_description: true
 sitemap: false
 ---
-# Welcome to the official Website of the Optimization-Länd Workshop 2026
+# 
 
 
 [chair in mathematical optimization](https://www.wim.uni-mannheim.de/staudigl/) w/ [Prof. Mathias Staudigl](mailto:mathias.staudigl@uni-mannheim.de).
