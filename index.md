@@ -7,20 +7,11 @@ description: >
 hide_description: true
 sitemap: false
 ---
-I am a PhD candidate at the [chair in mathematical optimization](https://www.wim.uni-mannheim.de/staudigl/) w/ [Prof. Mathias Staudigl](mailto:mathias.staudigl@uni-mannheim.de).
+# Welcome to the official Website of the Optimization-Länd Workshop 2026
 
 
-## Research Interests
-- Bilevel Variational Inequalities
-- Stochastic Optimal Control
-- Variational Analysis
-- Mathematics of Reinforcement Learning
-- Applications in Machine Learning and Energy Systems
+[chair in mathematical optimization](https://www.wim.uni-mannheim.de/staudigl/) w/ [Prof. Mathias Staudigl](mailto:mathias.staudigl@uni-mannheim.de).
 
-
-
-## Contact
-You can contact me via [johannes-carl.schnebel@uni-mannheim.de](mailto:johannes-carl.schnebel@uni-mannheim.de) or visit me at my office B6 - Room C303 at Mannheim University.
 
 
 
