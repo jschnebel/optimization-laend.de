@@ -8,10 +8,10 @@ sitemap: false
 # 
 
 
-[chair in mathematical optimization](https://www.wim.uni-mannheim.de/staudigl/) w/ [Prof. Mathias Staudigl](mailto:mathias.staudigl@uni-mannheim.de).
+[chair in mathematical optimization](https://www.wim.uni-mannheim.de/staudigl/) [Prof. Mathias Staudigl](mailto:mathias.staudigl@uni-mannheim.de).
 
 
 
 
-2026-02-05
+2026-02-09
 {:.note title="Last modified"}
