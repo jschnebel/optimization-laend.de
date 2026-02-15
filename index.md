@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Welcome to the official Website of the Optimization-Länd Workshop 2026
+title: Welcome to the official Website of the Optimization in the Länd Workshop 2026
 hide_description: true
 sitemap: false
 ---
