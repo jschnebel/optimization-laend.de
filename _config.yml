@@ -2,8 +2,8 @@
 # ========================================================================================
 
 # Basic site info
-title: "Optimization-Länd Workshop 2026"
-description: "Official website for the Optimization in the Länd Workshop 2026"
+title: "Optimization-in-the-Länd Workshop 2026"
+description: "Official website for the Optimization-in-the-Länd Workshop 2026"
 author: "Mathias Staudigl"
 
 # URL settings
@@ -16,7 +16,7 @@ theme: jekyll-theme-hydejack
 # Navigation
 nav:
 menu:
-  - title: Welcome to the official Website of the Optimization-Länd Workshop 2026
+  - title: Welcome to the official Website of the Optimization-in-the-Länd Workshop 2026
     url: /
   - title: Program
     url: /program/
