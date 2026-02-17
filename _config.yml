@@ -13,17 +13,25 @@ baseurl: "/optimization-laend.de"    # repo name for project site
 # Theme
 theme: jekyll-theme-hydejack
 
+#Hydejack settings
+hydejack:
+  dark_mode:
+    dynamic: false
+    icon: false
+
+theme_color: "#ffffff"
+accent_color: "#4fb1ba" 
+
+
 # Navigation
 nav:
 menu:
-  - title: Welcome to the official Website of the Optimization-in-the-Länd Workshop 2026
-    url: /
   - title: Program
     url: /program/
-  - title: Registration
-    url: /registration/
   - title: Venue
     url: /venue/
+  - title: Organizers
+    url: /organizers/
 
 # Optional features
 markdown: kramdown
