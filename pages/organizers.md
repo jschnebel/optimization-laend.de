@@ -36,7 +36,7 @@ permalink: /organizers/
   }
 
   .organizer-photo.zoom img {
-    transform: scale(1.4);
+    transform: scale(1.8);
     transform-origin: center;
   }
 
@@ -44,6 +44,21 @@ permalink: /organizers/
     margin-top: 0;
     color: #4a6fa5;
     font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .email-icon {
+    color: #4a6fa5;
+    text-decoration: none;
+    font-size: 1.8rem;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .email-icon:hover {
+    opacity: 1;
   }
 
   .organizer-info p {
@@ -66,7 +81,7 @@ permalink: /organizers/
     <img src="{{ site.baseurl }}/assets/Staudigl.jpg" alt="Mathias Staudigl" />
   </div>
   <div class="organizer-info">
-    <h2>Prof. Mathias Staudigl</h2>
+    <h2>Prof. Mathias Staudigl <a class="email-icon" href="mailto:m.staudigl@uni-mannheim.de" title="m.staudigl@uni-mannheim.de">✉</a></h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
@@ -81,7 +96,7 @@ permalink: /organizers/
     <img src="{{ site.baseurl }}/assets/Herzog.jpg" alt="Roland Herzog" />
   </div>
   <div class="organizer-info">
-    <h2>Prof. Roland Herzog</h2>
+    <h2>Prof. Roland Herzog <a class="email-icon" href="mailto:roland.herzog@iwr.uni-heidelberg.de" title="roland.herzog@iwr.uni-heidelberg.de">✉</a></h2>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     </p>
