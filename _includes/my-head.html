@@ -1,0 +1,31 @@
+<style>
+  /* Hide the top navbar bar */
+  #_navbar,
+  .navbar,
+  nav.navbar {
+    display: none !important;
+  }
+
+  /* Force light mode sitewide */
+  @media (prefers-color-scheme: dark) {
+    :root { color-scheme: light !important; }
+    body, .theme-dark, [data-theme="dark"] {
+      --body-bg: #fff !important;
+      --body-color: #333 !important;
+      --heading-color: #333 !important;
+      --link-color: #4a6fa5 !important;
+      background-color: #fff !important;
+      color: #333 !important;
+      filter: none !important;
+    }
+  }
+</style>
+
+<!-- Remove favicon -->
+<link rel="icon" type="image/png" href="{{ site.baseurl }}/assets/favicon.png">
+
+<script>
+  document.documentElement.removeAttribute('data-theme');
+  document.documentElement.classList.remove('theme-dark');
+  localStorage.removeItem('theme');
+</script>
