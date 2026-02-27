@@ -111,19 +111,19 @@ hide_description: true
       </thead>
       <tbody>
         <tr class="row-break"><td class="time">09:30 – 10:00</td><td>Welcome / Coffee</td></tr>
-        <tr class="row-plenary"><td class="time">10:00 – 10:45</td><td>Radu Boţ (U Vienna)</td></tr>
-        <tr class="row-talk"><td class="time">10:45 – 11:15</td><td>Speaker 2</td></tr>
+        <tr class="row-plenary"><td class="time">10:00 – 10:45</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">10:45 – 11:15</td><td>Short Talk</td></tr>
         <tr class="row-break"><td class="time">11:15 – 11:30</td><td>Coffee break</td></tr>
-        <tr class="row-talk"><td class="time">11:30 – 11:55</td><td>Speaker 3</td></tr>
-        <tr class="row-talk"><td class="time">11:55 – 12:20</td><td>Speaker 4</td></tr>
+        <tr class="row-talk"><td class="time">11:30 – 11:55</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">11:55 – 12:20</td><td>Short Talk</td></tr>
         <tr class="row-break"><td class="time">12:20 – 13:50</td><td>Lunch break</td></tr>
-        <tr class="row-plenary"><td class="time">13:50 – 14:35</td><td>Speaker 5</td></tr>
-        <tr class="row-talk"><td class="time">14:35 – 15:00</td><td>Speaker 6</td></tr>
-        <tr class="row-talk"><td class="time">15:00 – 15:25</td><td>Speaker 7</td></tr>
-        <tr class="row-talk"><td class="time">15:25 – 15:50</td><td>Speaker 8</td></tr>
+        <tr class="row-plenary"><td class="time">13:50 – 14:35</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">14:35 – 15:00</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">15:00 – 15:25</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">15:25 – 15:50</td><td>Short Talk</td></tr>
         <tr class="row-break"><td class="time">15:50 – 16:15</td><td>Coffee break</td></tr>
-        <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td>Bernadette Hahn-Rigaud (U Stuttgart)</td></tr>
-        <tr class="row-talk"><td class="time">17:00 – 17:25</td><td>Speaker 10</td></tr>
+        <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">17:00 – 17:25</td><td>Short Talk</td></tr>
         <tr class="row-break"><td class="time">17:25 – 18:00</td><td>Discussion</td></tr>
       </tbody>
     </table>
@@ -136,16 +136,16 @@ hide_description: true
         <tr><th>Time</th><th>Event</th></tr>
       </thead>
       <tbody>
-        <tr class="row-plenary"><td class="time">09:15 – 10:00</td><td>Luca Calatroni (U Genoa)</td></tr>
-        <tr class="row-talk"><td class="time">10:00 – 10:25</td><td>Speaker 2</td></tr>
+        <tr class="row-plenary"><td class="time">09:15 – 10:00</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">10:00 – 10:25</td><td>Short Talk</td></tr>
         <tr class="row-break"><td class="time">10:25 – 10:50</td><td>Coffee break</td></tr>
-        <tr class="row-talk"><td class="time">10:50 – 11:15</td><td>Speaker 3</td></tr>
-        <tr class="row-plenary"><td class="time">11:15 – 12:00</td><td>Speaker 4</td></tr>
+        <tr class="row-talk"><td class="time">10:50 – 11:15</td><td>Short Talk</td></tr>
+        <tr class="row-plenary"><td class="time">11:15 – 12:00</td><td>Long Talk</td></tr>
         <tr class="row-break"><td class="time">12:00 – 13:40</td><td>Lunch break</td></tr>
-        <tr class="row-plenary"><td class="time">13:40 – 14:25</td><td>Speaker 5</td></tr>
-        <tr class="row-talk"><td class="time">14:25 – 14:50</td><td>Speaker 6</td></tr>
-        <tr class="row-talk"><td class="time">14:50 – 15:15</td><td>Speaker 7</td></tr>
-        <tr class="row-talk"><td class="time">15:15 – 15:40</td><td>Speaker 8</td></tr>
+        <tr class="row-plenary"><td class="time">13:40 – 14:25</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">14:25 – 14:50</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">14:50 – 15:15</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">15:15 – 15:40</td><td>Short Talk</td></tr>
         <tr class="row-break"><td class="time">15:40</td><td>Discussion / Closing</td></tr>
       </tbody>
     </table>
