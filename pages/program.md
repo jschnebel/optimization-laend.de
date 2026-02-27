@@ -111,7 +111,7 @@ hide_description: true
       </thead>
       <tbody>
         <tr class="row-break"><td class="time">09:30 – 10:00</td><td>Welcome / Coffee</td></tr>
-        <tr class="row-plenary"><td class="time">10:00 – 10:45</td><td>Speaker 1</td></tr>
+        <tr class="row-plenary"><td class="time">10:00 – 10:45</td><td>Radu Boţ (U Vienna)</td></tr>
         <tr class="row-talk"><td class="time">10:45 – 11:15</td><td>Speaker 2</td></tr>
         <tr class="row-break"><td class="time">11:15 – 11:30</td><td>Coffee break</td></tr>
         <tr class="row-talk"><td class="time">11:30 – 11:55</td><td>Speaker 3</td></tr>
@@ -122,7 +122,7 @@ hide_description: true
         <tr class="row-talk"><td class="time">15:00 – 15:25</td><td>Speaker 7</td></tr>
         <tr class="row-talk"><td class="time">15:25 – 15:50</td><td>Speaker 8</td></tr>
         <tr class="row-break"><td class="time">15:50 – 16:15</td><td>Coffee break</td></tr>
-        <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td>Speaker 9</td></tr>
+        <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td>Bernadette Hahn-Rigaud (U Stuttgart)</td></tr>
         <tr class="row-talk"><td class="time">17:00 – 17:25</td><td>Speaker 10</td></tr>
         <tr class="row-break"><td class="time">17:25 – 18:00</td><td>Discussion</td></tr>
       </tbody>
@@ -136,7 +136,7 @@ hide_description: true
         <tr><th>Time</th><th>Event</th></tr>
       </thead>
       <tbody>
-        <tr class="row-plenary"><td class="time">09:15 – 10:00</td><td>Speaker 1</td></tr>
+        <tr class="row-plenary"><td class="time">09:15 – 10:00</td><td>Luca Calatroni (U Genoa)</td></tr>
         <tr class="row-talk"><td class="time">10:00 – 10:25</td><td>Speaker 2</td></tr>
         <tr class="row-break"><td class="time">10:25 – 10:50</td><td>Coffee break</td></tr>
         <tr class="row-talk"><td class="time">10:50 – 11:15</td><td>Speaker 3</td></tr>
