@@ -9,25 +9,21 @@ sitemap: false
 
 This workshop will feature recent advances in optimization and inverse problems, aiming to promote new interactions and explore possible collaboration opportunities.
 
-The workshop is planned as a joint meeting between the IFIP-TC7 working groups on Inverse problems (WG 7.4) Nonlinear optimisation (WG 7.8), and organised by the mathematical optimisation and scientific computing labs in Mannheim and Heidelberg. Thematically, the workshop is focussed on the interface between inverse problem and mathematical optimisation. In particular, main topics of this workshop include (among others):
-	•	Advances in optimisation methods for inverse problems 
-	•	Data-driven methodologies
-	•	Computational approaches. 
-
-Confirmed speakers:
-	•	Radu Boț (U Vienna)
-  •	Luca Calatroni (U Genoa)
-  •	Kristian Bredies (U Graz)
-  •	Tristan van Leeuwen (CWI Amsterdam)
-  •	Marcello Carioni (U Twente)
-  •	Bernadette Hahn-Rigaud (U Stuttgart)
-
-
-
-
-
-
-
+The workshop is planned as a joint meeting between the IFIP-TC7 working groups on Inverse problems (WG 7.4) Nonlinear optimisation (WG 7.8), and organised by the mathematical optimisation and scientific computing labs in Mannheim and Heidelberg. Thematically, the workshop is focussed on the interface between inverse problem and mathematical optimisation. In particular, main topics of this workshop include (among others):  
+	•	Advances in optimisation methods for inverse problems   
+	•	Data-driven methodologies  
+	•	Computational approaches   
+\
+\
+**Confirmed speakers**:   
+	•	Radu Boț (U Vienna)  
+  •	Luca Calatroni (U Genoa)  
+  •	Kristian Bredies (U Graz)   
+  •	Tristan van Leeuwen (CWI Amsterdam)  
+  •	Marcello Carioni (U Twente)  
+  •	Bernadette Hahn-Rigaud (U Stuttgart)  
+\
+\
 Sponsored by:
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap;">
