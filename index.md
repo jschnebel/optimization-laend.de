@@ -15,26 +15,34 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 	•	Computational approaches   
 \
 \
-**Confirmed participants**:   
-	•	Radu Boț (U Vienna)  
-  •	Kristian Bredies (U Graz)   
-  •	Luca Calatroni (U Genoa)  
-  •	Marcello Carioni (U Twente)  
-  •	Christian Clason (U Graz)
-  •	Jalal Fadili (CNRS)
-  •	Bernadette Hahn-Rigaud (U Stuttgart)  
-  •	Andrea Ianelli (U Stuttgart)
-  •	Barbara Kaltenbacher (U Klagenfurt)
-  •	Tristan van Leeuwen (CWI Amsterdam)  
-  •	Claudia Totzeck (U Wuppertal)  
-  •	Silvia Villa (U Genoa)
-  •	Frank Werner (U Würzburg)
+**Confirmed participants**:
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.2rem 2rem;">
 
+<span>• Radu Boț (U Vienna)</span>
+<span>• Barbara Kaltenbacher (U Klagenfurt)</span>
 
+<span>• Kristian Bredies (U Graz)</span>
+<span>• Tristan van Leeuwen (CWI Amsterdam)</span>
 
+<span>• Luca Calatroni (U Genoa)</span>
+<span>• Claudia Totzeck (U Wuppertal)</span>
 
+<span>• Marcello Carioni (U Twente)</span>
+<span>• Silvia Villa (U Genoa)</span>
 
+<span>• Christian Clason (U Graz)</span>
+<span>• Frank Werner (U Würzburg)</span>
 
+<span>• Jalal Fadili (CNRS)</span>
+<span></span>
+
+<span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
+<span></span>
+
+<span>• Andrea Ianelli (U Stuttgart)</span>
+<span></span>
+
+</div>
 \
 \
 Sponsored by:
