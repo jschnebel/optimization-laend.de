@@ -34,13 +34,15 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Frank Werner (U Würzburg)</span>
 
 <span>• Jalal Fadili (CNRS)</span>
+<span>• Matthias Ehrhardt (U Bath)</span>
 <span></span>
 
 <span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
+<span>• Russel Luke (U Göttingen)</span>
 <span></span>
 
 <span>• Andrea Ianelli (U Stuttgart)</span>
-<span>• Barbara Kaltenbacher (U Klagenfurt)</span>
+<span>• Stefan Ulbrich (TU Darmstadt)</span>
 <span></span>
 
 </div>
