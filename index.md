@@ -40,6 +40,7 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span></span>
 
 <span>• Andrea Ianelli (U Stuttgart)</span>
+<span>• Barbara Kaltenbacher (U Klagenfurt)</span>
 <span></span>
 
 </div>
