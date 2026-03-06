@@ -28,36 +28,19 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Matthias Ehrhardt (U Bath)</span>
 
 <span>• Jalal Fadili (CNRS)</span>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<span>• Matthias Ehrhardt (U Bath)</span>
-<span></span>
-
-<span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
-<span>• Russel Luke (U Göttingen)</span>
-<span></span>
-
-<span>• Andrea Ianelli (U Stuttgart)</span>
-<span>• Stefan Ulbrich (TU Darmstadt)</span>
-<span></span>
-=======
 <span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
 
-=======
-<span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
-
->>>>>>> Stashed changes
-<span>• Michael Hintermüller (WIAS Berlin)</span>
+<span>• Michael Hintermüller</span>
 <span>• Andrea Iannelli (U Stuttgart)</span>
 
 <span>• Barbara Kaltenbacher (U Klagenfurt)</span>
-<span>• Ekaterina Kostina (U Heidelberg)</span>
+<span>• Ekaterina Kostina (Heidelberg)</span>
 
 <span>• Russell Luke (U Göttingen)</span>
 <span>• Peter Ochs (U Saarland)</span>
 
 <span>• Panagiotis Patrinos (KU Leuven)</span>
-<span>• Stefania Petra (U Heidelberg)</span>
+<span>• Stefania Petra (Heidelberg)</span>
 
 <span>• Oliver Stein (KIT)</span>
 <span>• Claudia Totzeck (U Wuppertal)</span>
@@ -67,10 +50,6 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 
 <span>• Silvia Villa (U Genoa)</span>
 <span>• Frank Werner (U Würzburg)</span>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 
 </div>
 \
