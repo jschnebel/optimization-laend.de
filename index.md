@@ -29,6 +29,7 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 
 <span>• Jalal Fadili (CNRS)</span>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <span>• Matthias Ehrhardt (U Bath)</span>
 <span></span>
 
@@ -42,6 +43,10 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 =======
 <span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
 
+=======
+<span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
+
+>>>>>>> Stashed changes
 <span>• Michael Hintermüller (WIAS Berlin)</span>
 <span>• Andrea Iannelli (U Stuttgart)</span>
 
@@ -62,6 +67,9 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 
 <span>• Silvia Villa (U Genoa)</span>
 <span>• Frank Werner (U Würzburg)</span>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 </div>
