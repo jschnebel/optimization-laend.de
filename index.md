@@ -19,21 +19,16 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.2rem 2rem;">
 
 <span>• Radu Boț (U Vienna)</span>
-<span>• Barbara Kaltenbacher (U Klagenfurt)</span>
-
 <span>• Kristian Bredies (U Graz)</span>
-<span>• Tristan van Leeuwen (CWI Amsterdam)</span>
 
 <span>• Luca Calatroni (U Genoa)</span>
-<span>• Claudia Totzeck (U Wuppertal)</span>
-
 <span>• Marcello Carioni (U Twente)</span>
-<span>• Silvia Villa (U Genoa)</span>
 
 <span>• Christian Clason (U Graz)</span>
-<span>• Frank Werner (U Würzburg)</span>
+<span>• Matthias Ehrhardt (U Bath)</span>
 
 <span>• Jalal Fadili (CNRS)</span>
+<<<<<<< Updated upstream
 <span>• Matthias Ehrhardt (U Bath)</span>
 <span></span>
 
@@ -44,6 +39,30 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Andrea Ianelli (U Stuttgart)</span>
 <span>• Stefan Ulbrich (TU Darmstadt)</span>
 <span></span>
+=======
+<span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
+
+<span>• Michael Hintermüller (WIAS Berlin)</span>
+<span>• Andrea Iannelli (U Stuttgart)</span>
+
+<span>• Barbara Kaltenbacher (U Klagenfurt)</span>
+<span>• Ekaterina Kostina (U Heidelberg)</span>
+
+<span>• Russell Luke (U Göttingen)</span>
+<span>• Peter Ochs (U Saarland)</span>
+
+<span>• Panagiotis Patrinos (KU Leuven)</span>
+<span>• Stefania Petra (U Heidelberg)</span>
+
+<span>• Oliver Stein (KIT)</span>
+<span>• Claudia Totzeck (U Wuppertal)</span>
+
+<span>• Stefan Ulbrich (TU Darmstadt)</span>
+<span>• Tristan van Leeuwen (CWI Amsterdam)</span>
+
+<span>• Silvia Villa (U Genoa)</span>
+<span>• Frank Werner (U Würzburg)</span>
+>>>>>>> Stashed changes
 
 </div>
 \
