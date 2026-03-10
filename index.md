@@ -51,17 +51,20 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Panagiotis Patrinos (KU Leuven)</span>
 <span>• Stefania Petra (U Heidelberg)</span>
 
+<span>• Juan Peypouquet (U Groningen)</span>
 <span>• Anton Schiela (U Bayreuth)</span>
+
 <span>• Oliver Stein (KIT)</span>
-
 <span>• Claudia Totzeck (U Wuppertal)</span>
+
 <span>• Stefan Ulbrich (TU Darmstadt)</span>
-
 <span>• Tuomo Valkonen (U Helsinki)</span>
-<span>• Silvia Villa (U Genoa)</span>
 
+<span>• Silvia Villa (U Genoa)</span>
 <span>• Frank Werner (U Würzburg)</span>
+
 <span>• Simon Weißmann (U Mannheim)</span>
+<span></span>
 
 </div>
 \
