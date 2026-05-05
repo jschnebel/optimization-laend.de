@@ -7,7 +7,7 @@ sitemap: false
 
 
 
-This workshop will feature recent advances in optimization and inverse problems, aiming to promote new interactions and explore possible collaboration opportunities.
+This workshop, taking place **25-27 November 2026** will feature recent advances in optimization and inverse problems, aiming to promote new interactions and explore possible collaboration opportunities.
 
 The workshop is planned as a joint meeting between the IFIP-TC7 working groups on Inverse problems (WG 7.4) Nonlinear optimisation (WG 7.8), and organised by the mathematical optimisation and scientific computing labs in Mannheim and Heidelberg. Thematically, the workshop is focussed on the interface between inverse problem and mathematical optimisation. In particular, main topics of this workshop include (among others):  
 	•	Advances in optimisation methods for inverse problems   
@@ -54,18 +54,16 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Stefania Petra (U Heidelberg)</span>
 <span>• Juan Peypouquet (U Groningen)</span>
 
-<span>• Shoham Sabbach (Cornell U)</span>
 <span>• Anton Schiela (U Bayreuth)</span>
-
 <span>• Oliver Stein (KIT)</span>
+
 <span>• Claudia Totzeck (U Wuppertal)</span>
-
 <span>• Stefan Ulbrich (TU Darmstadt)</span>
+
 <span>• Tuomo Valkonen (U Helsinki)</span>
-
 <span>• Silvia Villa (U Genoa)</span>
-<span>• Frank Werner (U Würzburg)</span>
 
+<span>• Frank Werner (U Würzburg)</span>
 <span>• Simon Weißmann (U Mannheim)</span>
 
 </div>
@@ -83,5 +81,5 @@ Sponsored by:
   </div>
 </div>
 
-2026-02-09
+2026-05-05
 {:.note title="Last modified"}

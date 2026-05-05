@@ -28,11 +28,13 @@ hide_description: true
     color: inherit;
   }
 
-  .schedule-table {
+.schedule-table {
     width: 100%;
     border-collapse: collapse;
     font-size: 0.9rem;
     margin-bottom: 2rem;
+    table-layout: fixed;
+    border-top: 2px solid #4a6fa5;
   }
 
   .schedule-table th {
@@ -50,8 +52,14 @@ hide_description: true
 
   .schedule-table .time {
     white-space: nowrap;
-    width: 120px;
+    width: 135px;
+    min-width: 135px;
     font-weight: 500;
+  }
+
+    .schedule-table td:last-child {
+    width: auto;
+    word-break: break-word;
   }
 
   .schedule-table tr.row-talk td {
@@ -81,17 +89,21 @@ hide_description: true
     border-radius: 2px;
   }
 
-  .day-heading {
+.day-heading {
     font-size: 1.1rem;
     font-weight: 700;
     color: #4a6fa5;
     margin-top: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
     padding-bottom: 0.3rem;
-    border-bottom: 2px solid #4a6fa5;
+    height: 3.5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    width: 100%;
   }
 
-  /* Stack on small screens */
   @media (max-width: 768px) {
     .schedule-wrapper {
       flex-direction: column;
@@ -99,38 +111,58 @@ hide_description: true
   }
 </style>
 
-
-
 <div class="schedule-wrapper">
 
   <div class="schedule-day">
-    <div class="day-heading">Thursday, November 26, 2026</div>
+    <div class="day-heading">Wednesday, November 25</div>
     <table class="schedule-table">
       <thead>
         <tr><th>Time</th><th>Event</th></tr>
       </thead>
       <tbody>
-        <tr class="row-break"><td class="time">09:30 – 10:00</td><td>Welcome / Coffee</td></tr>
-        <tr class="row-plenary"><td class="time">10:00 – 10:45</td><td>Long Talk</td></tr>
-        <tr class="row-talk"><td class="time">10:45 – 11:15</td><td>Short Talk</td></tr>
-        <tr class="row-break"><td class="time">11:15 – 11:30</td><td>Coffee break</td></tr>
-        <tr class="row-talk"><td class="time">11:30 – 11:55</td><td>Short Talk</td></tr>
-        <tr class="row-talk"><td class="time">11:55 – 12:20</td><td>Short Talk</td></tr>
-        <tr class="row-break"><td class="time">12:20 – 13:50</td><td>Lunch break</td></tr>
-        <tr class="row-plenary"><td class="time">13:50 – 14:35</td><td>Long Talk</td></tr>
-        <tr class="row-talk"><td class="time">14:35 – 15:00</td><td>Short Talk</td></tr>
-        <tr class="row-talk"><td class="time">15:00 – 15:25</td><td>Short Talk</td></tr>
-        <tr class="row-talk"><td class="time">15:25 – 15:50</td><td>Short Talk</td></tr>
-        <tr class="row-break"><td class="time">15:50 – 16:15</td><td>Coffee break</td></tr>
-        <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td>Long Talk</td></tr>
-        <tr class="row-talk"><td class="time">17:00 – 17:25</td><td>Short Talk</td></tr>
-        <tr class="row-break"><td class="time">17:25 – 18:00</td><td>Discussion</td></tr>
+        <tr class="row-break"><td class="time">12:00 – 13:00</td><td>Welcome / Snacks</td></tr>
+        <tr class="row-plenary"><td class="time">13:00 – 13:45</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">13:45 – 14:05</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">14:05 – 14:30</td><td>Short Talk</td></tr>
+        <tr class="row-break"><td class="time">14:30 – 15:00</td><td>Coffee break</td></tr>
+        <tr class="row-talk"><td class="time">15:00 – 15:20</td><td>Short Talk</td></tr>
+        <tr class="row-plenary"><td class="time">15:20 – 16:05</td><td>Long Talk</td></tr>
+        <tr class="row-plenary"><td class="time">16:05 – 16:50</td><td>Long Talk</td></tr>
+        <tr class="row-break"><td class="time">16:50 – 17:10</td><td>Coffee break</td></tr>
+        <tr class="row-talk"><td class="time">17:10 – 17:55</td><td>Short Talk</td></tr>
+        <tr class="row-break"><td class="time">17:55 – 18:30</td><td>Discussion / Closing</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="schedule-day">
-    <div class="day-heading">Friday, November 27, 2026</div>
+    <div class="day-heading">Thursday, November 26</div>
+    <table class="schedule-table">
+      <thead>
+        <tr><th>Time</th><th>Event</th></tr>
+      </thead>
+      <tbody>
+        <tr class="row-plenary"><td class="time">09:00 – 09:45</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">09:45 – 10:15</td><td>Short Talk</td></tr>
+        <tr class="row-break"><td class="time">10:15 – 10:40</td><td>Coffee break</td></tr>
+        <tr class="row-talk"><td class="time">10:40 – 11:05</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">11:05 – 11:30</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">11:30 – 12:15</td><td>Short Talk</td></tr>
+        <tr class="row-break"><td class="time">12:15 – 13:30</td><td>Lunch break</td></tr>
+        <tr class="row-plenary"><td class="time">13:30 – 14:15</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">14:15 – 14:40</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">14:40 – 15:05</td><td>Short Talk</td></tr>
+        <tr class="row-break"><td class="time">15:05 – 15:30</td><td>Coffee break</td></tr>
+        <tr class="row-plenary"><td class="time">15:30 – 16:15</td><td>Long Talk</td></tr>
+        <tr class="row-talk"><td class="time">16:15 – 16:30</td><td>Short Talk</td></tr>
+        <tr class="row-plenary"><td class="time">16:30 – 17:15</td><td>Long Talk</td></tr>
+        <tr class="row-break"><td class="time">17:25 – 18:00</td><td>Discussion / Closing</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="schedule-day">
+    <div class="day-heading">Friday, November 27</div>
     <table class="schedule-table">
       <thead>
         <tr><th>Time</th><th>Event</th></tr>
@@ -141,12 +173,11 @@ hide_description: true
         <tr class="row-break"><td class="time">10:25 – 10:50</td><td>Coffee break</td></tr>
         <tr class="row-talk"><td class="time">10:50 – 11:15</td><td>Short Talk</td></tr>
         <tr class="row-plenary"><td class="time">11:15 – 12:00</td><td>Long Talk</td></tr>
-        <tr class="row-break"><td class="time">12:00 – 13:40</td><td>Lunch break</td></tr>
-        <tr class="row-plenary"><td class="time">13:40 – 14:25</td><td>Long Talk</td></tr>
-        <tr class="row-talk"><td class="time">14:25 – 14:50</td><td>Short Talk</td></tr>
-        <tr class="row-talk"><td class="time">14:50 – 15:15</td><td>Short Talk</td></tr>
-        <tr class="row-talk"><td class="time">15:15 – 15:40</td><td>Short Talk</td></tr>
-        <tr class="row-break"><td class="time">15:40</td><td>Discussion / Closing</td></tr>
+        <tr class="row-break"><td class="time">12:00 – 13:30</td><td>Lunch break</td></tr>
+        <tr class="row-talk"><td class="time">13:30 – 13:55</td><td>Short Talk</td></tr>
+        <tr class="row-talk"><td class="time">13:55 – 14:40</td><td>Long Talk</td></tr>
+        <tr class="row-plenary"><td class="time">14:40 – 15:15</td><td>Long Talk</td></tr>
+        <tr class="row-break"><td class="time">15:15</td><td>Discussion / Closing</td></tr>
       </tbody>
     </table>
   </div>
