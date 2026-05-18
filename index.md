@@ -28,24 +28,33 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Christian Clason (U Graz)</span>
 
 <span>• Constantin Cristof (TU Darmstadt)</span>
+<span>• Pavel Dvurechensky (WIAS Berlin)</span>
+
 <span>• Matthias Ehrhardt (U Bath)</span>
-
 <span>• Jalal Fadili (CNRS)</span>
+
+<span>• Caroline Geiersbach (U Klagenfurt)</span>
+<span>• Philipp Guth (RICAM Linz)</span>
+
 <span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
+<span>• Markus Haltmeier (U Innsbruck)</span>
 
+<span>• Bastian von Harrach (U Frankfurt)</span>
 <span>• Michael Hintermüller (WIAS Berlin)</span>
+
 <span>• Thorsten Hohage (U Göttingen)</span>
-
 <span>• Martin Holler (U Graz)</span>
+
 <span>• Andrea Iannelli (U Stuttgart)</span>
-
 <span>• Barbara Kaltenbacher (U Klagenfurt)</span>
+
 <span>• Ekaterina Kostina (U Heidelberg)</span>
-
 <span>• Tristan van Leeuwen (CWI Amsterdam)</span>
-<span>• Dirk Lorenz (U Bremen)</span>
 
+<span>• Dirk Lorenz (U Bremen)</span>
 <span>• Russell Luke (U Göttingen)</span>
+
+<span>• Christian Meyer (TU Dortmund)</span>
 <span>• Peter Ochs (U Saarland)</span>
 
 <span>• Panagiotis Patrinos (KU Leuven)</span>
@@ -54,7 +63,10 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Stefania Petra (U Heidelberg)</span>
 <span>• Juan Peypouquet (U Groningen)</span>
 
+<span>• Nelly Pustelnik (ENS Lyon)</span>
 <span>• Anton Schiela (U Bayreuth)</span>
+
+<span>• Martin Schmidt (U Trier)</span>
 <span>• Oliver Stein (KIT)</span>
 
 <span>• Claudia Totzeck (U Wuppertal)</span>

@@ -129,7 +129,7 @@ hide_description: true
         <tr class="row-plenary"><td class="time">15:20 – 16:05</td><td>Long Talk</td></tr>
         <tr class="row-plenary"><td class="time">16:05 – 16:50</td><td>Long Talk</td></tr>
         <tr class="row-break"><td class="time">16:50 – 17:10</td><td>Coffee break</td></tr>
-        <tr class="row-talk"><td class="time">17:10 – 17:55</td><td>Short Talk</td></tr>
+        <tr class="row-plenary"><td class="time">17:10 – 17:55</td><td>Long Talk</td></tr>
         <tr class="row-break"><td class="time">17:55 – 18:30</td><td>Discussion / Closing</td></tr>
       </tbody>
     </table>
@@ -175,7 +175,7 @@ hide_description: true
         <tr class="row-plenary"><td class="time">11:15 – 12:00</td><td>Long Talk</td></tr>
         <tr class="row-break"><td class="time">12:00 – 13:30</td><td>Lunch break</td></tr>
         <tr class="row-talk"><td class="time">13:30 – 13:55</td><td>Short Talk</td></tr>
-        <tr class="row-talk"><td class="time">13:55 – 14:40</td><td>Long Talk</td></tr>
+        <tr class="row-plenary"><td class="time">13:55 – 14:40</td><td>Long Talk</td></tr>
         <tr class="row-plenary"><td class="time">14:40 – 15:15</td><td>Long Talk</td></tr>
         <tr class="row-break"><td class="time">15:15</td><td>Discussion / Closing</td></tr>
       </tbody>
