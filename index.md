@@ -34,7 +34,7 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Jalal Fadili (CNRS)</span>
 
 <span>• Caroline Geiersbach (U Klagenfurt)</span>
-<span>• Philipp Guth (RICAM Linz)</span>
+<span>• Pontus Giselsson (U Lund)</span>
 
 <span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
 <span>• Markus Haltmeier (U Innsbruck)</span>
@@ -55,27 +55,29 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Russell Luke (U Göttingen)</span>
 
 <span>• Christian Meyer (TU Dortmund)</span>
+<span>• Cesare Molinari (U Genoa)</span>
+
 <span>• Peter Ochs (U Saarland)</span>
-
 <span>• Panagiotis Patrinos (KU Leuven)</span>
+
 <span>• Edouard Pauwels (TSE Toulouse)</span>
-
 <span>• Stefania Petra (U Heidelberg)</span>
+
 <span>• Juan Peypouquet (U Groningen)</span>
-
 <span>• Nelly Pustelnik (ENS Lyon)</span>
+
 <span>• Anton Schiela (U Bayreuth)</span>
-
 <span>• Martin Schmidt (U Trier)</span>
+
 <span>• Oliver Stein (KIT)</span>
-
 <span>• Claudia Totzeck (U Wuppertal)</span>
+
 <span>• Stefan Ulbrich (TU Darmstadt)</span>
-
 <span>• Tuomo Valkonen (U Helsinki)</span>
-<span>• Silvia Villa (U Genoa)</span>
 
+<span>• Silvia Villa (U Genoa)</span>
 <span>• Frank Werner (U Würzburg)</span>
+
 <span>• Simon Weißmann (U Mannheim)</span>
 
 </div>
