@@ -52,3 +52,8 @@ _zip
 _site/
 .sass-cache/
 .jekyll-cache/
+
+# Never commit registration data
+*.xlsx
+*.csv
+registrations*/

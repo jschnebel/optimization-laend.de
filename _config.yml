@@ -32,6 +32,8 @@ menu:
     url: /venue/
   - title: Organizers
     url: /organizers/
+  - title: Registration
+    url: /registration/
 
 # Optional features
 markdown: kramdown
