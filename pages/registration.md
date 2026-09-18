@@ -5,7 +5,7 @@ permalink: /registration/
 ---
 
 <!--
-  SETUP: replace GOOGLE_FORM_ID below with the ID of your Google Form.
+  SETUP: replace 1FAIpQLSeoSnHgIuEkCYcI5nLMtIfVpymxanyffypFJVxW7u6PiFBDag below with the ID of your Google Form.
   Google Form -> Send -> "<>" (embed) tab -> copy the src URL, which looks like
   https://docs.google.com/forms/d/e/XXXXXXXX/viewform?embedded=true
   Responses are stored in the linked Google Sheet only - never in this repository.
@@ -22,7 +22,7 @@ permalink: /registration/
 
   .registration-form {
     width: 100%;
-    min-height: 1400px;
+    min-height: 1100px;
     border: 0;
   }
 </style>
@@ -33,10 +33,10 @@ permalink: /registration/
 </div>
 
 <iframe class="registration-form"
-        src="https://docs.google.com/forms/d/e/GOOGLE_FORM_ID/viewform?embedded=true"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeoSnHgIuEkCYcI5nLMtIfVpymxanyffypFJVxW7u6PiFBDag/viewform?embedded=true"
         loading="lazy">
   Loading…
 </iframe>
 
 If the form does not load, you can
-[open it in a new tab](https://docs.google.com/forms/d/e/GOOGLE_FORM_ID/viewform).
+[open it in a new tab](https://docs.google.com/forms/d/e/1FAIpQLSeoSnHgIuEkCYcI5nLMtIfVpymxanyffypFJVxW7u6PiFBDag/viewform).
