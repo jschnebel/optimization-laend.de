@@ -13,16 +13,16 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 	•	Advances in optimisation methods for inverse problems   
 	•	Data-driven methodologies  
 	•	Computational approaches
-\
-\
+<br>
+<br>
 <div style="margin: 1.5rem 0;">
   <a href="{{ site.baseurl }}/assets/OptiLaend_Poster.pdf" download
      style="display: inline-block; padding: 0.6rem 1.2rem; background-color: #003056; color: #fff; border-radius: 4px; text-decoration: none; font-weight: 600;">
     &#11015; Download Poster
   </a>
 </div>
-\
-\
+<br>
+<br>
 **Confirmed participants**:
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.2rem 2rem;">
 
@@ -89,8 +89,8 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Simon Weißmann (U Mannheim)</span>
 
 </div>
-\
-\
+<br>
+<br>
 Sponsored by:
 
 <div style="display: flex; align-items: center; justify-content: center; gap: 2rem; margin: 1.5rem 0; flex-wrap: wrap;">
