@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Guest Registration
+title: Registration
 permalink: /registration/
 ---
 
@@ -28,8 +28,9 @@ permalink: /registration/
 </style>
 
 <div class="registration-note">
-  <strong>This form is for guest attendees only.</strong><br>
-  Invited speakers are already registered and do not need to fill it in.
+  This form is for additional guests who would like to join the workshop.
+  Invited participants are already registered and do not need to sign up again.<br><br>
+  Due to limited capacity, we cannot guarantee participation. You will receive a confirmation by email.
 </div>
 
 <iframe class="registration-form"
