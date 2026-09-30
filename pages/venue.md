@@ -97,7 +97,7 @@ permalink: /venue/
 </style>
 
 <div class="venue-section">
-  <h2>Wednesday, 25 November</h2>
+  <h2>Wednesday, November 25</h2>
   <div class="venue-info-box">
     <strong>Room:</strong> 008.1<br>
     <strong>Building:</strong> B6, 30–32<br>
@@ -119,7 +119,7 @@ permalink: /venue/
 </div>
 
 <div class="venue-section">
-  <h2>Thursday &amp; Friday, 26–27 November</h2>
+  <h2>Thursday &amp; Friday, November 26–27</h2>
   <div class="venue-info-box">
     <strong>Room:</strong> Fuchs-Festsaal (O 138)<br>
     <strong>Building:</strong> Schloss (Mannheim Palace)<br>
