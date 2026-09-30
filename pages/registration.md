@@ -28,10 +28,10 @@ permalink: /registration/
 </style>
 
 <div class="registration-note">
-  You're warmly invited to register for the three-day Optimization in the Länd Workshop in Mannheim, 25–27 November 2026. There will be no conference fee; everyone is very welcome to join!<br><br>
+  You're warmly invited to register for the three-day Optimization in the Länd Workshop in Mannheim, 25–27 November 2026. There will be no conference fee. Everyone is very welcome to join!<br><br>
   Registration is open until <strong>2 November 2026</strong>. As space at the venue is limited, we may not be able to accommodate everyone, depending on the number of registrations we receive.
   We will let you know by email whether we can confirm your place.<br><br>
-  Participants who have been invited before September are already registered and do not need to sign up again.
+  Participants who have been invited before September 30 are already registered and do not need to sign up again.
 </div>
 
 <iframe class="registration-form"
