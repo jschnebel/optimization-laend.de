@@ -28,7 +28,7 @@ permalink: /registration/
 </style>
 
 <div class="registration-note">
-  We are delighted that you would like to join us! Registration is open until <strong>2 November 2026</strong>.<br><br>
+  Thank you for your interest in the workshop. Registration is open until <strong>2 November 2026</strong>.<br><br>
   As space at the venue is limited, we may not be able to accommodate everyone, depending on the number of registrations we receive.
   We will let you know by email whether we can confirm your place.<br><br>
   If you have been invited to the workshop, you are already registered and do not need to sign up again.
