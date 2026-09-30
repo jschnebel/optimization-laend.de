@@ -104,7 +104,17 @@ permalink: /organizers/
     </div>
     <div class="organizer-info">
       <h3>Dr. Andrea Ebner</h3>
-      <a href="andrea.ebner@uni-mannheim.de">Mail</a>
+      <a href="mailto:andrea.ebner@uni-mannheim.de">Mail</a>
+    </div>
+  </div>
+
+  <div class="organizer-card">
+    <div class="organizer-photo">
+      <img src="{{ site.baseurl }}/assets/Simon.webp" alt="Simon Weißmann" />
+    </div>
+    <div class="organizer-info">
+      <h3>Dr. Simon Weißmann</h3>
+      <a href="mailto:simon.weissmann@uni-mannheim.de">Mail</a>
     </div>
   </div>
 
