@@ -83,34 +83,30 @@ permalink: /venue/
   .hotel-list a:hover {
     text-decoration: underline;
   }
+  .venue-map-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #4a6fa5;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .venue-map-link:hover {
+    text-decoration: underline;
+  }
 </style>
 
 <div class="venue-section">
-  <h2>Location</h2>
+  <h2>Wednesday, 25 November</h2>
   <div class="venue-info-box">
     <strong>Room:</strong> 008.1<br>
     <strong>Building:</strong> B6, 30–32<br>
     <strong>Address:</strong> B6 30–32, 68159 Mannheim, Germany<br>
-    <strong>Institution:</strong> University of Mannheim
+    <strong>Tram stop:</strong> Mannheim Schloss, two stops from Mannheim Hauptbahnhof
   </div>
-</div>
-
-<div class="venue-section">
-  <h2>Getting There</h2>
   <p>
-    The workshop takes place in <strong>Room 008.1</strong> in the University of Mannheim building <strong>B6, 30–32</strong>, located in the city centre just a few steps from the Baroque Palace (<em>Barockschloss</em>), the university's main building.
+    On Wednesday, the workshop takes place in <strong>Room 008.1</strong> in the University of Mannheim building <strong>B6, 30–32</strong>, in the city centre just a few steps from the palace.
   </p>
-
-  <div class="directions-note">
-    🚂 <strong>By train:</strong> The venue is a short walk from Mannheim Hauptbahnhof (approx. 10–15 minutes on foot) or one stop by tram.<br><br>
-    🚋 <strong>By tram:</strong> Take tram line 4 or 6 to <em>Schloss</em>; from there it is a short walk to B6.<br><br>
-    🚗 <strong>By car:</strong> Parking is available at the Parkhaus Stadthaus N 1 (Bismarckstraße 14).<br><br>
-    ✈️ <strong>By plane:</strong> The closest major airport is <strong>Frankfurt Airport (FRA)</strong>, with direct train connections to Mannheim Hauptbahnhof (approx. 30–40 minutes). <strong>Karlsruhe/Baden-Baden Airport (FKB)</strong> is also an option, reachable from Mannheim by train in approx. 1 hour.
-  </div>
-</div>
-
-<div class="venue-section">
-  <h2>Map</h2>
   <div class="map-container">
     <iframe
       src="https://maps.google.com/maps?q=B6%2030-32%2C%2068159%20Mannheim&z=17&output=embed"
@@ -119,23 +115,54 @@ permalink: /venue/
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
+  <a class="venue-map-link" href="https://www.google.com/maps/search/?api=1&query=B6%2030-32%2C%2068159%20Mannheim" target="_blank">Open in Google Maps &rarr;</a>
+</div>
+
+<div class="venue-section">
+  <h2>Thursday &amp; Friday, 26–27 November</h2>
+  <div class="venue-info-box">
+    <strong>Room:</strong> Fuchs-Festsaal (O 138)<br>
+    <strong>Building:</strong> Schloss (Mannheim Palace)<br>
+    <strong>Address:</strong> Carl-Theodor-Platz, Mannheim, Germany<br>
+    <strong>Tram stop:</strong> Mannheim Schloss, two stops from Mannheim Hauptbahnhof
+  </div>
+  <p>
+    On Thursday and Friday, the workshop takes place in the <strong>Fuchs-Festsaal (O 138)</strong> in the Mannheim Palace (<em>Schloss</em>), the University of Mannheim's main building.
+  </p>
+  <div class="map-container">
+    <iframe
+      src="https://maps.google.com/maps?q=Carl-Theodor-Platz%2C%20Mannheim&z=17&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <a class="venue-map-link" href="https://www.google.com/maps/search/?api=1&query=Carl-Theodor-Platz%2C%20Mannheim" target="_blank">Open in Google Maps &rarr;</a>
+</div>
+
+<div class="venue-section">
+  <h2>Getting to Mannheim</h2>
+  <div class="directions-note">
+    🚂 <strong>By train:</strong> Mannheim Hauptbahnhof is a major hub of the German long-distance rail network, with direct ICE/IC connections to most large cities in Germany and neighbouring countries. From Hauptbahnhof, both venues are two tram stops away (stop <em>Mannheim Schloss</em>) or a short walk.<br><br>
+    ✈️ <strong>By plane:</strong> The closest major airport is <strong>Frankfurt Airport (FRA)</strong>, with direct train connections to Mannheim Hauptbahnhof (approx. 30–40 minutes). <strong>Karlsruhe/Baden-Baden Airport (FKB)</strong> is also an option, reachable from Mannheim by train in approx. 1 hour.
+  </div>
 </div>
 
 <div class="venue-section">
   <h2>Hotels</h2>
-  <p>The following hotels are conveniently located near the venue:</p>
+  <p>The following hotels are conveniently located in the city centre, close to both venues:</p>
   <ul class="hotel-list">
     <li>
       <a href="https://hrewards.com/de/intercityhotel-mannheim" target="_blank">IntercityHotel Mannheim</a><br>
-      Schlossgartenstraße 1, 68161 Mannheim — directly at Hauptbahnhof, approx. 1 km from the venue.
+      Schlossgartenstraße 1, 68161 Mannheim — directly at Hauptbahnhof.
     </li>
     <li>
       <a href="https://www.hilton.com/de/hotels/framagi-hilton-garden-inn-mannheim/" target="_blank">Hilton Garden Inn Mannheim</a><br>
-      Willy-Brandt-Platz 13, 68161 Mannheim — next to Hauptbahnhof, approx. 1 km from the venue.
+      Willy-Brandt-Platz 13, 68161 Mannheim — next to Hauptbahnhof.
     </li>
     <li>
       <a href="https://www.motel-one.com/de/hotels/mannheim/hotel-mannheim/" target="_blank">Motel One Mannheim</a><br>
-      Paradeplatz O2 1–10, 68161 Mannheim — centrally located at Paradeplatz, approx. 600 m from the venue.
+      Paradeplatz O2 1–10, 68161 Mannheim — centrally located at Paradeplatz.
     </li>
   </ul>
 </div>
