@@ -121,16 +121,16 @@ hide_description: true
       </thead>
       <tbody>
         <tr class="row-break"><td class="time">12:00 – 13:00</td><td>Welcome / Snacks</td></tr>
-        <tr class="row-plenary"><td class="time">13:00 – 13:45</td><td>Radu Boț</td></tr>
+        <tr class="row-plenary"><td class="time">13:00 – 13:45</td><td>Stefan Ulbrich</td></tr>
         <tr class="row-talk"><td class="time">13:45 – 14:05</td><td>Peter Ochs</td></tr>
         <tr class="row-talk"><td class="time">14:05 – 14:30</td><td>Edouard Pauwels</td></tr>
         <tr class="row-break"><td class="time">14:30 – 15:00</td><td>Coffee break</td></tr>
         <tr class="row-talk"><td class="time">15:00 – 15:20</td><td>Silvia Villa</td></tr>
-        <tr class="row-plenary"><td class="time">15:20 – 16:05</td><td>Dirk Lorenz</td></tr>
+        <tr class="row-talk"><td class="time">15:20 – 16:05</td><td>Pavel Dvurechensky</td></tr>
         <tr class="row-plenary"><td class="time">16:05 – 16:50</td><td>Panagiotis Patrinos</td></tr>
         <tr class="row-break"><td class="time">16:50 – 17:10</td><td>Coffee break</td></tr>
         <tr class="row-plenary"><td class="time">17:10 – 17:55</td><td>Martin Schmidt</td></tr>
-        <tr class="row-break"><td class="time">17:55 – 18:30</td><td>Discussion / Closing</td></tr>
+        <tr class="row-talk"><td class="time">17:55 – 18:20</td><td>Tristan van Leeuwen</td></tr>
       </tbody>
     </table>
   </div>
@@ -142,10 +142,10 @@ hide_description: true
         <tr><th>Time</th><th>Event</th></tr>
       </thead>
       <tbody>
-        <tr class="row-plenary"><td class="time">09:00 – 09:45</td><td>Stefan Ulbrich</td></tr>
+        <tr class="row-plenary"><td class="time">09:00 – 09:45</td><td>Radu Boț</td></tr>
         <tr class="row-talk"><td class="time">09:45 – 10:15</td><td>Behzad Azmi</td></tr>
         <tr class="row-break"><td class="time">10:15 – 10:40</td><td>Coffee break</td></tr>
-        <tr class="row-talk"><td class="time">10:40 – 11:05</td><td>Pavel Dvurechensky</td></tr>
+        <tr class="row-talk"><td class="time">10:40 – 11:05</td><td>Dirk Lorenz</td></tr>
         <tr class="row-talk"><td class="time">11:05 – 11:30</td><td>Tuomo Valkonen</td></tr>
         <tr class="row-plenary"><td class="time">11:30 – 12:15</td><td>Kristian Bredies</td></tr>
         <tr class="row-break"><td class="time">12:15 – 13:30</td><td>Lunch break</td></tr>
@@ -154,9 +154,9 @@ hide_description: true
         <tr class="row-talk"><td class="time">14:40 – 15:05</td><td>Stefania Petra</td></tr>
         <tr class="row-break"><td class="time">15:05 – 15:30</td><td>Coffee break</td></tr>
         <tr class="row-plenary"><td class="time">15:30 – 16:15</td><td>Michael Hintermüller</td></tr>
-        <tr class="row-talk"><td class="time">16:15 – 16:30</td><td>Tristan van Leeuwen</td></tr>
-        <tr class="row-plenary"><td class="time">16:30 – 17:15</td><td>Barbara Kaltenbacher</td></tr>
-        <tr class="row-break"><td class="time">17:25 – 18:00</td><td>Discussion / Closing</td></tr>
+        <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td>Barbara Kaltenbacher</td></tr>
+        <tr class="row-break"><td class="time">17:00 – 17:10</td><td>Short break</td></tr>
+        <tr class="row-break"><td class="time">17:10 – 18:10</td><td>Panel</td></tr>
       </tbody>
     </table>
   </div>
@@ -168,6 +168,7 @@ hide_description: true
         <tr><th>Time</th><th>Event</th></tr>
       </thead>
       <tbody>
+        <tr class="row-talk"><td class="time">08:30 – 08:55</td><td>Jalal Fadili</td></tr>
         <tr class="row-plenary"><td class="time">09:15 – 10:00</td><td>Luca Calatroni</td></tr>
         <tr class="row-talk"><td class="time">10:00 – 10:25</td><td>Markus Haltmeier</td></tr>
         <tr class="row-break"><td class="time">10:25 – 10:50</td><td>Coffee break</td></tr>
