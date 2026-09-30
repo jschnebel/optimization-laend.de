@@ -148,15 +148,15 @@ hide_description: true
         <tr class="row-plenary"><td class="time">10:35 – 11:20</td><td>Dirk Lorenz</td></tr>
         <tr class="row-talk"><td class="time">11:20 – 11:45</td><td>Tuomo Valkonen</td></tr>
         <tr class="row-plenary"><td class="time">11:45 – 12:30</td><td>Kristian Bredies</td></tr>
-        <tr class="row-break"><td class="time">12:30 – 13:45</td><td>Lunch break</td></tr>
-        <tr class="row-plenary"><td class="time">13:45 – 14:30</td><td>Matthias Ehrhardt</td></tr>
-        <tr class="row-talk"><td class="time">14:30 – 14:55</td><td>Nelly Pustelnik</td></tr>
-        <tr class="row-talk"><td class="time">14:55 – 15:20</td><td>Stefania Petra</td></tr>
-        <tr class="row-break"><td class="time">15:20 – 15:45</td><td>Coffee break</td></tr>
-        <tr class="row-plenary"><td class="time">15:45 – 16:30</td><td>Michael Hintermüller</td></tr>
-        <tr class="row-plenary"><td class="time">16:30 – 17:15</td><td>Barbara Kaltenbacher</td></tr>
-        <tr class="row-break"><td class="time">17:15 – 17:25</td><td>Short break</td></tr>
-        <tr class="row-break"><td class="time">17:25 – 18:25</td><td>Panel</td></tr>
+        <tr class="row-break"><td class="time">12:30 – 13:30</td><td>Lunch break</td></tr>
+        <tr class="row-plenary"><td class="time">13:30 – 14:15</td><td>Matthias Ehrhardt</td></tr>
+        <tr class="row-talk"><td class="time">14:15 – 14:40</td><td>Nelly Pustelnik</td></tr>
+        <tr class="row-talk"><td class="time">14:40 – 15:05</td><td>Stefania Petra</td></tr>
+        <tr class="row-break"><td class="time">15:05 – 15:30</td><td>Coffee break</td></tr>
+        <tr class="row-plenary"><td class="time">15:30 – 16:15</td><td>Michael Hintermüller</td></tr>
+        <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td>Barbara Kaltenbacher</td></tr>
+        <tr class="row-break"><td class="time">17:00 – 17:10</td><td>Short break</td></tr>
+        <tr class="row-break"><td class="time">17:10 – 18:10</td><td>Panel</td></tr>
       </tbody>
     </table>
   </div>
@@ -169,16 +169,16 @@ hide_description: true
       </thead>
       <tbody>
         <tr class="row-talk"><td class="time">08:30 – 08:55</td><td>Jalal Fadili</td></tr>
-        <tr class="row-plenary"><td class="time">09:15 – 10:00</td><td>Luca Calatroni</td></tr>
-        <tr class="row-talk"><td class="time">10:00 – 10:25</td><td>Markus Haltmeier</td></tr>
-        <tr class="row-break"><td class="time">10:25 – 10:50</td><td>Coffee break</td></tr>
-        <tr class="row-talk"><td class="time">10:50 – 11:15</td><td>Marcello Carioni</td></tr>
-        <tr class="row-plenary"><td class="time">11:15 – 12:00</td><td>Bernadette Hahn-Rigaud</td></tr>
-        <tr class="row-break"><td class="time">12:00 – 13:30</td><td>Lunch break</td></tr>
-        <tr class="row-talk"><td class="time">13:30 – 13:55</td><td>Simon Weißmann</td></tr>
-        <tr class="row-plenary"><td class="time">13:55 – 14:40</td><td>Bastian von Harrach</td></tr>
-        <tr class="row-plenary"><td class="time">14:40 – 15:25</td><td>Russell Luke</td></tr>
-        <tr class="row-break"><td class="time">15:25</td><td>Discussion / Closing</td></tr>
+        <tr class="row-plenary"><td class="time">08:55 – 09:40</td><td>Luca Calatroni</td></tr>
+        <tr class="row-talk"><td class="time">09:40 – 10:05</td><td>Markus Haltmeier</td></tr>
+        <tr class="row-break"><td class="time">10:05 – 10:30</td><td>Coffee break</td></tr>
+        <tr class="row-talk"><td class="time">10:30 – 10:55</td><td>Marcello Carioni</td></tr>
+        <tr class="row-plenary"><td class="time">10:55 – 11:40</td><td>Bernadette Hahn-Rigaud</td></tr>
+        <tr class="row-break"><td class="time">11:40 – 13:10</td><td>Lunch break</td></tr>
+        <tr class="row-talk"><td class="time">13:10 – 13:35</td><td>Simon Weißmann</td></tr>
+        <tr class="row-plenary"><td class="time">13:35 – 14:20</td><td>Bastian von Harrach</td></tr>
+        <tr class="row-plenary"><td class="time">14:20 – 15:05</td><td>Russell Luke</td></tr>
+        <tr class="row-break"><td class="time">15:05</td><td>Discussion / Closing</td></tr>
       </tbody>
     </table>
   </div>
