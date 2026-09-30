@@ -84,7 +84,7 @@ permalink: /organizers/
     </div>
     <div class="organizer-info">
       <h3>Prof. Dr. Mathias Staudigl</h3>
-      <a href="mailto:m.staudigl@uni-mannheim.de">Mail</a>
+      <a href="mailto:mathias.staudigl@wu.ac.at">Mail</a>
     </div>
   </div>
 
