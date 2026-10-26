@@ -103,5 +103,7 @@ Sponsored by:
   </div>
 </div>
 
-30 September 2026
+The workshop is supported by the [Data Science Center](https://www.uni-mannheim.de/datascience/) of the University of Mannheim.
+
+26 October 2026
 {:.note title="Last modified"}
