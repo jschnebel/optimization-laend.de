@@ -1,0 +1,113 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Adjoint-based Methods for Optimal Control of Hyperbolic
+Systems of Conservation Laws}
+
+\author{
+Stefan Ulbrich\thanks{Department of Mathematics, Technische Universit\"at
+Darmstadt,
+\texttt{stefan.ulbrich@tu-darmstadt.de}}
+\and
+Jannik Breitkopf\thanks{Department of Mathematics, Technische Universit\"at
+Darmstadt,
+\texttt{jannik.breitkopf@tu-darmstadt.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+optimal control, adjoint equation, hyperbolic systems of conservation laws
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+Hyperbolic systems of conservation problems arise in many applications, for
+example in fluid mechanics or traffic flow models. A particular feature lies
+in the fact that even for smooth data discontinuities may develop (shocks,
+contact discontinuities). This complicates the development of derivative
+based optimality conditions and solution methods in the context of optimal
+control and inverse problems governed by these PDEs.
+
+We consider strictly hyperbolic $n\times n$ systems of conservation laws in
+one space dimension and present a sensitivity calculus for the optimal
+control of piecewise $C^1$ solutions containing shocks.
+This implies the differentiability of many objective
+functionals with respect to controls. To obtain an adjoint-based derivative
+representation of the objective functional, we study the adjoint
+equation, which is a system of transport equations with discontinuous
+coefficients. It turns out that the solution of the adjoint equation is
+non-unique and an appropriate boundary condition along shocks is required to
+select the correct adjoint state. We present existence, uniqueness and
+regularity results for the adjoint equation.
+
+Finally, we discuss challenges and possible approaches to solve the adjoint
+equation numerically. Moreover, we derive from the properties of the adjoint
+state conclusions for the design of structure-exploiting derivative based methods
+for optimal control and inverse problems involving systems of conservation laws.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This work was supported by the DFG in the ”Collaborative Research Centre CRC/Transregio 154,
+Mathematical Modelling, Simulation and Optimization Using the Example of Gas
+Networks”, Project-ID 239904186, Projects A02.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+\bibitem{BreitkopfUlbrich2025}
+J.~Breitkopf and S.~Ulbrich.
+\newblock A variational calculus for optimal control of the generalized riemann
+  problem for hyperbolic systems of conservation laws, 2025.
+\newblock Preprint.
+\newblock \href {https://arxiv.org/abs/2509.22076}
+  {\nolinkurl{arXiv:2509.22076}}.
+
+\bibitem{BreitkopfUlbrich2026}
+J.~Breitkopf and S.~Ulbrich.
+\newblock An adjoint calculus for optimal control of entropy solutions of the
+  generalized riemann problem for hyperbolic systems of conservation laws with
+  shocks, 2026.
+\newblock Preprint.
+\newblock URL: \url{https://opus4.kobv.de/opus4-trr154/643}.
+\end{thebibliography}
+
+\end{document}

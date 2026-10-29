@@ -1,0 +1,115 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries From inverse problems in PDEs to convex semidefinite optimization}
+
+\author{
+Bastian Harrach\thanks{Goethe University Frankfurt, Germany,
+\texttt{harrach@math.uni-frankfurt.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+inverse problems, elliptic PDEs, semidefinite optimization
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+Several applications in medical imaging and non-destructive material testing lead to inverse elliptic coefficient problems, where an unknown coefficient function in an elliptic PDE is to be determined from partial knowledge of its solutions. This is usually a highly non-linear ill posed inverse problem, for which unique reconstructability results, stability and resolution estimates and global convergence of numerical methods are very hard to achieve.
+
+After FEM discretization \cite{Harrach2021}, inverse elliptic coefficient problem can often be written in the following form:
+\begin{equation*}
+\text{Reconstruct } \quad \hat y\in \mathbb{R}^m_+ \quad \text{ from } \quad \hat Y:=F(\hat y)\in \mathbb{S}^n,
+\end{equation*}
+where $F:\ \mathbb{R}_+^m\to \mathbb{S}^n_+$ is given by
+\[
+F(y)=-B  A_y^{-1} B^T,\quad A_y:=\sum_{j=1}^m y_j A_j,
+\]
+with $A_j\in \mathbb{S}^d_-$, and surjective $B\in \mathbb{R}^{n\times d}$ ($d,n,m\in \mathbb{N}$). 
+
+The matrix $-F(y)$ is the Schur complement of the block matrix
+\[
+\begin{pmatrix} -A_y & B^T\\ B & 0\end{pmatrix},
+\]
+which yields that $F$ is convex and monotonically non-increasing with respect to the semi-definite ordering of symmetric matrices (aka Loewner order). 
+A further Schur complement argument shows that $F(y)\preceq Y$ is equivalent to $A_y\preceq C:=-B^T Y^{-1} B$, cf. \cite{BrojatschHarrach2025}. Hence, 
+the set of all $y\in \mathbb{R}^m_+$ satisfying $F(y)\preceq Y$ is convex. The solution of the inverse problem $F(y)=Y$ lies on a corner of this convex set with maximally active constraints. 
+
+In this talk, we will build upon this relation to discuss reformulations of the nonlinear inverse problem $F(y)=Y$ as a semidefinite optimization problem \cite{Harrach2022, Harrach2023}
+\begin{align*}
+ b^T y \to \text{max!}
+ \quad \text{s.t.} \quad  \sum_{i=1}^m y_i A_i \preceq C.
+\end{align*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1em}
+%
+%\noindent
+%\textbf{Acknowledgements.}
+%This work was supported by ...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{Harrach2021}
+B. Harrach.
+\newblock An Introduction to Finite Element Methods for Inverse Coefficient Problems in Elliptic PDEs.
+\newblock {\em Jahresber. Dtsch. Math. Ver.}, 123 (2021), 183--210. 
+\newblock \href{https://doi.org/10.1365/s13291-021-00236-2}{https://doi.org/10.1365/s13291-021-00236-2}
+
+\bibitem{Harrach2022}
+B. Harrach.
+\newblock Solving an inverse elliptic coefficient problem by convex non-linear semidefinite programming.
+\newblock {\em Optim. Lett.}, 16 (2022), 1599--1609.
+\newblock \href{https://doi.org/10.1007/s11590-021-01802-4}{https://doi.org/10.1007/s11590-021-01802-4}
+
+\bibitem{Harrach2023}
+B. Harrach.
+\newblock The Calder\'on problem with finitely many unknowns is equivalent to convex semidefinite optimization.
+\newblock {\em SIAM J. Math. Anal.}, 55 (2023), 5666--5684.
+\newblock \href{https://doi.org/10.1137/23M1544854}{https://doi.org/10.1137/23M1544854}
+
+\bibitem{BrojatschHarrach2025}
+A. Brojatsch, B. Harrach.
+\newblock On the required number of electrodes for uniqueness and convex reformulation in an inverse coefficient problem
+\newblock {\em Inverse Problems}, 41 (2025), 105011.
+\newblock \href{https://doi.org/10.1088/1361-6420/ae1055}{https://doi.org/10.1088/1361-6420/ae1055}
+\end{thebibliography}
+
+\end{document}

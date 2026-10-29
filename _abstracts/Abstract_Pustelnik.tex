@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Adaptive Block-Coordinate Forward-Backward: Particular case of multilevel block strategy for Image Reconstruction}
+
+\author{Nelly Pustelnik}
+%thanks{Department of Mathematics, University A,
+%\texttt{first.author@university.edu}}
+%\and
+%Second Author\thanks{Institute of Applied Mathematics, University B,
+%\texttt{second.author@university.edu}}
+%}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+Adaptive Block-Coordinate Forward-Backward: Particular case of multilevel block strategy for Image Reconstruction
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+Classical first-order optimization methods for imaging inverse problems struggle to scale efficiently with increasing image resolution. Here, we introduce an adaptive multiresolution block coordinate Forward-Backward algorithm for image restoration. The selection of multiresolution blocks is guided by the local magnitude of the proximal update, using a stochastic, non-smooth Gauss-Southwell rule applied to the image wavelet decomposition. This adaptive approach dynamically balances updates across scales, prioritizing coarse or fine blocks based on the degradation characteristics. As a result, the proposed method automatically adjusts to varying levels of blur and noise without requiring a predefined hierarchical update scheme. 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+%\textbf{Acknowledgements.}
+%This work was supported by ...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+%\begin{thebibliography}{9}
+
+
+%\end{thebibliography}
+
+\end{document}

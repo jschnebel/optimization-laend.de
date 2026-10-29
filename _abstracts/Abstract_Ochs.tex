@@ -1,0 +1,72 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Title}
+
+\author{Peter Ochs
+%First Author\thanks{Department of Mathematics, University A,
+%\texttt{first.author@university.edu}}
+%\and
+%Second Author\thanks{Institute of Applied Mathematics, University B,
+%\texttt{second.author@university.edu}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+Learning Optimization Algorithms with Average Case Convergence Rates
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+The change of paradigm from purely model driven to data driven (learning based) approaches has tremendously altered the picture in many applications in Machine Learning, Computer Vision, Signal Processing, Inverse Problems, Statistics and so on. There is no need to mention the significant boost in performance for many specific applications, thanks to the advent of large scale Deep Learning. In this talk, we open the area of optimization algorithms for this data driven paradigm, for which theoretical guarantees are indispensable. The expectations about an optimization algorithm are clearly beyond empirical evidence, as there may be a whole processing pipeline depending on a reliable output of the optimization algorithm, and application domains of algorithms can vary significantly. While there is already a vast literature on "learning to optimize", there is no theoretical guarantees associated with these algorithms that meet these expectations from an optimization point of view. We develop the first framework to learn optimization algorithms with provable generalization guarantees to certain classes of optimization problems, while the learning based backbone enables the algorithms' functioning far beyond the limitations of classical (deterministic) worst case bounds. Our results rely on PAC-Bayes bounds for general, unbounded loss-functions based on exponential families. We learn optimization algorithms with provable generalization guarantees (PAC-bounds) and explicit trade-off between a high probability of convergence and a high convergence speed.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+%\textbf{Acknowledgements.}
+%This work was supported by ...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+%\begin{thebibliography}{9}
+%\end{thebibliography}
+
+\end{document}

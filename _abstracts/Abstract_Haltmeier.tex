@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Locally-Supervised Global Image Reconstruction}
+
+\author{
+Markus Haltmeier\thanks{Department of Mathematics, Universit\"at Innsbruck, Austria,
+\texttt{markus.haltmeier@uibk.ac.at}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+inverse problems, partially-supervised learning, invariances, image upsampling,
+photoacoustic microscopy
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+We consider the recovery of an image $x \in \mathbb{R}^{I}$ from incomplete
+observations $y = P_{\Omega} x$ with observed pixels $\Omega \subseteq I$, which
+covers upsampling as well as inpainting. Learning-based solutions approximate
+the minimizer $\mathbb{E}[X \mid X_{\Omega}]$ of the supervised loss
+$\mathbb{E}[\lVert f(X_{\Omega}) - X\rVert^{2}]$, requiring fully sampled ground
+truth; self-supervised methods avoid this, but rely on $\Omega$ being random and
+covering the whole index set in expectation. We instead study fixed patterns
+with incomplete coverage, compensating for the missing randomness by invariances
+of the image distribution. Our main contributions are the following:
+
+\begin{itemize}[leftmargin=1.5em]
+    \item We introduce a locally-supervised framework based on a fixed
+    subsampling set $\Omega$, a small supervision set $B \subseteq I$, and
+    transformations $(T_{\ell})_{\ell}$ leaving $X$ and $M_{\Omega} \odot X$
+    invariant in distribution, with $(T_{\ell}(B))_{\ell}$ partitioning $I$.
+    \item We establish that the optimal reconstruction function is
+    $\mathcal{T}$-equivariant and minimizes the locally supervised loss,
+    \[
+        \mathbb{E}[X \mid X_{\Omega}]
+        = \operatorname*{arg\,min}_{f \in \mathcal{F}(\mathbb{R}^{I};\mathcal{T})}
+          \mathbb{E}\bigl[\lVert M_{B} \odot f(X_{\Omega}) - X_{B}\rVert^{2}\bigr],
+    \]
+    so supervision on the small subset $B$ recovers the fully supervised solution.
+    \item We derive a sparse-dense sampling scheme \cite{Walder2026} with
+    supervision on a single quadrant, realized by a U-Net with circular padding.
+    \item Experiments on optical-resolution photoacoustic microscopy of lung
+    tissue show performance close to fully supervised training at a fraction of
+    the measurements, outperforming patch-wise training.
+\end{itemize}
+
+Future work includes noise, invariances beyond translations, and extensions  to ill-pposed inverse problems. 
+This is joint work with B.~Walder, D.~Toader, R.~Nuster, G.~Paltauf,
+P.~Burgholzer, G.~Langer and L.~Krainer.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+Supported by the Austrian Research Funding Association (FFG), project Compressed
+Photoacoustic Remote Sensing (FO999898886).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{Walder2026}
+B.~Walder, D.~Toader, R.~Nuster, G.~Paltauf, P.~Burgholzer, G.~Langer,
+L.~Krainer and M.~Haltmeier.
+\newblock Locally-supervised global image restoration.
+\newblock {\em Inverse Problems}, 2026.
+\newblock \url{https://doi.org/10.1088/1361-6420/ae6fe1}
+
+\end{thebibliography}
+
+\end{document}

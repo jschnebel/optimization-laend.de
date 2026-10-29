@@ -1,0 +1,84 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Derivative-Free Bilevel Learning for Inverse Problems: From Stochastic Gradient Estimation to Multilevel Methods}
+
+\author{
+Neil K. Chada\thanks{Department of Mathematics, City University of Hong Kong, Hong Kong SAR, \texttt{neilchada123@gmail.com}}
+\and
+Mohammad S. Salehi\thanks{Independent scholar, London, UK, \texttt{sadeghsalehi1997@gmail.com}}
+\and 
+Mathias Staudigl\thanks{Institute of Mathematics, University of Mannheim, Germany, \texttt{m.staudigl@uni-mannheim.de}}
+\and 
+\underline{Simon Weissmann}\thanks{Institute of Mathematics, University of Mannheim, Germany, \texttt{simon.weissmann@uni-mannheim.de}}
+}
+
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+Bilevel optimization, derivative-free optimization, multilevel Monte Carlo, Gaussian smoothing, inverse problems.
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+We consider bilevel learning problems arising in inverse problems, where regularization parameters are optimized from data and each upper-level function evaluation requires the approximate solution of a lower-level reconstruction problem. When derivatives of the lower-level solution map are unavailable or undesirable, zeroth-order methods provide a flexible alternative, but can become computationally expensive due to increasingly accurate inner solves. We propose a multilevel Monte Carlo approach for derivative-free bilevel optimization that combines Gaussian smoothing with a hierarchy of lower-level accuracies. The resulting estimator uses many inexpensive coarse solves and only few accurate fine solves. We derive convergence and complexity guarantees and identify the properties of the lower-level solver that determine whether multilevel sampling yields a genuine computational speedup. Numerical experiments for imaging inverse problems illustrate the potential gains. This
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1em}
+%
+%\noindent
+%\textbf{Acknowledgements.}
+%This work was supported by ...
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1em}
+%
+%\begin{thebibliography}{9}
+%
+%\bibitem{Attouch2013}
+%H.~Attouch, J.~Bolte and B.~Svaiter.
+%\newblock Convergence of descent methods for semi-algebraic and tame problems.
+%\newblock {\em Mathematical Programming}, 137 (2013), 91--129.
+%
+%\bibitem{Nesterov2018}
+%Y.~Nesterov.
+%\newblock {\em Lectures on Convex Optimization}.
+%\newblock Springer, 2018.
+%
+%\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,90 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Point Source Localisation with Unbalanced Optimal Transport}
+
+\author{
+Tuomo Valkonen\thanks{MODEMAT
+\texttt{tuomo.valkonen@iki.fi}}
+\and
+Thi Tam Dang\thanks{Department of Mathematics and Statistics University of Helsinki,
+\texttt{tam.dang@iki.fi}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+optimization, inverse problems, measure spaces, convectionn-diffusion
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+Replacing the quadratic proximal penalty familiar from Hilbert spaces by an unbalanced optimal transport distance, we develop forward-backward type optimisation methods in spaces of Radon measures. We avoid the actual computation of the optimal transport distances through the use of transport three-plans and the rough concept of transport subdifferentials. The resulting algorithm has a step similar to the sliding heuristics previously introduced for conditional gradient methods, however, now non-heuristically derived from the geometry of the space \cite{tuomov-unbalanced}.
+
+Afterwards, as an application of the above algorithm, we study the inverse problem of locating gas leaks from line-of-sight concentration measurements using a convection–diffusion model with the source term a Radon measure. By imposing sparsity-promoting regularisation on this measure, we recover point sources---identifying both their locations and intensities---rather than diffuse approximations.
+We jointly estimate the underlying physical convection (wind) and diffusion parameters.
+Our main theoretical contribution is the stability analysis of the convection--diffusion equation with respect to its parameters: the measure, and the convection and diffusion fields.
+Our experiments demonstrate accurate localisation, highlighting the potential of the method for practical gas emission detection \cite{dangvalkonen2026leak}.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This work was supported by the Jane and Aatos Erkko Foundation.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\providecommand{\eprint}[1]{\href{http://arxiv.org/abs/#1}{arXiv:#1}}
+\begin{thebibliography}{1}
+
+\bibitem{dangvalkonen2026leak}
+T.\,T{.\nobreak\kern 0.33333em}Dang and T{.\nobreak\kern 0.33333em}Valkonen,
+  Leak localisation with a measure source convection--diffusion model, 2026,
+  \href{https://arxiv.org/abs/2605.12095}{\nolinkurl{arXiv:2605.12095}}.
+\newblock submitted.
+
+\bibitem{tuomov-unbalanced}
+T{.\nobreak\kern 0.33333em}Valkonen, Point source localisation with unbalanced
+  optimal transport, 2025,
+  \href{https://arxiv.org/abs/2502.12417}{\nolinkurl{arXiv:2502.12417}}.
+\newblock submitted.
+
+\end{thebibliography}
+
+\end{document}

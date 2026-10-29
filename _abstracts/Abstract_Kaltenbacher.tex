@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Locally-averaged McCormick relaxations for discretization-regularized inverse problems
+}
+
+\author{
+Barbara Kaltenbacher\thanks{Department of Mathematics, University of Klagenfurt,
+\texttt{barbara.kaltenbacher@aau.at}}
+\and
+Paul Manns\thanks{
+Department of Mathematics, TU Dortmund University, 
+\texttt{paul.manns@tu-dortmund.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+inverse problems, regularization by discretization, McCormick relaxation
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+As a prototypical coefficient inverse problem, we consider identification of the potential in an elliptic PDE from indirect observations and its regularization by discretization in pre-image space -- the so-called least squares version of regularization by projection. We are particularly interested in a situation where the coefficient only takes values in a discrete and finite set. In doing so, we seek to minimize the data misfit over the finite dimensional subspace of piecewise constant function on a given partition of the domain, under the PDE as well as the discrete valuedness as constraints.
+The resulting algorithmic challenge is twofold:
+* the discretization level must be adapted to the noise level to allow us to stably recover coefficient and state in this nonlinear inverse problem;
+* the discretization-regularized minimization problem must be solved to global optimality.
+For the former, we establish a general result on the least squares method for nonlinear ill-posed operator equations.
+The latter is not possible by gradient-based nonlinear programming algorithms due to non-convexity.
+We therefore need a global optimization algorithm like (spatial) branch-\&-bound, which requires means to compute (approximate) primal upper and dual lower bounds. 
+In order to obtain dual bounds, we employ a McCormick relaxation, combined with local averaging \cite{LeyfferManns2025mccormick}, which reduces the number of degrees of freedom and makes the problem amenable to optimization based bound tightening.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This work was supported by the Austrian Science Fund (FWF) under grant
+[10.55776/F100800]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{IP_McCormick}
+Barbara Kaltenbacher and Paul Manns.
+\newblock {Locally-averaged McCormick relaxations for
+  discretization-regularized inverse problems }.
+\newblock {\em Inverse Problems}, 2026.
+\newblock see also arXiv:2601.01995 [math.NA].
+
+\bibitem{LeyfferManns2025mccormick}
+Sven Leyffer and Paul Manns.
+\newblock {McCormick} envelopes in mixed-integer {PDE}-constrained
+  optimization.
+\newblock {\em Mathematical Programming}, pages 1--46, 2025.
+
+\end{thebibliography}
+
+\end{document}

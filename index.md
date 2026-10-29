@@ -39,7 +39,6 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Pavel Dvurechensky (WIAS Berlin)</span>
 
 <span>• Matthias Ehrhardt (U Bath)</span>
-<span>• Jalal Fadili (CNRS)</span>
 
 <span>• Caroline Geiersbach (U Klagenfurt)</span>
 <span>• Pontus Giselsson (U Lund)</span>

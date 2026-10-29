@@ -1,0 +1,87 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Semismooth Newton methods with global convergence rates}
+
+\author{
+Amal Alphonse\thanks{Weierstrass Institute,
+\texttt{alphonse@wias-berlin.de}}
+\and
+Pavel Dvurechensky\thanks{Weierstrass Institute,
+\texttt{dvurechensky@wias-berlin.de}}
+\and
+Ioannis P.~A. Papadopoulos\thanks{University of Oxford,
+\texttt{papadopoulos@maths.ox.ac.uk}}
+\and
+Clemens Sirotenko\thanks{Weierstrass Institute,
+\texttt{sirotenko@wias-berlin.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+optimization, second-order methods, semismoothness, convergence rates
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+We propose LeAP-SSN (Levenberg-Marquardt Adaptive Proximal Semismooth Newton method), a semismooth Newton-type method with a parameter-free globalisation strategy that guarantees, for minimization problems, nonasymptotic sublinear convergence rate in convex setting and linear convergence rate under the Polyak--Lojasiewicz condition, in Hilbert spaces. The method employs an adaptive Levenberg--Marquardt regularisation for the Newton steps, combined with backtracking, and does not require knowledge of problem-specific constants. The algorithm achieves superlinear convergence under mild semismoothness and Dennis--Moré or partial smoothness conditions. By combining strong global guarantees with superlinear local rates in a fully parameter-agnostic framework, LeAP-SSN bridges the gap between globally convergent second-order algorithms and Semismooth Newton's methods with the fast asymptotic local rates. The practical efficiency of the method is illustrated on representative problems from imaging, contact mechanics, and machine learning. We also propose a modification of this method based on gradient regularization and show that it achieves improved local superlinear convergence under strong semismoothness and is able to work with lazy Hessian updates. The details can be found in \url{https://arxiv.org/abs/2508.16468} and \url{https://arxiv.org/abs/2602.08069}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy -- The Berlin Mathematics Research Center MATH+ (EXC-2046/1, project ID: 390685689).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+%\begin{thebibliography}{9}
+%
+%\bibitem{Attouch2013}
+%H.~Attouch, J.~Bolte and B.~Svaiter.
+%\newblock Convergence of descent methods for semi-algebraic and tame problems.
+%\newblock {\em Mathematical Programming}, 137 (2013), 91--129.
+%
+%\bibitem{Nesterov2018}
+%Y.~Nesterov.
+%\newblock {\em Lectures on Convex Optimization}.
+%\newblock Springer, 2018.
+%
+%\end{thebibliography}
+
+\end{document}

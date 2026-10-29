@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries How to make (Bregman-)Kaczmarz methods fast}
+
+\author{
+Dirk Lorenz\thanks{Center for Industrial Mathematics, University of Bremen,
+\texttt{d.lorenz@uni-bremen.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+constrained optimization, Kaczmarz methods
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+Bregman-Kaczmarz methods can compute solutions of systems of linear equations that additionally minimize a strongly convex functions (e.g. minimum-norm solutions, but also sparse solutions). Their plain version is oftentimes quite slow and hence, there is interest in speeding up the methods. Optimal step-sizes are, on the one hand, often hard to compute and, on the other hand, do not always bring much improvements for. In this talk I will treat several acceleration mechanisms e.g. based on momentum (with a computable approximate minimal error criterion) and dual acceleration.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This work was supported by the International Training Network TraDE-OPT fundedd, MSCA Grant agreement ID: 861137
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{1}
+D.A. Lorenz, M. Winkler.
+\newblock  Minimal error momentum Bregman-Kaczmarz
+\newblock {\em Linear Algebra and its Applications} 709, 416-448, 2025
+
+\bibitem{2}
+L. Tondji, I. Necoara, D.A. Lorenz.
+\newblock Acceleration and restart for the randomized Bregman-Kaczmarz method
+\newblock {\em Linear Algebra and its Applications} 699, 508-538, 2024
+
+\bibitem{3}
+L. Tondji, D.A. Lorenz.
+\newblock Faster randomized block sparse Kaczmarz by averaging
+\newblock {\em Numerical Algorithms} 93 (4), 1417-1451, 2023
+
+\end{thebibliography}
+
+\end{document}

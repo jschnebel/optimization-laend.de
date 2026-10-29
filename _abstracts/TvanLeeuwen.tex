@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+% Keep the bibliography compact enough for the one-page workshop format.
+\let\oldthebibliography\thebibliography
+\renewcommand{\thebibliography}[1]{%
+  \small
+  \oldthebibliography{#1}%
+  \setlength{\itemsep}{0pt}%
+  \setlength{\parskip}{0pt}%
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries An Invertible Generative Model for Forward and Inverse Problems}
+
+\author{
+Tristan van Leeuwen\thanks{Centrum Wiskunde \& Informatica, Amsterdam, and
+Utrecht University, Utrecht, The Netherlands,
+\texttt{T.van.Leeuwen@cwi.nl}}
+\and
+Christoph Brune\thanks{University of Twente, Enschede, The Netherlands}
+\and
+Marcello Carioni\footnotemark[2]
+\and
+Lasse Veenstra\thanks{Delft University of Technology, The Netherlands}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1.5em}
+
+\noindent
+\textbf{Keywords:}
+Bayesian inverse problems, normalizing flows, triangular transport,
+amortized inference
+
+\vspace{-0.5em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+\vspace{-0.5em}
+
+Many inverse problems require both a forward simulator, which generates data
+for given parameters, and an inference procedure, which characterizes the
+parameters compatible with observed data. In a Bayesian formulation these
+tasks amount to sampling from the likelihood and the posterior, respectively. 
+Both tasks can benefit from recent advances in generative models. Existing amortized approaches typically learn separate conditional generative models for the two directions
+\cite{Radev2023}, or focus primarily on the inverse direction
+\cite{Ardizzone2019}.
+
+We introduce a single invertible generative map that performs both tasks.
+Starting from the classical use of triangular transport maps for conditional
+sampling \cite{Marzouk2017}, we combine a lower-triangular transport, adapted
+to the likelihood, with an upper-triangular transport, adapted to the
+posterior \cite{vanLeeuwen2026}. The resulting bijection acts on the joint parameter--data space:
+evaluated forward, it generates samples from the likelihood for a prescribed
+parameter; evaluated in reverse, it generates posterior samples for prescribed
+data. We investigate the (non-)uniqueness of this construction, and proposal a variational formulation that allows us to learn the map from samples.
+
+In linear Gaussian problems the construction is explicit and,
+unlike the individual triangular transports, can remain well conditioned as
+the observational noise vanishes. Nonlinear examples and an image-inpainting
+experiment illustrate simulation and uncertainty-aware inversion with the
+same model. The framework thus offers a unified route to amortized forward
+simulation and Bayesian inference, with potential extensions to experimental
+design.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.5em}
+
+\begin{thebibliography}{9}
+
+\bibitem{Ardizzone2019}
+L.~Ardizzone, J.~Kruse, S.~Wirkert, et al.
+\newblock Analyzing inverse problems with invertible neural networks.
+\newblock In {\em International Conference on Learning Representations}, 2019.
+
+\bibitem{Marzouk2017}
+Y.~Marzouk, T.~Moselhy, M.~Parno, and A.~Spantini.
+\newblock Sampling via measure transport: An introduction.
+\newblock In {\em Handbook of Uncertainty Quantification}, pp.~785--825,
+Springer, 2017.
+
+\bibitem{Radev2023}
+S.~T. Radev, M.~Schmitt, V.~Pratz, et al.
+\newblock JANA: Jointly amortized neural approximation of complex Bayesian
+models.
+\newblock In {\em Proceedings of UAI}, PMLR 216:1695--1706, 2023.
+
+\bibitem{vanLeeuwen2026}
+T.~van Leeuwen.
+\newblock The reversible simulator: A data-driven approach for solving forward
+and inverse problems.
+\newblock In {\em Applications of Mathematics in Sciences, Engineering, and
+Economics}, pp.~243--260, Springer, 2026.
+
+\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}
+
+\author{
+Behzad Azmi\thanks{Department of Mathematics and Statistics, University of Konstanz, 
+\texttt{behzad.azmi@uni-konstanz.de}}
+\and
+Alberto De Marchi\thanks{Department of Aerospace Engineering, University of the Bundeswehr Munich,
+\texttt{alberto.demarchi@unibw.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+Proximal methods, interior-point methods, PDE constrained optimization, complexity.
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+We present an inexact interior-point method for a class of nonsmooth nonconvex optimization problems with conic inequality constraints. The problem is posed in a Hilbert space, while the inequality constraint is induced by an order cone in a Banach lattice. The objective combines a smooth term with a convex nonsmooth term whose proximal mapping is computable. The method is based on barrier-regularized subproblems, which are solved inexactly by a proximal-gradient scheme.
+
+We consider both logarithmic and power-type barrier functions and establish the analytical properties required for the convergence and complexity analysis. Under suitable constraint qualifications, we show that the primal iterates and the associated barrier multipliers satisfy quantitative approximate KKT conditions. Based on these estimates, we establish convergence to stationary points and derive complexity bounds for the full outer–inner scheme, combining the barrier-parameter updates with the inexact proximal-gradient solution of the subproblems. Numerical examples from finite-dimensional nonlinear optimization and PDE-constrained optimization with pointwise state constraints illustrate the theoretical results.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1em}
+%
+%\noindent
+%\textbf{Acknowledgements.}
+%This work was supported by ...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{1em}
+%
+%\begin{thebibliography}{9}
+%
+%\bibitem{Attouch2013}
+%H.~Attouch, J.~Bolte and B.~Svaiter.
+%\newblock Convergence of descent methods for semi-algebraic and tame problems.
+%\newblock {\em Mathematical Programming}, 137 (2013), 91--129.
+%
+%\bibitem{Nesterov2018}
+%Y.~Nesterov.
+%\newblock {\em Lectures on Convex Optimization}.
+%\newblock Springer, 2018.
+%
+%\end{thebibliography}
+
+\end{document}

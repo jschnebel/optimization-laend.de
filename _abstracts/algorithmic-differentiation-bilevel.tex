@@ -1,0 +1,22 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+\begin{document}
+
+\begin{center}
+  {\Large\bfseries Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions}
+\end{center}
+
+\bigskip
+
+\noindent
+Many learning approaches to inverse problems are bilevel problems, such as learning regularization parameters or training unrolled networks. Their hypergradients are often computed by algorithmic differentiation: differentiating through the iterations of the algorithm that solves the lower-level problem. This works well when the lower-level solution is unique. In underdetermined or degenerate problems, however, many solutions exist, and the derivative depends on which one the algorithm picks. We show that algorithmic differentiation still makes sense in this case. It converges to the derivative of the solution selected by the algorithm, which reflects the algorithm's geometry and initialization. We make this precise for (preconditioned) gradient descent, discuss extensions to mirror descent for constrained problems, and illustrate the results on exemplar inverse problems.
+
+\medskip
+
+\noindent
+This is joint work with C.~Daniele and S.~Villa (MaLGa, University of Genoa), and S.~Vaiter (CNRS).
+
+\end{document}

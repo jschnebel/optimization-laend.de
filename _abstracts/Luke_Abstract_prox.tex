@@ -1,0 +1,285 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+\usepackage[linesnumbered,lined,ruled, noend]{algorithm2e}
+\newcommand{\algorithmicrequire}{\textbf{Input:}}
+\newcommand{\algorithmicensure}{\textbf{Output:}}
+\usepackage{algpseudocode}
+\usepackage{enumerate}
+\usepackage{graphicx,accents}
+\makeatletter
+\DeclareRobustCommand{\cev}[1]{%
+    \mathpalette\do@cev{#1}%
+}
+\newcommand{\do@cev}[2]{%
+    \fix@cev{#1}{+}%
+    \reflectbox{$\m@th#1\vec{\reflectbox{$\fix@cev{#1}{-}\m@th#1#2\fix@cev{#1}{+}$}}$}%
+    \fix@cev{#1}{-}%
+}
+\newcommand{\fix@cev}[2]{%
+    \ifx#1\displaystyle
+        \mkern#23mu
+    \else
+        \ifx#1\textstyle
+            \mkern#23mu
+        \else
+        \ifx#1\scriptstyle
+            \mkern#22mu
+        \else
+            \mkern#22mu
+        \fi
+        \fi
+    \fi
+}
+\makeatother
+
+\DeclareMathOperator{\dom}{{dom\,}}
+\DeclareMathOperator{\gcore}{{gcore}}
+\DeclareMathOperator{\epi}{Epi}
+\DeclareMathOperator{\proj}{P}
+\DeclareMathOperator{\dist}{d}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator{\prox}{prox}
+\DeclareMathOperator{\Id}{Id}
+\newcommand{\Tbar}{{\overline{T}}}
+
+\renewcommand{\equiv}{:=}
+\newcommand{\ucmin}[2]{\underset{#2}{\mbox{minimize}}~#1}
+\newcommand{\map}[3]{#1:\,#2\rightarrow #3\,}
+\newcommand{\set}[2]{\left\{#1\,\left|\,#2\right.\right\}}
+%\newcommand{\extre}{(-\infty,+\infty]}
+\newcommand{\extre}{\overline{\mathbb{R}}}
+\newcommand{\xbar}{\bar{x}}
+\newcommand{\bbR}{\mathbb{R}}
+\newcommand{\bbN}{\mathbb{N}}
+\newcommand{\Dcal}{{\mathcal D}}
+\newcommand{\paren}[1]{\left(#1\right)}
+\newcommand{\Nbb}{\mathbb{N}}
+\newcommand{\Mtilde}{{\widetilde{M}}}
+\newcommand{\Mbar}{{\overline{M}}}
+\newcommand{\diff}{d}
+
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Quantitative Convergence of Proximal Splitting Iterations in Uniformly Convex Metric Spaces}
+
+\author{
+Russell Luke\thanks{Institute for Numerical and Applied Mathematics, Georg-August University of Göttingen,
+\texttt{r.luke@math.uni-goettingen.de}}
+}
+
+\date{Nov 25-27, 2026}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+optimization, metric space, proximal mapping, operator splitting
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+We provide sufficient conditions for quantitative
+convergence of the iterates of proximal splitting algorithms for minimizing a sum of functions on a metric space.
+
+The setting for our development is a $p$-uniformly convex metric space, denoted $(G,d)$.
+Our central goal is to solve the following optimization problem
+ \begin{equation}\label{eq:gen prob}
+     \argmin_{x\in G} \sum_{j=1}^m f_j(x).
+ \end{equation}
+For geodesic metric spaces, in the absence of linear structure {\em implicit tools}
+using the {\em proximal mapping} \cite{Jost1995}
+% \cite{AriLeuLop14, RuiLopNic15, Izuchukwu19, Bacak13, Bacak14, Bacak23, ChoiJi16, Mayer98, Jost1995, LauLuk21, BLL, OhtaPal15, EspFer09}
+are well-developed and provide notions of descent based on  {\em gradient flows} \cite{DeGMarTos80, AmbGigSav2005}.
+This is applied to evolution systems (see for instance \cite{GigNob21}) and metric measure spaces (see for instance \cite{OhtaPal15}).
+Purely implicit methods based on proximal splitting are possible whenever the proximal mapping can be computed
+explicitly \cite{Bacak14, LauLuk21, BLL, LukMir26}.
+
+Let
+\begin{equation}
+\begin{aligned}
+\Tbar &\equiv (\tau_m \prox^p_{f_m,\lambda_m} \oplus (1 - \tau_m)\Id)  \circ \cdots \nonumber \\
+  &\quad \circ (\tau_2 \prox^p_{f_2,\lambda_2} \oplus (1 - \tau_2)\Id)
+    \circ (\tau_1 \prox^p_{f_1,\lambda_1} \oplus (1 - \tau_1)\Id).
+\end{aligned}
+\end{equation}
+Holding the parameters $\tau_j$ and $\lambda_j$ fixed, we characterize the properties of the mapping $\Tbar$ and
+determine the convergence properties of fixed point sequences $(x^k)$ under $\Tbar$:
+\[
+ x^{k+1}= \overline{T} x^k.
+\]
+
+The theory does not assume that the functions $f_j$ have common minima, nor does it require vanishing proximal parameters or step sizes.
+Our results are stated for general $p$-uniformly convex
+spaces with curvature bounded above, and a corollary specializes the main theorem
+to Hadamard spaces, where many assumptions for the more general setting can be dropped.
+The theory is demonstrated with computation of Fr\'echet means in the
+space of SPD matrices with the affine invariant metric (a Hadamard space) and the
+sphere with the usual geodesic metric (a CAT($\kappa$) metric space).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) – Projektnummer 566257456 and 541767835
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{AmbGigSav2005}
+L.~Ambrosio, N.~Gigli, and G.~Savar{\'e}.
+\newblock {\em Gradient Flows in Metric Spaces and in the Space of Probability
+  Measures}.
+\newblock Basel: Birkh\"auser, 1 edition, 2005.
+
+\bibitem{RuiLopNic15}
+D.~{Ariza-Ruiz}, G.~{L{\'o}pez-Acedo}, and A.~Nicolae.
+\newblock The asymptotic behavior of the composition of firmly nonexpansive
+  mappings.
+\newblock {\em J Optim Theory Appl}, 167:409--429, 2015.
+
+\bibitem{Bacak14}
+M.~Ba{\v c}{\'a}k.
+\newblock Computing medians and means in {{Hadamard}} spaces.
+\newblock {\em SIAM J. Optim.}, 24(3):1542--1566, 2014.
+
+\bibitem{BalCarLie94}
+K.~Ball, E.~A. Carlen, and E.~H. Lieb.
+\newblock Sharp uniform convexity and smoothness inequalities for trace norms.
+\newblock {\em Invent. Math.}, 115(3):463--482, 1994.
+
+\bibitem{BLL}
+A.~B{\"e}rd{\"e}llima, F.~Lauster, and D.~R. Luke.
+\newblock {{$\alpha$}}-firmly nonexpansive operators on metric spaces.
+\newblock {\em J. Fixed Point Theory Appl.}, 24, 2022.
+
+\bibitem{BurBurIva}
+D.~Burago, {\relax Yu}.~Burago, and S.~Ivanov.
+\newblock {\em A Course in Metric Geometry}, volume~33 of {\em Grad. {{Stud}}.
+  {{Math}}.}
+\newblock Providence, RI: American Mathematical Society (AMS), 2001.
+
+\bibitem{Cheeger99}
+J.~Cheeger.
+\newblock Differentiability of {{Lipschitz}} functions on metric measure
+  spaces.
+\newblock {\em Geom. Funct. Anal.}, 9(3):428--517, 1999.
+
+\bibitem{DeGMarTos80}
+E.~De~Giorgi, A.~Marino, and M.~Tosques.
+\newblock Problemi di evoluzione in spazi metrici e curve di massima pendenza.
+\newblock {\em Atti Accad. Naz. Lincei, VIII. Ser., Rend., Cl. Sci. Fis. Mat.
+  Nat.}, 68:180--187, 1980.
+
+\bibitem{GigNob21}
+Nicola Gigli and Francesco Nobili.
+\newblock A differential perspective on gradient flows on
+  {{\(\mathbf{\mathsf{CAT}} (\kappa)\)}}-spaces and applications.
+\newblock {\em J. Geom. Anal.}, 31(12):11780--11818, 2021.
+
+% \bibitem{GooLewLopNic_cat0cc}
+% A.~Goodwin, A.~S. Lewis, G.~{L{\'o}pez-Acedo}, and A.~Nicolae.
+% \newblock Convex optimization on {{CAT}}(0) cubical complexes.
+% \newblock {\em Adv. Appl. Math.}, 165:20, 2025.
+%
+% \bibitem{GooLewLopNicFoCM}
+% A.~Goodwin, A.~S. Lewis, G.~{L{\'o}pez-Acedo}, and A.~Nicolae.
+% \newblock Recognizing {{Weighted Means}} in {{Geodesic Spaces}}.
+% \newblock {\em Found Comput Math}, September 2025.
+%
+% \bibitem{GooLewLopNic26}
+% A.~Goodwin, A.~S. Lewis, G.~{L{\'o}pez-Acedo}, and A.~Nicolae.
+% \newblock Stochastic and incremental subgradient methods for convex
+%   optimization on {{Hadamard}} spaces.
+% \newblock {\em Math. Program.}, March 2026.
+%
+% \bibitem{HeiKos98}
+% J.~Heinonen and P.~Koskela.
+% \newblock Quasiconformal maps in metric spaces with controlled geometry.
+% \newblock {\em Acta Math.}, 181(1):1--61, 1998.
+
+\bibitem{Jost1995}
+J.~Jost.
+\newblock Convex functionals and generalized harmonic maps into spaces of non
+  positive curvature.
+\newblock {\em Comment. Math. Helv.}, 70(4):659--673, 1995.
+
+\bibitem{LauLuk21}
+F.~Lauster and D.~R. Luke.
+\newblock Convergence of proximal splitting algorithms in {{CAT}}({{$\kappa$}})
+  spaces and beyond.
+\newblock {\em Fixed Point Theory Algorithms Sci Eng}, 2021(13), 2021.
+
+% \bibitem{LewLopNic_SIOPT24}
+% A.~S. Lewis, G.~{L{\'o}pez-Acedo}, and A.~Nicolae.
+% \newblock Basic convex analysis in metric spaces with bounded curvature.
+% \newblock {\em SIAM J. Optim.}, 34(1):366--388, 2024.
+%
+% \bibitem{Loj63}
+% Stanis{\l}aw {\L}ojasiewicz.
+% \newblock A topological property of real analytic subsets.
+% \newblock Equ. {Derivees} partielles, {Paris} 1962, {Colloques} internat.
+%   {Centre} nat. {Rech}. sci. 117, 87-89 (1963)., 1963.
+%
+\bibitem{LukMir26}
+D.~R. Luke and M.~Mirhashemi.
+\newblock Convergence of proximal splitting algorithms in uniformly convex
+  metric spaces.
+\newblock arxiv 2605.03484, 2026.
+
+\bibitem{OhtaPal15}
+S.~Ohta and M.~P{\'a}lfia.
+\newblock Discrete-time gradient flows and law of large numbers in
+  {{Alexandrov}} spaces.
+\newblock {\em Calc. Var. Partial Differ. Equ.}, 54(2):1591--1610, 2015.
+
+% \bibitem{Plaut92}
+% Conrad Plaut.
+% \newblock A metric characterization of manifolds with boundary.
+% \newblock {\em Compos. Math.}, 81(3):337--354, 1992.
+%
+% \bibitem{Polyak63}
+% B.~T. Polyak.
+% \newblock Gradient methods for the minimisation of functionals.
+% \newblock {\em Zh. Vychisl. Mat. Mat. Fiz.}, 3:643--653, 1963.
+%
+% \bibitem{Rademacher1917}
+% H.~Rademacher.
+% \newblock {\"Uber partielle und totale Differenzierbarkeit von Funktionen
+%   mehrerer Variablen und \"uber die Transformation der Doppelintegrale. I, II.}
+% \newblock {\em Math. Ann.}, 79:340--359, 1920.
+%
+\end{thebibliography}
+
+\end{document}

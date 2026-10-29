@@ -1,0 +1,127 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Calmness of the Solution-Set Mapping\\for Linear
+  Bilevel and Pricing Problems}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{
+  Henri Lefebvre\thanks{LIRMM, University of Montpellier, CNRS,
+    Montpellier, France,
+    \texttt{henri.lefebvre@cnrs.fr}}
+  \and
+  Martin Schmidt\thanks{Trier University,
+    Department of Mathematics,
+    Universitätsring 15,
+    54296 Trier,
+    Germany,
+    \texttt{martin.schmidt@uni-trier.de}}
+  \and
+  Anton Svensson\thanks{Universidad de O'Higgins, Av Libertador Bernardo O'Higgins 611,
+    Rancagua,
+    Chile,
+    \texttt{anton.svensson@uoh.cl}}
+  \and
+  Johannes Thürauf\thanks{University of Technology Nuremberg (UTN),
+    Department Liberal Arts and Social Sciences,
+    Discrete Optimization,
+    Dr.-Luise-Herzberg-Str.\ 4,
+    90461 Nuremberg,
+    Germany,
+    \texttt{johannes.thuerauf@utn.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+Bilevel optimization,
+Linear bilevel optimization,
+Pricing problems,
+Approximate feasibility,
+Calmness,
+Outer semicontinuity
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+We study linear bilevel and pricing problems in which the upper- and
+lower-level constraints' right-hand sides are perturbed.
+In this setting, it is an important question, also for the validity of
+numerical solution schemes, if the solution-set mapping of the
+parametric bilevel problem is calm at the zero-perturbation.
+We provide the complete picture both for linear bilevel as well as for
+pricing problems.
+If the result is positive or not depends on whether the problems have
+coupling constraints or not and on whether the perturbation is allowed
+to take place in both levels and if they lead to relaxations or
+tightenings of the respective constraints.
+In particular, the solution-set mapping is calm for linear bilevel
+problems without coupling constraints and for pricing problems if the
+upper-level problem is not tightened by the perturbation.
+For the negative results, we provide illustrative counterexamples.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+We acknowledge the support by the German
+Bundesministerium f\"ur Bildung und Forschung within
+the project ``RODES'' (F\"orderkennzeichen 05M22UTB).
+Moreover, the authors thank the DFG for their support within
+the research training group~2126 ``Algorithmic Optimization''.
+The third author acknowledges the support of ANID-Chile through the
+projects Fondecyt regular 1251159 and Fondecyt iniciación 11261583.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+%\begin{thebibliography}{9}
+%
+%\bibitem{Attouch2013}
+%H.~Attouch, J.~Bolte and B.~Svaiter.
+%\newblock Convergence of descent methods for semi-algebraic and tame problems.
+%\newblock {\em Mathematical Programming}, 137 (2013), 91--129.
+%
+%\bibitem{Nesterov2018}
+%Y.~Nesterov.
+%\newblock {\em Lectures on Convex Optimization}.
+%\newblock Springer, 2018.
+%
+%\end{thebibliography}
+
+\end{document}

@@ -1,0 +1,871 @@
+% =====================================================================
+%  OptiLänd Workshop 2026 -- Book of Abstracts
+%  Compile with: pdflatex Book_of_Abstracts.tex  (run twice)
+% =====================================================================
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage[a4paper,top=2.3cm,bottom=2.4cm,left=2.4cm,right=2.4cm,headheight=14pt]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\definecolor{accent}{HTML}{4A6FA5}
+\definecolor{muted}{HTML}{777777}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=accent,
+  citecolor=accent,
+  urlcolor=accent,
+  pdftitle={OptiLänd Workshop 2026 -- Book of Abstracts},
+  pdfauthor={OptiLänd Workshop 2026 organizers}
+}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.5em}
+\setlist{itemsep=2pt,topsep=4pt}
+
+% ---------------------------------------------------------------------
+%  Math macros used in individual abstracts
+% ---------------------------------------------------------------------
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator{\prox}{prox}
+\DeclareMathOperator{\Id}{Id}
+
+% ---------------------------------------------------------------------
+%  Header / footer
+% ---------------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{muted}OptiLänd Workshop 2026 \,·\, Book of Abstracts}
+\fancyhead[R]{\small\color{muted}\rightmark}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headrule}{{\color{accent!40}\hrule width\headwidth height\headrulewidth}}
+
+% ---------------------------------------------------------------------
+%  Unified abstract layout
+% ---------------------------------------------------------------------
+% \talk{label}{day and time}{speaker (running head)}{title}
+\newcommand{\talk}[4]{%
+  \clearpage
+  \markright{#3}%
+  \phantomsection\label{#1}%
+  {\sffamily\small\color{accent}#2\par}
+  \vspace{-0.3em}{\color{accent}\rule{\linewidth}{0.8pt}}\par
+  \vspace{0.8em}
+  {\LARGE\bfseries\raggedright #4\par}
+  \vspace{0.9em}
+}
+% list of authors (presenting author underlined)
+\newcommand{\authors}[1]{{\large #1\par}\vspace{0.2em}}
+% one affiliation line: \affil{number}{text}; leave number empty for single affiliation
+\newcommand{\affil}[2]{{\footnotesize\itshape\textsuperscript{#1}#2\par}\vspace{-0.45em}}
+% e-mail of the presenting author
+\newcommand{\contact}[1]{\vspace{0.35em}{\footnotesize\texttt{#1}\par}}
+\newcommand{\keywords}[1]{%
+  \vspace{0.8em}{\small\textbf{Keywords:} #1\par}\vspace{0.6em}}
+\newcommand{\abstracttext}{\vspace{0.4em}}
+\newcommand{\ack}[1]{\par\medskip{\small\textbf{Acknowledgements.} #1\par}}
+% placeholder for abstracts not yet received
+% \tba{label}{day and time}{speaker}{affiliation}
+\newcommand{\tba}[4]{%
+  \talk{#1}{#2}{#3}{TBA}
+  \authors{#3}
+  \affil{}{#4}
+  \vspace{1.5em}
+  {\color{muted}\itshape Title and abstract to be announced.\par}
+}
+
+% compact bibliography inside each abstract
+\makeatletter
+\renewenvironment{thebibliography}[1]
+  {\par\medskip{\small\bfseries\color{accent}References\par}\nopagebreak\vspace{-0.3em}%
+   \small
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+        {\settowidth\labelwidth{\@biblabel{#1}}%
+         \leftmargin\labelwidth
+         \advance\leftmargin\labelsep
+         \itemsep 1pt \parsep 0pt \topsep 2pt
+         \usecounter{enumiv}%
+         \let\p@enumiv\@empty
+         \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+   \sloppy\clubpenalty4000\widowpenalty4000\sfcode`\.\@m}
+  {\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+\makeatother
+
+% ---------------------------------------------------------------------
+%  Program overview tables
+% ---------------------------------------------------------------------
+\newcommand{\dayheading}[2]{%
+  \vspace{1.2em}
+  {\large\bfseries\color{accent}#1\par}
+  {\small\color{muted}#2\par}
+  \vspace{0.2em}}
+% \prog{time}{speaker}{title}{label}
+\newcommand{\prog}[4]{#1 & \textbf{#2}\newline{\small\itshape #3} & \pageref{#4}\\[3pt]}
+% \progbreak{time}{text}
+\newcommand{\progbreak}[2]{\textcolor{muted}{#1} & \multicolumn{2}{l}{\textcolor{muted}{\itshape #2}}\\[3pt]}
+% \progevent{time}{text}  (panel, closing)
+\newcommand{\progevent}[2]{#1 & \multicolumn{2}{l}{\textbf{#2}}\\[3pt]}
+% each day is kept together with its heading (no page break inside a day)
+\newenvironment{daytable}
+  {\par\noindent\tabularx{\linewidth}{@{}p{2.6cm}X>{\raggedleft\arraybackslash}p{0.8cm}@{}}%
+   {\small\color{muted}Time} & {\small\color{muted}Speaker and title} & {\small\color{muted}Page}\\[2pt]
+   \hline\noalign{\vspace{4pt}}}
+  {\endtabularx\par}
+
+% =====================================================================
+\begin{document}
+
+% ---------------------------------------------------------------------
+%  Title page
+% ---------------------------------------------------------------------
+\begin{titlepage}
+  \centering
+  \vspace*{3.5cm}
+  {\color{accent}\rule{\linewidth}{1.2pt}}\par
+  \vspace{1.2cm}
+  {\Huge\bfseries Optimization in the Länd\par}
+  \vspace{0.4cm}
+  {\LARGE OptiLänd Workshop 2026\par}
+  \vspace{1.2cm}
+  {\Huge\color{accent}Book of Abstracts\par}
+  \vspace{1.2cm}
+  {\color{accent}\rule{\linewidth}{1.2pt}}\par
+  \vspace{1.2cm}
+  {\Large 25--27 November 2026\par}
+  \vspace{0.3cm}
+  {\large University of Mannheim, Germany\par}
+  \vspace{1.5cm}
+  {\normalsize Joint meeting of the IFIP TC7 working groups\\
+   WG 7.4 (Inverse Problems) and WG 7.8 (Nonlinear Optimisation)\par}
+  \vfill
+  {\small
+  \textbf{Organizers}\\[0.3em]
+  Mathias Staudigl \,·\, Roland Herzog \,·\, Simon Weißmann\\
+  Andrea Ebner \,·\, Meggie Marschner \,·\, Siqi Qu \,·\, Johannes Schnebel\par
+  \vspace{0.8cm}
+  \textbf{Venue}\\[0.3em]
+  Wednesday: Room 008.1, building B6 30--32, 68159 Mannheim\\
+  Thursday \& Friday: Fuchs-Festsaal (O 138), Mannheim Palace (Schloss)\par
+  \vspace{0.8cm}
+  \url{https://jschnebel.github.io/optimization-laend.de/}\par}
+\end{titlepage}
+
+% ---------------------------------------------------------------------
+%  Program overview
+% ---------------------------------------------------------------------
+\markright{Program}
+\section*{Program}
+\vspace{-0.6em}
+{\small\color{muted}Each entry links to the corresponding abstract.\par}
+
+\noindent\begin{minipage}{\linewidth}
+\dayheading{Wednesday, 25 November}{Room 008.1, B6 30--32}
+\begin{daytable}
+\progbreak{12:00 -- 13:00}{Welcome / Snacks}
+\prog{13:00 -- 13:45}{Stefan Ulbrich}{Adjoint-based Methods for Optimal Control of Hyperbolic Systems of Conservation Laws}{abs:ulbrich}
+\prog{13:45 -- 14:10}{Peter Ochs}{Learning Optimization Algorithms with Average Case Convergence Rates}{abs:ochs}
+\prog{14:10 -- 14:35}{Edouard Pauwels}{Estimation of Monge Transport Maps with Empirical Brenier Potentials}{abs:pauwels}
+\progbreak{14:35 -- 15:05}{Coffee break}
+\prog{15:05 -- 15:30}{Silvia Villa}{TBA}{abs:villa}
+\prog{15:30 -- 15:55}{Pavel Dvurechensky}{Semismooth Newton Methods with Global Convergence Rates}{abs:dvurechensky}
+\prog{15:55 -- 16:40}{Panagiotis Patrinos}{TBA}{abs:patrinos}
+\progbreak{16:40 -- 17:00}{Coffee break}
+\prog{17:00 -- 17:45}{Martin Schmidt}{Calmness of the Solution-Set Mapping for Linear Bilevel and Pricing Problems}{abs:schmidt}
+\prog{17:45 -- 18:10}{Tristan van Leeuwen}{An Invertible Generative Model for Forward and Inverse Problems}{abs:vanleeuwen}
+\end{daytable}
+\end{minipage}
+
+
+\noindent\begin{minipage}{\linewidth}
+\dayheading{Thursday, 26 November}{Fuchs-Festsaal (O 138), Mannheim Palace}
+\begin{daytable}
+\prog{09:00 -- 09:45}{Radu Ioan Boţ}{On the Interplay Between Continuous- and Discrete-Time Methods in Convex Optimization and Monotone Inclusions}{abs:bot}
+\prog{09:45 -- 10:10}{Behzad Azmi}{Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}{abs:azmi}
+\progbreak{10:10 -- 10:35}{Coffee break}
+\prog{10:35 -- 11:20}{Dirk Lorenz}{How to Make (Bregman-)Kaczmarz Methods Fast}{abs:lorenz}
+\prog{11:20 -- 11:45}{Tuomo Valkonen}{Point Source Localisation with Unbalanced Optimal Transport}{abs:valkonen}
+\prog{11:45 -- 12:30}{Kristian Bredies}{TBA}{abs:bredies}
+\progbreak{12:30 -- 13:30}{Lunch break}
+\prog{13:30 -- 14:15}{Matthias Ehrhardt}{TBA}{abs:ehrhardt}
+\prog{14:15 -- 14:40}{Nelly Pustelnik}{Adaptive Block-Coordinate Forward-Backward: Particular Case of Multilevel Block Strategy for Image Reconstruction}{abs:pustelnik}
+\prog{14:40 -- 15:05}{Stefania Petra}{TBA}{abs:petra}
+\progbreak{15:05 -- 15:30}{Coffee break}
+\prog{15:30 -- 16:15}{Michael Hintermüller}{TBA}{abs:hintermueller}
+\prog{16:15 -- 17:00}{Barbara Kaltenbacher}{Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems}{abs:kaltenbacher}
+\progbreak{17:00 -- 17:10}{Short break}
+\progevent{17:10 -- 18:10}{Panel}
+\end{daytable}
+\end{minipage}
+
+
+\noindent\begin{minipage}{\linewidth}
+\dayheading{Friday, 27 November}{Fuchs-Festsaal (O 138), Mannheim Palace}
+\begin{daytable}
+\prog{08:30 -- 08:55}{Anton Schiela}{TBA}{abs:schiela}
+\prog{08:55 -- 09:40}{Luca Calatroni}{Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions}{abs:calatroni}
+\prog{09:40 -- 10:05}{Markus Haltmeier}{Locally-Supervised Global Image Reconstruction}{abs:haltmeier}
+\progbreak{10:05 -- 10:30}{Coffee break}
+\prog{10:30 -- 10:55}{Marcello Carioni}{Atomic Gradient Flows: Gradient Flows on Sparse Representations}{abs:carioni}
+\prog{10:55 -- 11:40}{Bernadette Hahn-Rigaud}{TBA}{abs:hahnrigaud}
+\progbreak{11:40 -- 13:10}{Lunch break}
+\prog{13:10 -- 13:35}{Simon Weißmann}{Derivative-Free Bilevel Learning for Inverse Problems: From Stochastic Gradient Estimation to Multilevel Methods}{abs:weissmann}
+\prog{13:35 -- 14:20}{Bastian von Harrach}{From Inverse Problems in PDEs to Convex Semidefinite Optimization}{abs:harrach}
+\prog{14:20 -- 15:05}{Russell Luke}{Quantitative Convergence of Proximal Splitting Iterations in Uniformly Convex Metric Spaces}{abs:luke}
+\progevent{15:05}{Discussion / Closing}
+\end{daytable}
+\end{minipage}
+
+
+% =====================================================================
+%  WEDNESDAY
+% =====================================================================
+
+% ---------------------------------------------------------------------
+\talk{abs:ulbrich}{Wednesday, 25 November \,·\, 13:00 -- 13:45}{Stefan Ulbrich}
+  {Adjoint-based Methods for Optimal Control of Hyperbolic Systems of Conservation Laws}
+\authors{\underline{Stefan Ulbrich}\textsuperscript{1}, Jannik Breitkopf\textsuperscript{1}}
+\affil{1}{Department of Mathematics, Technische Universität Darmstadt}
+\contact{stefan.ulbrich@tu-darmstadt.de}
+\keywords{optimal control, adjoint equation, hyperbolic systems of conservation laws}
+
+Hyperbolic systems of conservation problems arise in many applications, for
+example in fluid mechanics or traffic flow models. A particular feature lies
+in the fact that even for smooth data discontinuities may develop (shocks,
+contact discontinuities). This complicates the development of derivative
+based optimality conditions and solution methods in the context of optimal
+control and inverse problems governed by these PDEs.
+
+We consider strictly hyperbolic $n\times n$ systems of conservation laws in
+one space dimension and present a sensitivity calculus for the optimal
+control of piecewise $C^1$ solutions containing shocks.
+This implies the differentiability of many objective
+functionals with respect to controls. To obtain an adjoint-based derivative
+representation of the objective functional, we study the adjoint
+equation, which is a system of transport equations with discontinuous
+coefficients. It turns out that the solution of the adjoint equation is
+non-unique and an appropriate boundary condition along shocks is required to
+select the correct adjoint state. We present existence, uniqueness and
+regularity results for the adjoint equation.
+
+Finally, we discuss challenges and possible approaches to solve the adjoint
+equation numerically. Moreover, we derive from the properties of the adjoint
+state conclusions for the design of structure-exploiting derivative based methods
+for optimal control and inverse problems involving systems of conservation laws.
+
+\ack{This work was supported by the DFG in the ``Collaborative Research Centre CRC/Transregio 154,
+Mathematical Modelling, Simulation and Optimization Using the Example of Gas
+Networks'', Project-ID 239904186, Projects A02.}
+
+\begin{thebibliography}{9}
+\bibitem{ulb:BreitkopfUlbrich2025}
+J.~Breitkopf and S.~Ulbrich.
+\newblock A variational calculus for optimal control of the generalized Riemann
+  problem for hyperbolic systems of conservation laws, 2025.
+\newblock Preprint,
+\href{https://arxiv.org/abs/2509.22076}{\nolinkurl{arXiv:2509.22076}}.
+
+\bibitem{ulb:BreitkopfUlbrich2026}
+J.~Breitkopf and S.~Ulbrich.
+\newblock An adjoint calculus for optimal control of entropy solutions of the
+  generalized Riemann problem for hyperbolic systems of conservation laws with
+  shocks, 2026.
+\newblock Preprint, \url{https://opus4.kobv.de/opus4-trr154/643}.
+\end{thebibliography}
+
+% ---------------------------------------------------------------------
+\talk{abs:ochs}{Wednesday, 25 November \,·\, 13:45 -- 14:10}{Peter Ochs}
+  {Learning Optimization Algorithms with Average Case Convergence Rates}
+\authors{Peter Ochs}
+\affil{}{Saarland University}
+\vspace{1em}
+
+The change of paradigm from purely model driven to data driven (learning based) approaches has tremendously altered the picture in many applications in Machine Learning, Computer Vision, Signal Processing, Inverse Problems, Statistics and so on. There is no need to mention the significant boost in performance for many specific applications, thanks to the advent of large scale Deep Learning. In this talk, we open the area of optimization algorithms for this data driven paradigm, for which theoretical guarantees are indispensable. The expectations about an optimization algorithm are clearly beyond empirical evidence, as there may be a whole processing pipeline depending on a reliable output of the optimization algorithm, and application domains of algorithms can vary significantly. While there is already a vast literature on ``learning to optimize'', there is no theoretical guarantees associated with these algorithms that meet these expectations from an optimization point of view. We develop the first framework to learn optimization algorithms with provable generalization guarantees to certain classes of optimization problems, while the learning based backbone enables the algorithms' functioning far beyond the limitations of classical (deterministic) worst case bounds. Our results rely on PAC-Bayes bounds for general, unbounded loss-functions based on exponential families. We learn optimization algorithms with provable generalization guarantees (PAC-bounds) and explicit trade-off between a high probability of convergence and a high convergence speed.
+
+% ---------------------------------------------------------------------
+\talk{abs:pauwels}{Wednesday, 25 November \,·\, 14:10 -- 14:35}{Edouard Pauwels}
+  {Estimation of Monge Transport Maps with Empirical Brenier Potentials}
+\authors{Elsa Cazelles\textsuperscript{1}, \underline{Edouard Pauwels}\textsuperscript{2}, Léo Portales\textsuperscript{3}}
+\affil{1}{CNRS, IRIT, Université de Toulouse}
+\affil{2}{Toulouse School of Economics, Université Toulouse Capitole}
+\affil{3}{IRIT, Toulouse School of Economics, INP Toulouse}
+\keywords{Optimal Transport, Statistical Estimation, Monge Problem, Error Bound}
+
+We analyze a statistical estimator for Monge transport maps: solutions to the quadratic optimal
+transport problem. For absolutely continuous source measures, this map is uniquely defined as
+the gradient of a convex function, a result known as Brenier theorem. Without absolute continuity,
+the problem is relaxed, maps are replaced by coupling measures, and optimal couplings are
+supported on the subdifferential of a convex function: a Brenier potential. This characterization
+is the basis for our Monge transport map estimator, for measures known only through finite
+samples. The resulting Brenier potential has a simple closed form expression based on the dual
+solution of the discrete sampled problem. We exhibit convergence rates for this estimator based
+on a new error bound for the dual quadratic optimal transport problem. Our methodology does
+not rely on smoothness or continuity of the Monge transport map and requires no computation
+beyond primal-dual solutions of the discrete, finite dimensional, linear program transport
+problem.
+
+% ---------------------------------------------------------------------
+\tba{abs:villa}{Wednesday, 25 November \,·\, 15:05 -- 15:30}{Silvia Villa}{University of Genoa}
+
+% ---------------------------------------------------------------------
+\talk{abs:dvurechensky}{Wednesday, 25 November \,·\, 15:30 -- 15:55}{Pavel Dvurechensky}
+  {Semismooth Newton Methods with Global Convergence Rates}
+\authors{Amal Alphonse\textsuperscript{1}, \underline{Pavel Dvurechensky}\textsuperscript{1}, Ioannis P.~A. Papadopoulos\textsuperscript{2}, Clemens Sirotenko\textsuperscript{1}}
+\affil{1}{Weierstrass Institute (WIAS), Berlin}
+\affil{2}{University of Oxford}
+\contact{dvurechensky@wias-berlin.de}
+\keywords{optimization, second-order methods, semismoothness, convergence rates}
+
+We propose LeAP-SSN (Levenberg--Marquardt Adaptive Proximal Semismooth Newton method), a semismooth Newton-type method with a parameter-free globalisation strategy that guarantees, for minimization problems, nonasymptotic sublinear convergence rate in convex setting and linear convergence rate under the Polyak--Łojasiewicz condition, in Hilbert spaces. The method employs an adaptive Levenberg--Marquardt regularisation for the Newton steps, combined with backtracking, and does not require knowledge of problem-specific constants. The algorithm achieves superlinear convergence under mild semismoothness and Dennis--Moré or partial smoothness conditions. By combining strong global guarantees with superlinear local rates in a fully parameter-agnostic framework, LeAP-SSN bridges the gap between globally convergent second-order algorithms and Semismooth Newton's methods with the fast asymptotic local rates. The practical efficiency of the method is illustrated on representative problems from imaging, contact mechanics, and machine learning. We also propose a modification of this method based on gradient regularization and show that it achieves improved local superlinear convergence under strong semismoothness and is able to work with lazy Hessian updates. The details can be found in \url{https://arxiv.org/abs/2508.16468} and \url{https://arxiv.org/abs/2602.08069}.
+
+\ack{This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy -- The Berlin Mathematics Research Center MATH+ (EXC-2046/1, project ID: 390685689).}
+
+% ---------------------------------------------------------------------
+\tba{abs:patrinos}{Wednesday, 25 November \,·\, 15:55 -- 16:40}{Panagiotis Patrinos}{KU Leuven}
+
+% ---------------------------------------------------------------------
+\talk{abs:schmidt}{Wednesday, 25 November \,·\, 17:00 -- 17:45}{Martin Schmidt}
+  {Calmness of the Solution-Set Mapping for Linear Bilevel and Pricing Problems}
+\authors{Henri Lefebvre\textsuperscript{1}, \underline{Martin Schmidt}\textsuperscript{2}, Anton Svensson\textsuperscript{3}, Johannes Thürauf\textsuperscript{4}}
+\affil{1}{LIRMM, University of Montpellier, CNRS, Montpellier, France}
+\affil{2}{Department of Mathematics, Trier University, Germany}
+\affil{3}{Universidad de O'Higgins, Rancagua, Chile}
+\affil{4}{Discrete Optimization, Department Liberal Arts and Social Sciences, University of Technology Nuremberg (UTN), Germany}
+\contact{martin.schmidt@uni-trier.de}
+\keywords{bilevel optimization, linear bilevel optimization, pricing problems, approximate feasibility, calmness, outer semicontinuity}
+
+We study linear bilevel and pricing problems in which the upper- and
+lower-level constraints' right-hand sides are perturbed.
+In this setting, it is an important question, also for the validity of
+numerical solution schemes, if the solution-set mapping of the
+parametric bilevel problem is calm at the zero-perturbation.
+We provide the complete picture both for linear bilevel as well as for
+pricing problems.
+If the result is positive or not depends on whether the problems have
+coupling constraints or not and on whether the perturbation is allowed
+to take place in both levels and if they lead to relaxations or
+tightenings of the respective constraints.
+In particular, the solution-set mapping is calm for linear bilevel
+problems without coupling constraints and for pricing problems if the
+upper-level problem is not tightened by the perturbation.
+For the negative results, we provide illustrative counterexamples.
+
+\ack{We acknowledge the support by the German
+Bundesministerium für Bildung und Forschung within
+the project ``RODES'' (Förderkennzeichen 05M22UTB).
+Moreover, the authors thank the DFG for their support within
+the research training group~2126 ``Algorithmic Optimization''.
+The third author acknowledges the support of ANID-Chile through the
+projects Fondecyt regular 1251159 and Fondecyt iniciación 11261583.}
+
+% ---------------------------------------------------------------------
+\talk{abs:vanleeuwen}{Wednesday, 25 November \,·\, 17:45 -- 18:10}{Tristan van Leeuwen}
+  {An Invertible Generative Model for Forward and Inverse Problems}
+\authors{\underline{Tristan van Leeuwen}\textsuperscript{1}, Christoph Brune\textsuperscript{2}, Marcello Carioni\textsuperscript{2}, Lasse Veenstra\textsuperscript{3}}
+\affil{1}{Centrum Wiskunde \& Informatica, Amsterdam, and Utrecht University, The Netherlands}
+\affil{2}{University of Twente, Enschede, The Netherlands}
+\affil{3}{Delft University of Technology, The Netherlands}
+\contact{T.van.Leeuwen@cwi.nl}
+\keywords{Bayesian inverse problems, normalizing flows, triangular transport, amortized inference}
+
+Many inverse problems require both a forward simulator, which generates data
+for given parameters, and an inference procedure, which characterizes the
+parameters compatible with observed data. In a Bayesian formulation these
+tasks amount to sampling from the likelihood and the posterior, respectively.
+Both tasks can benefit from recent advances in generative models. Existing amortized approaches typically learn separate conditional generative models for the two directions
+\cite{vl:Radev2023}, or focus primarily on the inverse direction
+\cite{vl:Ardizzone2019}.
+
+We introduce a single invertible generative map that performs both tasks.
+Starting from the classical use of triangular transport maps for conditional
+sampling \cite{vl:Marzouk2017}, we combine a lower-triangular transport, adapted
+to the likelihood, with an upper-triangular transport, adapted to the
+posterior \cite{vl:vanLeeuwen2026}. The resulting bijection acts on the joint parameter--data space:
+evaluated forward, it generates samples from the likelihood for a prescribed
+parameter; evaluated in reverse, it generates posterior samples for prescribed
+data. We investigate the (non-)uniqueness of this construction, and propose a variational formulation that allows us to learn the map from samples.
+
+In linear Gaussian problems the construction is explicit and,
+unlike the individual triangular transports, can remain well conditioned as
+the observational noise vanishes. Nonlinear examples and an image-inpainting
+experiment illustrate simulation and uncertainty-aware inversion with the
+same model. The framework thus offers a unified route to amortized forward
+simulation and Bayesian inference, with potential extensions to experimental
+design.
+
+\begin{thebibliography}{9}
+\bibitem{vl:Ardizzone2019}
+L.~Ardizzone, J.~Kruse, S.~Wirkert, et al.
+\newblock Analyzing inverse problems with invertible neural networks.
+\newblock In {\em International Conference on Learning Representations}, 2019.
+
+\bibitem{vl:Marzouk2017}
+Y.~Marzouk, T.~Moselhy, M.~Parno, and A.~Spantini.
+\newblock Sampling via measure transport: An introduction.
+\newblock In {\em Handbook of Uncertainty Quantification}, pp.~785--825,
+Springer, 2017.
+
+\bibitem{vl:Radev2023}
+S.~T. Radev, M.~Schmitt, V.~Pratz, et al.
+\newblock JANA: Jointly amortized neural approximation of complex Bayesian
+models.
+\newblock In {\em Proceedings of UAI}, PMLR 216:1695--1706, 2023.
+
+\bibitem{vl:vanLeeuwen2026}
+T.~van Leeuwen.
+\newblock The reversible simulator: A data-driven approach for solving forward
+and inverse problems.
+\newblock In {\em Applications of Mathematics in Sciences, Engineering, and
+Economics}, pp.~243--260, Springer, 2026.
+\end{thebibliography}
+
+% =====================================================================
+%  THURSDAY
+% =====================================================================
+
+% ---------------------------------------------------------------------
+\talk{abs:bot}{Thursday, 26 November \,·\, 09:00 -- 09:45}{Radu Ioan Boţ}
+  {On the Interplay Between Continuous- and Discrete-Time Methods in Convex Optimization and Monotone Inclusions}
+\authors{Radu Ioan Boţ}
+\affil{}{Faculty of Mathematics, University of Vienna}
+\contact{radu.bot@univie.ac.at}
+\keywords{continuous-time methods, algorithms, convex optimization, monotone inclusions, fast convergence rates}
+
+In this talk, we explore the interplay between continuous-time and discrete-time models for solving convex optimization problems and monotone inclusions. We discuss strategies for achieving faster convergence rates across the different settings, as well as issues related to the convergence of trajectories and iterates.
+
+% ---------------------------------------------------------------------
+\talk{abs:azmi}{Thursday, 26 November \,·\, 09:45 -- 10:10}{Behzad Azmi}
+  {Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}
+\authors{\underline{Behzad Azmi}\textsuperscript{1}, Alberto De Marchi\textsuperscript{2}}
+\affil{1}{Department of Mathematics and Statistics, University of Konstanz}
+\affil{2}{Department of Aerospace Engineering, University of the Bundeswehr Munich}
+\contact{behzad.azmi@uni-konstanz.de}
+\keywords{proximal methods, interior-point methods, PDE constrained optimization, complexity}
+
+We present an inexact interior-point method for a class of nonsmooth nonconvex optimization problems with conic inequality constraints. The problem is posed in a Hilbert space, while the inequality constraint is induced by an order cone in a Banach lattice. The objective combines a smooth term with a convex nonsmooth term whose proximal mapping is computable. The method is based on barrier-regularized subproblems, which are solved inexactly by a proximal-gradient scheme.
+
+We consider both logarithmic and power-type barrier functions and establish the analytical properties required for the convergence and complexity analysis. Under suitable constraint qualifications, we show that the primal iterates and the associated barrier multipliers satisfy quantitative approximate KKT conditions. Based on these estimates, we establish convergence to stationary points and derive complexity bounds for the full outer--inner scheme, combining the barrier-parameter updates with the inexact proximal-gradient solution of the subproblems. Numerical examples from finite-dimensional nonlinear optimization and PDE-constrained optimization with pointwise state constraints illustrate the theoretical results.
+
+% ---------------------------------------------------------------------
+\talk{abs:lorenz}{Thursday, 26 November \,·\, 10:35 -- 11:20}{Dirk Lorenz}
+  {How to Make (Bregman-)Kaczmarz Methods Fast}
+\authors{Dirk Lorenz}
+\affil{}{Center for Industrial Mathematics, University of Bremen}
+\contact{d.lorenz@uni-bremen.de}
+\keywords{constrained optimization, Kaczmarz methods}
+
+Bregman-Kaczmarz methods can compute solutions of systems of linear equations that additionally minimize a strongly convex functions (e.g. minimum-norm solutions, but also sparse solutions). Their plain version is oftentimes quite slow and hence, there is interest in speeding up the methods. Optimal step-sizes are, on the one hand, often hard to compute and, on the other hand, do not always bring much improvements for. In this talk I will treat several acceleration mechanisms e.g. based on momentum (with a computable approximate minimal error criterion) and dual acceleration \cite{lor:1,lor:2,lor:3}.
+
+\ack{This work was supported by the International Training Network TraDE-OPT funded by MSCA, grant agreement ID: 861137.}
+
+\begin{thebibliography}{9}
+\bibitem{lor:1}
+D.~A. Lorenz and M.~Winkler.
+\newblock Minimal error momentum Bregman-Kaczmarz.
+\newblock {\em Linear Algebra and its Applications}, 709 (2025), 416--448.
+
+\bibitem{lor:2}
+L.~Tondji, I.~Necoara, and D.~A. Lorenz.
+\newblock Acceleration and restart for the randomized Bregman-Kaczmarz method.
+\newblock {\em Linear Algebra and its Applications}, 699 (2024), 508--538.
+
+\bibitem{lor:3}
+L.~Tondji and D.~A. Lorenz.
+\newblock Faster randomized block sparse Kaczmarz by averaging.
+\newblock {\em Numerical Algorithms}, 93(4) (2023), 1417--1451.
+\end{thebibliography}
+
+% ---------------------------------------------------------------------
+\talk{abs:valkonen}{Thursday, 26 November \,·\, 11:20 -- 11:45}{Tuomo Valkonen}
+  {Point Source Localisation with Unbalanced Optimal Transport}
+\authors{\underline{Tuomo Valkonen}\textsuperscript{1}, Thi Tam Dang\textsuperscript{2}}
+\affil{1}{MODEMAT}
+\affil{2}{Department of Mathematics and Statistics, University of Helsinki}
+\contact{tuomo.valkonen@iki.fi}
+\keywords{optimization, inverse problems, measure spaces, convection--diffusion}
+
+Replacing the quadratic proximal penalty familiar from Hilbert spaces by an unbalanced optimal transport distance, we develop forward-backward type optimisation methods in spaces of Radon measures. We avoid the actual computation of the optimal transport distances through the use of transport three-plans and the rough concept of transport subdifferentials. The resulting algorithm has a step similar to the sliding heuristics previously introduced for conditional gradient methods, however, now non-heuristically derived from the geometry of the space \cite{val:unbalanced}.
+
+Afterwards, as an application of the above algorithm, we study the inverse problem of locating gas leaks from line-of-sight concentration measurements using a convection--diffusion model with the source term a Radon measure. By imposing sparsity-promoting regularisation on this measure, we recover point sources---identifying both their locations and intensities---rather than diffuse approximations.
+We jointly estimate the underlying physical convection (wind) and diffusion parameters.
+Our main theoretical contribution is the stability analysis of the convection--diffusion equation with respect to its parameters: the measure, and the convection and diffusion fields.
+Our experiments demonstrate accurate localisation, highlighting the potential of the method for practical gas emission detection \cite{val:leak}.
+
+\ack{This work was supported by the Jane and Aatos Erkko Foundation.}
+
+\begin{thebibliography}{9}
+\bibitem{val:leak}
+T.~T.~Dang and T.~Valkonen.
+\newblock Leak localisation with a measure source convection--diffusion model, 2026.
+\newblock Submitted,
+\href{https://arxiv.org/abs/2605.12095}{\nolinkurl{arXiv:2605.12095}}.
+
+\bibitem{val:unbalanced}
+T.~Valkonen.
+\newblock Point source localisation with unbalanced optimal transport, 2025.
+\newblock Submitted,
+\href{https://arxiv.org/abs/2502.12417}{\nolinkurl{arXiv:2502.12417}}.
+\end{thebibliography}
+
+% ---------------------------------------------------------------------
+\tba{abs:bredies}{Thursday, 26 November \,·\, 11:45 -- 12:30}{Kristian Bredies}{University of Graz}
+
+% ---------------------------------------------------------------------
+\tba{abs:ehrhardt}{Thursday, 26 November \,·\, 13:30 -- 14:15}{Matthias Ehrhardt}{University of Bath}
+
+% ---------------------------------------------------------------------
+\talk{abs:pustelnik}{Thursday, 26 November \,·\, 14:15 -- 14:40}{Nelly Pustelnik}
+  {Adaptive Block-Coordinate Forward-Backward: Particular Case of Multilevel Block Strategy for Image Reconstruction}
+\authors{Nelly Pustelnik}
+\affil{}{ENS de Lyon}
+\vspace{1em}
+
+Classical first-order optimization methods for imaging inverse problems struggle to scale efficiently with increasing image resolution. Here, we introduce an adaptive multiresolution block coordinate Forward-Backward algorithm for image restoration. The selection of multiresolution blocks is guided by the local magnitude of the proximal update, using a stochastic, non-smooth Gauss-Southwell rule applied to the image wavelet decomposition. This adaptive approach dynamically balances updates across scales, prioritizing coarse or fine blocks based on the degradation characteristics. As a result, the proposed method automatically adjusts to varying levels of blur and noise without requiring a predefined hierarchical update scheme.
+
+% ---------------------------------------------------------------------
+\tba{abs:petra}{Thursday, 26 November \,·\, 14:40 -- 15:05}{Stefania Petra}{Heidelberg University}
+
+% ---------------------------------------------------------------------
+\tba{abs:hintermueller}{Thursday, 26 November \,·\, 15:30 -- 16:15}{Michael Hintermüller}{Weierstrass Institute (WIAS), Berlin}
+
+% ---------------------------------------------------------------------
+\talk{abs:kaltenbacher}{Thursday, 26 November \,·\, 16:15 -- 17:00}{Barbara Kaltenbacher}
+  {Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems}
+\authors{\underline{Barbara Kaltenbacher}\textsuperscript{1}, Paul Manns\textsuperscript{2}}
+\affil{1}{Department of Mathematics, University of Klagenfurt}
+\affil{2}{Department of Mathematics, TU Dortmund University}
+\contact{barbara.kaltenbacher@aau.at}
+\keywords{inverse problems, regularization by discretization, McCormick relaxation}
+
+As a prototypical coefficient inverse problem, we consider identification of the potential in an elliptic PDE from indirect observations and its regularization by discretization in pre-image space -- the so-called least squares version of regularization by projection. We are particularly interested in a situation where the coefficient only takes values in a discrete and finite set. In doing so, we seek to minimize the data misfit over the finite dimensional subspace of piecewise constant function on a given partition of the domain, under the PDE as well as the discrete valuedness as constraints.
+The resulting algorithmic challenge is twofold:
+\begin{itemize}[leftmargin=1.5em]
+  \item the discretization level must be adapted to the noise level to allow us to stably recover coefficient and state in this nonlinear inverse problem;
+  \item the discretization-regularized minimization problem must be solved to global optimality.
+\end{itemize}
+For the former, we establish a general result on the least squares method for nonlinear ill-posed operator equations.
+The latter is not possible by gradient-based nonlinear programming algorithms due to non-convexity.
+We therefore need a global optimization algorithm like (spatial) branch-\&-bound, which requires means to compute (approximate) primal upper and dual lower bounds.
+In order to obtain dual bounds, we employ a McCormick relaxation, combined with local averaging \cite{kal:LeyfferManns2025}, which reduces the number of degrees of freedom and makes the problem amenable to optimization based bound tightening.
+
+\ack{This work was supported by the Austrian Science Fund (FWF) under grant 10.55776/F100800.}
+
+\begin{thebibliography}{9}
+\bibitem{kal:IP_McCormick}
+B.~Kaltenbacher and P.~Manns.
+\newblock Locally-averaged McCormick relaxations for
+  discretization-regularized inverse problems.
+\newblock {\em Inverse Problems}, 2026.
+\newblock See also arXiv:2601.01995 [math.NA].
+
+\bibitem{kal:LeyfferManns2025}
+S.~Leyffer and P.~Manns.
+\newblock McCormick envelopes in mixed-integer PDE-constrained
+  optimization.
+\newblock {\em Mathematical Programming}, pages 1--46, 2025.
+\end{thebibliography}
+
+% =====================================================================
+%  FRIDAY
+% =====================================================================
+
+% ---------------------------------------------------------------------
+\tba{abs:schiela}{Friday, 27 November \,·\, 08:30 -- 08:55}{Anton Schiela}{University of Bayreuth}
+
+% ---------------------------------------------------------------------
+\talk{abs:calatroni}{Friday, 27 November \,·\, 08:55 -- 09:40}{Luca Calatroni}
+  {Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions}
+\authors{Luca Calatroni}
+\affil{}{University of Genoa}
+\vspace{1em}
+
+Many learning approaches to inverse problems are bilevel problems, such as learning regularization parameters or training unrolled networks. Their hypergradients are often computed by algorithmic differentiation: differentiating through the iterations of the algorithm that solves the lower-level problem. This works well when the lower-level solution is unique. In underdetermined or degenerate problems, however, many solutions exist, and the derivative depends on which one the algorithm picks. We show that algorithmic differentiation still makes sense in this case. It converges to the derivative of the solution selected by the algorithm, which reflects the algorithm's geometry and initialization. We make this precise for (preconditioned) gradient descent, discuss extensions to mirror descent for constrained problems, and illustrate the results on exemplar inverse problems.
+
+This is joint work with C.~Daniele and S.~Villa (MaLGa, University of Genoa), and S.~Vaiter (CNRS).
+
+% ---------------------------------------------------------------------
+\talk{abs:haltmeier}{Friday, 27 November \,·\, 09:40 -- 10:05}{Markus Haltmeier}
+  {Locally-Supervised Global Image Reconstruction}
+\authors{Markus Haltmeier}
+\affil{}{Department of Mathematics, Universität Innsbruck, Austria}
+\contact{markus.haltmeier@uibk.ac.at}
+\keywords{inverse problems, partially-supervised learning, invariances, image upsampling, photoacoustic microscopy}
+
+We consider the recovery of an image $x \in \mathbb{R}^{I}$ from incomplete
+observations $y = P_{\Omega} x$ with observed pixels $\Omega \subseteq I$, which
+covers upsampling as well as inpainting. Learning-based solutions approximate
+the minimizer $\mathbb{E}[X \mid X_{\Omega}]$ of the supervised loss
+$\mathbb{E}[\lVert f(X_{\Omega}) - X\rVert^{2}]$, requiring fully sampled ground
+truth; self-supervised methods avoid this, but rely on $\Omega$ being random and
+covering the whole index set in expectation. We instead study fixed patterns
+with incomplete coverage, compensating for the missing randomness by invariances
+of the image distribution. Our main contributions are the following:
+\begin{itemize}[leftmargin=1.5em]
+    \item We introduce a locally-supervised framework based on a fixed
+    subsampling set $\Omega$, a small supervision set $B \subseteq I$, and
+    transformations $(T_{\ell})_{\ell}$ leaving $X$ and $M_{\Omega} \odot X$
+    invariant in distribution, with $(T_{\ell}(B))_{\ell}$ partitioning $I$.
+    \item We establish that the optimal reconstruction function is
+    $\mathcal{T}$-equivariant and minimizes the locally supervised loss,
+    \[
+        \mathbb{E}[X \mid X_{\Omega}]
+        = \operatorname*{arg\,min}_{f \in \mathcal{F}(\mathbb{R}^{I};\mathcal{T})}
+          \mathbb{E}\bigl[\lVert M_{B} \odot f(X_{\Omega}) - X_{B}\rVert^{2}\bigr],
+    \]
+    so supervision on the small subset $B$ recovers the fully supervised solution.
+    \item We derive a sparse-dense sampling scheme \cite{hal:Walder2026} with
+    supervision on a single quadrant, realized by a U-Net with circular padding.
+    \item Experiments on optical-resolution photoacoustic microscopy of lung
+    tissue show performance close to fully supervised training at a fraction of
+    the measurements, outperforming patch-wise training.
+\end{itemize}
+Future work includes noise, invariances beyond translations, and extensions to ill-posed inverse problems.
+This is joint work with B.~Walder, D.~Toader, R.~Nuster, G.~Paltauf,
+P.~Burgholzer, G.~Langer and L.~Krainer.
+
+\ack{Supported by the Austrian Research Funding Association (FFG), project Compressed
+Photoacoustic Remote Sensing (FO999898886).}
+
+\begin{thebibliography}{9}
+\bibitem{hal:Walder2026}
+B.~Walder, D.~Toader, R.~Nuster, G.~Paltauf, P.~Burgholzer, G.~Langer,
+L.~Krainer and M.~Haltmeier.
+\newblock Locally-supervised global image restoration.
+\newblock {\em Inverse Problems}, 2026.
+\newblock \url{https://doi.org/10.1088/1361-6420/ae6fe1}
+\end{thebibliography}
+
+% ---------------------------------------------------------------------
+\talk{abs:carioni}{Friday, 27 November \,·\, 10:30 -- 10:55}{Marcello Carioni}
+  {Atomic Gradient Flows: Gradient Flows on Sparse Representations}
+\authors{Christian Amend\textsuperscript{1}, \underline{Marcello Carioni}\textsuperscript{1}, Konstantinos Zemas\textsuperscript{2}}
+\affil{1}{Department of Mathematics, University of Twente}
+\affil{2}{Institute of Applied Mathematics, University of Bonn}
+\contact{m.c.carioni@utwente.nl}
+\keywords{optimization, inverse problems, gradient flows in metric spaces, sparsity}
+
+One of the most popular approaches for optimization problems in the space of measures are the so-called Particle Gradient Flows (PGFs). PGFs restrict the problem to linear combinations of Dirac deltas and then perform a gradient flow in the space of weights and positions \cite{car:Chizat}. In this talk, I will show how to generalize PGFs to arbitrary spaces and optimization problems:
+\begin{align*}
+\inf_{u \in X} G(u) \quad \text{where} \quad  G(u) := F(Au) + R(u)
+\end{align*}
+where $X$ is a Banach space, $F$ is a smooth fidelity term, $A$ is a linear operator and $R$ is a convex regularizer \cite{car:atomic}.
+The crucial idea is how to choose the right notion of particles, which we argue to be the extremal points of the ball of $R$. Such observation is motivated by Krein--Milman theorem that allows to represent any element in the domain of $G$ as the limit of convex combinations of such extremal points. In particular, one considers the restriction of $G$ to \emph{sparse representations}
+\begin{align*}
+u_{\rm sparse} = \sum_{i=1}^n c_i u_i \quad c_i \in \mathbb{R}_+, \ \ u_i \in {\rm Ext}(\{R \leq 1\})
+\end{align*}
+and performs a gradient flow of such restriction in the extremal points $u_i$ and coefficients $c_i$, named \emph{Atomic Gradient Flow} (AGF). I will consider analytical properties of such flow, showing its well-posedness as a minimizing movement scheme, its uniqueness and the related contraction estimates. Then, using Choquet's theorem, I will present how to lift the problem into the Wasserstein space over extremal points and weights, discussing the relations between the lifting of the AGF and the AGF itself.
+Finally, I will show how AGFs can be used to deal with optimization problems with BV-seminorm and Optimal Transport regularizations.
+
+\ack{C.A. and M.C.'s research is supported by the NWO-M1 grant Curve Ensemble Gradient Descents for
+Sparse Dynamic Problems (OCENW.M.22.302) and NWO-Vidi grant SPARGO (VI.Vidi.243.200).}
+
+\begin{thebibliography}{9}
+\bibitem{car:atomic}
+C.~Amend, M.~Carioni and K.~Zemas.
+\newblock Atomic gradient flows: Gradient flows on sparse representations.
+\newblock arXiv preprint arXiv:2603.25675, 2026.
+
+\bibitem{car:Chizat}
+L.~Chizat and F.~Bach.
+\newblock On the global convergence of gradient descent for over-parameterized models using optimal transport.
+\newblock In {\em NeurIPS}, 2018.
+\end{thebibliography}
+
+% ---------------------------------------------------------------------
+\tba{abs:hahnrigaud}{Friday, 27 November \,·\, 10:55 -- 11:40}{Bernadette Hahn-Rigaud}{University of Stuttgart}
+
+% ---------------------------------------------------------------------
+\talk{abs:weissmann}{Friday, 27 November \,·\, 13:10 -- 13:35}{Simon Weißmann}
+  {Derivative-Free Bilevel Learning for Inverse Problems: From Stochastic Gradient Estimation to Multilevel Methods}
+\authors{Neil K. Chada\textsuperscript{1}, Mohammad S. Salehi\textsuperscript{2}, Mathias Staudigl\textsuperscript{3}, \underline{Simon Weißmann}\textsuperscript{3}}
+\affil{1}{Department of Mathematics, City University of Hong Kong, Hong Kong SAR}
+\affil{2}{Independent scholar, London, UK}
+\affil{3}{Institute of Mathematics, University of Mannheim, Germany}
+\contact{simon.weissmann@uni-mannheim.de}
+\keywords{bilevel optimization, derivative-free optimization, multilevel Monte Carlo, Gaussian smoothing, inverse problems}
+
+We consider bilevel learning problems arising in inverse problems, where regularization parameters are optimized from data and each upper-level function evaluation requires the approximate solution of a lower-level reconstruction problem. When derivatives of the lower-level solution map are unavailable or undesirable, zeroth-order methods provide a flexible alternative, but can become computationally expensive due to increasingly accurate inner solves. We propose a multilevel Monte Carlo approach for derivative-free bilevel optimization that combines Gaussian smoothing with a hierarchy of lower-level accuracies. The resulting estimator uses many inexpensive coarse solves and only few accurate fine solves. We derive convergence and complexity guarantees and identify the properties of the lower-level solver that determine whether multilevel sampling yields a genuine computational speedup. Numerical experiments for imaging inverse problems illustrate the potential gains.
+
+% ---------------------------------------------------------------------
+\talk{abs:harrach}{Friday, 27 November \,·\, 13:35 -- 14:20}{Bastian von Harrach}
+  {From Inverse Problems in PDEs to Convex Semidefinite Optimization}
+\authors{Bastian Harrach}
+\affil{}{Goethe University Frankfurt, Germany}
+\contact{harrach@math.uni-frankfurt.de}
+\keywords{inverse problems, elliptic PDEs, semidefinite optimization}
+
+Several applications in medical imaging and non-destructive material testing lead to inverse elliptic coefficient problems, where an unknown coefficient function in an elliptic PDE is to be determined from partial knowledge of its solutions. This is usually a highly non-linear ill posed inverse problem, for which unique reconstructability results, stability and resolution estimates and global convergence of numerical methods are very hard to achieve.
+
+After FEM discretization \cite{har:Harrach2021}, inverse elliptic coefficient problem can often be written in the following form:
+\begin{equation*}
+\text{Reconstruct } \quad \hat y\in \mathbb{R}^m_+ \quad \text{ from } \quad \hat Y:=F(\hat y)\in \mathbb{S}^n,
+\end{equation*}
+where $F:\ \mathbb{R}_+^m\to \mathbb{S}^n_+$ is given by
+\[
+F(y)=-B  A_y^{-1} B^T,\quad A_y:=\sum_{j=1}^m y_j A_j,
+\]
+with $A_j\in \mathbb{S}^d_-$, and surjective $B\in \mathbb{R}^{n\times d}$ ($d,n,m\in \mathbb{N}$).
+
+The matrix $-F(y)$ is the Schur complement of the block matrix
+$\left(\begin{smallmatrix} -A_y & B^T\\ B & 0\end{smallmatrix}\right)$,
+which yields that $F$ is convex and monotonically non-increasing with respect to the semi-definite ordering of symmetric matrices (aka Loewner order).
+A further Schur complement argument shows that $F(y)\preceq Y$ is equivalent to $A_y\preceq C:=-B^T Y^{-1} B$, cf.~\cite{har:BrojatschHarrach2025}. Hence,
+the set of all $y\in \mathbb{R}^m_+$ satisfying $F(y)\preceq Y$ is convex. The solution of the inverse problem $F(y)=Y$ lies on a corner of this convex set with maximally active constraints.
+
+In this talk, we will build upon this relation to discuss reformulations of the nonlinear inverse problem $F(y)=Y$ as a semidefinite optimization problem \cite{har:Harrach2022, har:Harrach2023}
+\begin{align*}
+ b^T y \to \text{max!}
+ \quad \text{s.t.} \quad  \sum_{i=1}^m y_i A_i \preceq C.
+\end{align*}
+
+\begin{thebibliography}{9}
+\bibitem{har:Harrach2021}
+B.~Harrach.
+\newblock An introduction to finite element methods for inverse coefficient problems in elliptic PDEs.
+\newblock {\em Jahresber. Dtsch. Math. Ver.}, 123 (2021), 183--210.
+\newblock \url{https://doi.org/10.1365/s13291-021-00236-2}
+
+\bibitem{har:Harrach2022}
+B.~Harrach.
+\newblock Solving an inverse elliptic coefficient problem by convex non-linear semidefinite programming.
+\newblock {\em Optim. Lett.}, 16 (2022), 1599--1609.
+\newblock \url{https://doi.org/10.1007/s11590-021-01802-4}
+
+\bibitem{har:Harrach2023}
+B.~Harrach.
+\newblock The Calderón problem with finitely many unknowns is equivalent to convex semidefinite optimization.
+\newblock {\em SIAM J. Math. Anal.}, 55 (2023), 5666--5684.
+\newblock \url{https://doi.org/10.1137/23M1544854}
+
+\bibitem{har:BrojatschHarrach2025}
+A.~Brojatsch and B.~Harrach.
+\newblock On the required number of electrodes for uniqueness and convex reformulation in an inverse coefficient problem.
+\newblock {\em Inverse Problems}, 41 (2025), 105011.
+\newblock \url{https://doi.org/10.1088/1361-6420/ae1055}
+\end{thebibliography}
+
+% ---------------------------------------------------------------------
+\talk{abs:luke}{Friday, 27 November \,·\, 14:20 -- 15:05}{Russell Luke}
+  {Quantitative Convergence of Proximal Splitting Iterations in Uniformly Convex Metric Spaces}
+\authors{Russell Luke}
+\affil{}{Institute for Numerical and Applied Mathematics, Georg-August University of Göttingen}
+\contact{r.luke@math.uni-goettingen.de}
+\keywords{optimization, metric space, proximal mapping, operator splitting}
+
+We provide sufficient conditions for quantitative
+convergence of the iterates of proximal splitting algorithms for minimizing a sum of functions on a metric space.
+
+The setting for our development is a $p$-uniformly convex metric space, denoted $(G,d)$.
+Our central goal is to solve the following optimization problem
+\[
+     \argmin_{x\in G} \sum_{j=1}^m f_j(x).
+\]
+For geodesic metric spaces, in the absence of linear structure \emph{implicit tools}
+using the \emph{proximal mapping} \cite{luk:Jost1995}
+are well-developed and provide notions of descent based on \emph{gradient flows} \cite{luk:DeGMarTos80, luk:AmbGigSav2005}.
+This is applied to evolution systems (see for instance \cite{luk:GigNob21}) and metric measure spaces (see for instance \cite{luk:OhtaPal15}).
+Purely implicit methods based on proximal splitting are possible whenever the proximal mapping can be computed
+explicitly \cite{luk:Bacak14, luk:LauLuk21, luk:BLL, luk:LukMir26}.
+
+Let
+\[
+\begin{aligned}
+\overline{T} &\coloneqq (\tau_m \prox^p_{f_m,\lambda_m} \oplus (1 - \tau_m)\Id)  \circ \cdots \\
+  &\quad \circ (\tau_2 \prox^p_{f_2,\lambda_2} \oplus (1 - \tau_2)\Id)
+    \circ (\tau_1 \prox^p_{f_1,\lambda_1} \oplus (1 - \tau_1)\Id).
+\end{aligned}
+\]
+Holding the parameters $\tau_j$ and $\lambda_j$ fixed, we characterize the properties of the mapping $\overline{T}$ and
+determine the convergence properties of fixed point sequences $(x^k)$ under $\overline{T}$:
+\[
+ x^{k+1}= \overline{T} x^k.
+\]
+
+The theory does not assume that the functions $f_j$ have common minima, nor does it require vanishing proximal parameters or step sizes.
+Our results are stated for general $p$-uniformly convex
+spaces with curvature bounded above, and a corollary specializes the main theorem
+to Hadamard spaces, where many assumptions for the more general setting can be dropped.
+The theory is demonstrated with computation of Fréchet means in the
+space of SPD matrices with the affine invariant metric (a Hadamard space) and the
+sphere with the usual geodesic metric (a CAT($\kappa$) metric space).
+
+\ack{This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) -- Projektnummer 566257456 and 541767835.}
+
+\begin{thebibliography}{99}
+\bibitem{luk:AmbGigSav2005}
+L.~Ambrosio, N.~Gigli, and G.~Savaré.
+\newblock {\em Gradient Flows in Metric Spaces and in the Space of Probability Measures}.
+\newblock Birkhäuser, Basel, 2005.
+
+\bibitem{luk:RuiLopNic15}
+D.~Ariza-Ruiz, G.~López-Acedo, and A.~Nicolae.
+\newblock The asymptotic behavior of the composition of firmly nonexpansive mappings.
+\newblock {\em J. Optim. Theory Appl.}, 167 (2015), 409--429.
+
+\bibitem{luk:Bacak14}
+M.~Bačák.
+\newblock Computing medians and means in Hadamard spaces.
+\newblock {\em SIAM J. Optim.}, 24(3) (2014), 1542--1566.
+
+\bibitem{luk:BalCarLie94}
+K.~Ball, E.~A. Carlen, and E.~H. Lieb.
+\newblock Sharp uniform convexity and smoothness inequalities for trace norms.
+\newblock {\em Invent. Math.}, 115(3) (1994), 463--482.
+
+\bibitem{luk:BLL}
+A.~Bërdëllima, F.~Lauster, and D.~R. Luke.
+\newblock $\alpha$-firmly nonexpansive operators on metric spaces.
+\newblock {\em J. Fixed Point Theory Appl.}, 24 (2022).
+
+\bibitem{luk:BurBurIva}
+D.~Burago, Yu.~Burago, and S.~Ivanov.
+\newblock {\em A Course in Metric Geometry}, volume~33 of {\em Grad. Stud. Math.}
+\newblock American Mathematical Society, Providence, RI, 2001.
+
+\bibitem{luk:Cheeger99}
+J.~Cheeger.
+\newblock Differentiability of Lipschitz functions on metric measure spaces.
+\newblock {\em Geom. Funct. Anal.}, 9(3) (1999), 428--517.
+
+\bibitem{luk:DeGMarTos80}
+E.~De~Giorgi, A.~Marino, and M.~Tosques.
+\newblock Problemi di evoluzione in spazi metrici e curve di massima pendenza.
+\newblock {\em Atti Accad. Naz. Lincei, VIII. Ser., Rend., Cl. Sci. Fis. Mat. Nat.}, 68 (1980), 180--187.
+
+\bibitem{luk:GigNob21}
+N.~Gigli and F.~Nobili.
+\newblock A differential perspective on gradient flows on $\mathsf{CAT}(\kappa)$-spaces and applications.
+\newblock {\em J. Geom. Anal.}, 31(12) (2021), 11780--11818.
+
+\bibitem{luk:Jost1995}
+J.~Jost.
+\newblock Convex functionals and generalized harmonic maps into spaces of non positive curvature.
+\newblock {\em Comment. Math. Helv.}, 70(4) (1995), 659--673.
+
+\bibitem{luk:LauLuk21}
+F.~Lauster and D.~R. Luke.
+\newblock Convergence of proximal splitting algorithms in CAT($\kappa$) spaces and beyond.
+\newblock {\em Fixed Point Theory Algorithms Sci. Eng.}, 2021(13) (2021).
+
+\bibitem{luk:LukMir26}
+D.~R. Luke and M.~Mirhashemi.
+\newblock Convergence of proximal splitting algorithms in uniformly convex metric spaces.
+\newblock arXiv:2605.03484, 2026.
+
+\bibitem{luk:OhtaPal15}
+S.~Ohta and M.~Pálfia.
+\newblock Discrete-time gradient flows and law of large numbers in Alexandrov spaces.
+\newblock {\em Calc. Var. Partial Differ. Equ.}, 54(2) (2015), 1591--1610.
+\end{thebibliography}
+
+\end{document}

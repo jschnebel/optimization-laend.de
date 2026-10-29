@@ -1,0 +1,95 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Atomic Gradient Flows: Gradient Flows on Sparse Representations}
+
+\author{
+Christian Amend\thanks{Department of Mathematics, University of Twente,
+\texttt{christian.amend@utwente.nl}}
+\and
+Marcello Carioni\thanks{Department of Mathematics, University of Twente,
+\texttt{m.c.carioni@utwente.nl}}
+\and
+Kostantinos Zemas\thanks{Institute of Applied Mathematics, University of Bonn,
+\texttt{zemas@iam.uni-bonn.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+optimization, inverse problems, gradient flows in metric spaces, sparsity
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+One of the most popular approaches for optimization problems in the space of measures are the so-called Particle Gradient Flows (PGFs). PGFs restrict the problem to linear combinations of Dirac deltas and then perform a gradient flow in the space of weights and positions \cite{Chizat}. In this talk, I will show how to generalize PGFs to arbitrary spaces and optimization problems:
+\begin{align*}
+\inf_{u \in X} G(u) \quad \text{where} \quad  G(u) := F(Au) + R(u)
+\end{align*}
+where $X$ is a Banach space, $F$ is a smooth fidelity term, $A$ is a linear operator and $R$ is a convex regularizer \cite{atomic}.
+The crucial idea is how to choose the right notion of particles, which we argue to be the extremal points of the ball of $R$. Such observation is motivated by Krein-Millman theorem that allows to represent any element in the domain of $G$ as the limit of convex combinations of such extremal points. In particular, one considers the restriction of $G$ to \emph{sparse representations}
+\begin{align*}
+u_{\rm sparse} = \sum_{i=1}^n c_i u_i \quad c_i \in \mathbb{R}_+, \ \ u_i \in {\rm Ext}(\{R \leq 1\}) 
+\end{align*} 
+and performs a gradient flow of such restriction in the extremal points $u_i$ and coefficients $c_i$, named \emph{Atomic Gradient Flow} (AGF). I will consider analytical properties of such flow, showing its well-posedness as a minimizing movement scheme, its uniqueness and the related contraction estimates. Then, using Choquet’s theorem, I will present how to lift the problem into the Wasserstein space over extremal points and weights, discussing the relations between the lifting of the AGF and the AGF itself. 
+Finally, I will show how AGFs can be used to deal with optimization problems with BV-seminorm and Optimal Transport regularizations.  
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+C.A. and M.C.’s research is supported by the NWO-M1 grant Curve Ensemble Gradient Descents for
+Sparse Dynamic Problems (OCENW.M.22.302) and NWO-Vidi grant SPARGO (VI.Vidi.243.200).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{atomic}
+C.~Amend, M.~Carioni and K.~Zemas.
+\newblock {\em Atomic Gradient Flows: Gradient Flows on Sparse Representations}.
+\newblock arXiv preprint arXiv:2603.25675, 2026.
+
+\bibitem{Chizat}
+L. Chizát, F. Bach.
+\newblock {\em On the Global Convergence of Gradient Descent for Over-parameterized Models using Optimal Transport}.
+\newblock Neurips, 2018.
+
+\end{thebibliography}
+
+\end{document}
