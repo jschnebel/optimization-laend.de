@@ -42,3 +42,15 @@ katex: true
 
 
 accent_image:          /assets/schloss_mannheim.jpg
+
+# Publish the Book of Abstracts PDF from _abstracts
+# (folders starting with "_" are skipped by Jekyll unless included);
+# the LaTeX sources and auxiliary files stay unpublished.
+include:
+  - _abstracts
+exclude:
+  - "_abstracts/*.tex"
+  - "_abstracts/*.aux"
+  - "_abstracts/*.log"
+  - "_abstracts/*.out"
+  - "_abstracts/Abstract_Pauwels.pdf"

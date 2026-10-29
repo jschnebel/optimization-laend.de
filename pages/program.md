@@ -98,22 +98,6 @@ hide_description: true
     margin: 2.5rem 0 1.2rem 0;
   }
 
-  .program-legend {
-    font-size: 0.85rem;
-    color: #555;
-    margin: -0.6rem 0 1.4rem 0;
-  }
-
-  .legend-swatch {
-    display: inline-block;
-    width: 0.9rem;
-    height: 0.9rem;
-    vertical-align: -0.12rem;
-    margin-right: 0.35rem;
-    border: 1px solid #c7d6ea;
-    background: #dce8f7;
-  }
-
   .download-button {
     display: inline-block;
     padding: 0.6rem 1.2rem;
@@ -146,6 +130,22 @@ hide_description: true
   .short-table th, .short-table td { padding-left: 0.65rem; padding-right: 0.65rem; }
   .short-table col.col-time { width: 6.8rem; }
 
+  /* talk blocks tall, breaks slim, so the talks dominate visually */
+  .short-table tr.row-block td {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    vertical-align: middle;
+  }
+  .short-table tr.row-break td {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.8rem;
+  }
+  .short-table tr.row-event td {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
   /* ---------- detailed program: days stacked vertically ---------- */
   /* full-width tables bleed 1rem on both sides so cell text lines up with the page text */
   .schedule-table.long-table {
@@ -159,6 +159,7 @@ hide_description: true
 
   .long-table td.speaker { font-weight: 600; }
   .long-table td.tba     { color: #999 !important; font-style: italic; }
+  .long-table tr.row-event td.title { font-weight: 400; }
 
   @media (max-width: 1100px) {
     .schedule-wrapper { flex-direction: column; gap: 0; align-items: stretch; }
@@ -189,7 +190,7 @@ All talks take place in Mannheim; see the [venue page]({{ site.baseurl }}/venue/
 Abstracts of all talks are collected in the Book of Abstracts.
 
 <div style="margin: 1.2rem 0 0.5rem 0;">
-  <a class="download-button" href="{{ site.baseurl }}/assets/OptiLaend_Book_of_Abstracts.pdf" download>
+  <a class="download-button" href="{{ site.baseurl }}/_abstracts/Book_of_Abstracts.pdf" download>
     &#11015; Download Book of Abstracts (PDF)
   </a>
 </div>
@@ -267,8 +268,6 @@ Abstracts of all talks are collected in the Book of Abstracts.
 
 <h2 class="program-section-title">Detailed program</h2>
 
-<p class="program-legend"><span class="legend-swatch"></span>45-minute plenary talk &nbsp;·&nbsp; all other talks are 25 minutes</p>
-
 <div class="day-heading">Wednesday, November 25</div>
 <p class="day-room">Room 008.1, B6 30–32</p>
 <table class="schedule-table long-table">
@@ -313,7 +312,7 @@ Abstracts of all talks are collected in the Book of Abstracts.
     <tr class="row-plenary"><td class="time">15:30 – 16:15</td><td class="speaker">Michael Hintermüller</td><td class="title tba">TBA</td></tr>
     <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td class="speaker">Barbara Kaltenbacher</td><td class="title">Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems</td></tr>
     <tr class="row-break"><td class="time">17:00 – 17:10</td><td colspan="2">Short break</td></tr>
-    <tr class="row-event"><td class="time">17:10 – 18:10</td><td colspan="2">Panel</td></tr>
+    <tr class="row-event"><td class="time">17:10 – 18:10</td><td class="speaker">Panel: Jürgen Hesser</td><td class="title">Point Cloud Registration With Machine Learning</td></tr>
   </tbody>
 </table>
 
