@@ -39,6 +39,7 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Pavel Dvurechensky (WIAS Berlin)</span>
 
 <span>• Matthias Ehrhardt (U Bath)</span>
+<span>• Jalal Fadili (ENSICAEN Caen)</span>
 
 <span>• Caroline Geiersbach (U Klagenfurt)</span>
 <span>• Pontus Giselsson (U Lund)</span>
@@ -104,5 +105,5 @@ Sponsored by:
 
 The workshop is supported by the [Data Science Center](https://www.uni-mannheim.de/datascience/) of the University of Mannheim.
 
-26 October 2026
+5 November 2026
 {:.note title="Last modified"}
