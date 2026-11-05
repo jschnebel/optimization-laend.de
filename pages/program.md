@@ -281,9 +281,9 @@ Abstracts of all talks are collected in the Book of Abstracts.
     <tr class="row-talk"><td class="time">13:45 – 14:10</td><td class="speaker">Peter Ochs</td><td class="title">Learning Optimization Algorithms with Average Case Convergence Rates</td></tr>
     <tr class="row-talk"><td class="time">14:10 – 14:35</td><td class="speaker">Edouard Pauwels</td><td class="title">Estimation of Monge Transport Maps with Empirical Brenier Potentials</td></tr>
     <tr class="row-break"><td class="time">14:35 – 15:05</td><td colspan="2">Coffee break</td></tr>
-    <tr class="row-talk"><td class="time">15:05 – 15:30</td><td class="speaker">Silvia Villa</td><td class="title tba">TBA</td></tr>
+    <tr class="row-talk"><td class="time">15:05 – 15:30</td><td class="speaker">Silvia Villa</td><td class="title">Zeroth Order Proximal Point Algorithm</td></tr>
     <tr class="row-talk"><td class="time">15:30 – 15:55</td><td class="speaker">Pavel Dvurechensky</td><td class="title">Semismooth Newton Methods with Global Convergence Rates</td></tr>
-    <tr class="row-plenary"><td class="time">15:55 – 16:40</td><td class="speaker">Panagiotis Patrinos</td><td class="title tba">TBA</td></tr>
+    <tr class="row-plenary"><td class="time">15:55 – 16:40</td><td class="speaker">Panagiotis Patrinos</td><td class="title">Nonlinear Preconditioning for Optimization and Monotone Inclusions</td></tr>
     <tr class="row-break"><td class="time">16:40 – 17:00</td><td colspan="2">Coffee break</td></tr>
     <tr class="row-plenary"><td class="time">17:00 – 17:45</td><td class="speaker">Martin Schmidt</td><td class="title">Calmness of the Solution-Set Mapping for Linear Bilevel and Pricing Problems</td></tr>
     <tr class="row-talk"><td class="time">17:45 – 18:10</td><td class="speaker">Tristan van Leeuwen</td><td class="title">An Invertible Generative Model for Forward and Inverse Problems</td></tr>
@@ -304,11 +304,11 @@ Abstracts of all talks are collected in the Book of Abstracts.
     <tr class="row-break"><td class="time">10:10 – 10:35</td><td colspan="2">Coffee break</td></tr>
     <tr class="row-plenary"><td class="time">10:35 – 11:20</td><td class="speaker">Dirk Lorenz</td><td class="title">How to Make (Bregman-)Kaczmarz Methods Fast</td></tr>
     <tr class="row-talk"><td class="time">11:20 – 11:45</td><td class="speaker">Tuomo Valkonen</td><td class="title">Point Source Localisation with Unbalanced Optimal Transport</td></tr>
-    <tr class="row-plenary"><td class="time">11:45 – 12:30</td><td class="speaker">Kristian Bredies</td><td class="title tba">TBA</td></tr>
+    <tr class="row-plenary"><td class="time">11:45 – 12:30</td><td class="speaker">Kristian Bredies</td><td class="title">Infinite Infimal Convolution Regularization: Concepts, Models and Optimization</td></tr>
     <tr class="row-break"><td class="time">12:30 – 13:30</td><td colspan="2">Lunch break</td></tr>
-    <tr class="row-plenary"><td class="time">13:30 – 14:15</td><td class="speaker">Matthias Ehrhardt</td><td class="title tba">TBA</td></tr>
+    <tr class="row-plenary"><td class="time">13:30 – 14:15</td><td class="speaker">Matthias Ehrhardt</td><td class="title">Lifting Input-Convex Neural Network Regularizers</td></tr>
     <tr class="row-talk"><td class="time">14:15 – 14:40</td><td class="speaker">Nelly Pustelnik</td><td class="title">Adaptive Block-Coordinate Forward-Backward: Particular Case of Multilevel Block Strategy for Image Reconstruction</td></tr>
-    <tr class="row-talk"><td class="time">14:40 – 15:05</td><td class="speaker">Stefania Petra</td><td class="title tba">TBA</td></tr>
+    <tr class="row-talk"><td class="time">14:40 – 15:05</td><td class="speaker">Stefania Petra</td><td class="title">Riemannian Multilevel Optimization</td></tr>
     <tr class="row-break"><td class="time">15:05 – 15:30</td><td colspan="2">Coffee break</td></tr>
     <tr class="row-plenary"><td class="time">15:30 – 16:15</td><td class="speaker">Michael Hintermüller</td><td class="title tba">TBA</td></tr>
     <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td class="speaker">Barbara Kaltenbacher</td><td class="title">Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems</td></tr>
@@ -325,12 +325,12 @@ Abstracts of all talks are collected in the Book of Abstracts.
     <tr><th>Time</th><th>Speaker</th><th>Title</th></tr>
   </thead>
   <tbody>
-    <tr class="row-talk"><td class="time">08:30 – 08:55</td><td class="speaker">Anton Schiela</td><td class="title tba">TBA</td></tr>
+    <tr class="row-talk"><td class="time">08:30 – 08:55</td><td class="speaker">Anton Schiela</td><td class="title">Optimal Control of Variational Problems on Manifolds</td></tr>
     <tr class="row-plenary"><td class="time">08:55 – 09:40</td><td class="speaker">Luca Calatroni</td><td class="title">Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions</td></tr>
     <tr class="row-talk"><td class="time">09:40 – 10:05</td><td class="speaker">Markus Haltmeier</td><td class="title">Locally-Supervised Global Image Reconstruction</td></tr>
     <tr class="row-break"><td class="time">10:05 – 10:30</td><td colspan="2">Coffee break</td></tr>
     <tr class="row-talk"><td class="time">10:30 – 10:55</td><td class="speaker">Marcello Carioni</td><td class="title">Atomic Gradient Flows: Gradient Flows on Sparse Representations</td></tr>
-    <tr class="row-plenary"><td class="time">10:55 – 11:40</td><td class="speaker">Bernadette Hahn-Rigaud</td><td class="title tba">TBA</td></tr>
+    <tr class="row-plenary"><td class="time">10:55 – 11:40</td><td class="speaker">Bernadette Hahn-Rigaud</td><td class="title">Challenges in Dynamic Inverse Problems</td></tr>
     <tr class="row-break"><td class="time">11:40 – 13:10</td><td colspan="2">Lunch break</td></tr>
     <tr class="row-talk"><td class="time">13:10 – 13:35</td><td class="speaker">Simon Weißmann</td><td class="title">Derivative-Free Bilevel Learning for Inverse Problems: From Stochastic Gradient Estimation to Multilevel Methods</td></tr>
     <tr class="row-plenary"><td class="time">13:35 – 14:20</td><td class="speaker">Bastian von Harrach</td><td class="title">From Inverse Problems in PDEs to Convex Semidefinite Optimization</td></tr>

@@ -82,6 +82,15 @@
   \affil{}{#4}
 }
 
+% title known, abstract not yet received
+% \abstracttba{label}{day and time}{speaker}{affiliation}{title}
+\newcommand{\abstracttba}[5]{%
+  \talk{#1}{#2}{#3}{#5}
+  \authors{#3}
+  \affil{}{#4}
+  \vspace{1.2em}{\itshape Abstract: TBA\par}
+}
+
 % compact bibliography inside each abstract
 \makeatletter
 \renewenvironment{thebibliography}[1]
@@ -174,9 +183,9 @@
 \prog{13:45 -- 14:10}{Peter Ochs}{Learning Optimization Algorithms with Average Case Convergence Rates}{abs:ochs}
 \prog{14:10 -- 14:35}{Edouard Pauwels}{Estimation of Monge Transport Maps with Empirical Brenier Potentials}{abs:pauwels}
 \progbreak{14:35 -- 15:05}{Coffee break}
-\prog{15:05 -- 15:30}{Silvia Villa}{TBA}{abs:villa}
+\prog{15:05 -- 15:30}{Silvia Villa}{Zeroth Order Proximal Point Algorithm}{abs:villa}
 \prog{15:30 -- 15:55}{Pavel Dvurechensky}{Semismooth Newton Methods with Global Convergence Rates}{abs:dvurechensky}
-\prog{15:55 -- 16:40}{Panagiotis Patrinos}{TBA}{abs:patrinos}
+\prog{15:55 -- 16:40}{Panagiotis Patrinos}{Nonlinear Preconditioning for Optimization and Monotone Inclusions}{abs:patrinos}
 \progbreak{16:40 -- 17:00}{Coffee break}
 \prog{17:00 -- 17:45}{Martin Schmidt}{Calmness of the Solution-Set Mapping for Linear Bilevel and Pricing Problems}{abs:schmidt}
 \prog{17:45 -- 18:10}{Tristan van Leeuwen}{An Invertible Generative Model for Forward and Inverse Problems}{abs:vanleeuwen}
@@ -193,11 +202,11 @@
 \progbreak{10:10 -- 10:35}{Coffee break}
 \prog{10:35 -- 11:20}{Dirk Lorenz}{How to Make (Bregman-)Kaczmarz Methods Fast}{abs:lorenz}
 \prog{11:20 -- 11:45}{Tuomo Valkonen}{Point Source Localisation with Unbalanced Optimal Transport}{abs:valkonen}
-\prog{11:45 -- 12:30}{Kristian Bredies}{TBA}{abs:bredies}
+\prog{11:45 -- 12:30}{Kristian Bredies}{Infinite Infimal Convolution Regularization: Concepts, Models and Optimization}{abs:bredies}
 \progbreak{12:30 -- 13:30}{Lunch break}
-\prog{13:30 -- 14:15}{Matthias Ehrhardt}{TBA}{abs:ehrhardt}
+\prog{13:30 -- 14:15}{Matthias Ehrhardt}{Lifting Input-Convex Neural Network Regularizers}{abs:ehrhardt}
 \prog{14:15 -- 14:40}{Nelly Pustelnik}{Adaptive Block-Coordinate Forward-Backward: Particular Case of Multilevel Block Strategy for Image Reconstruction}{abs:pustelnik}
-\prog{14:40 -- 15:05}{Stefania Petra}{TBA}{abs:petra}
+\prog{14:40 -- 15:05}{Stefania Petra}{Riemannian Multilevel Optimization}{abs:petra}
 \progbreak{15:05 -- 15:30}{Coffee break}
 \prog{15:30 -- 16:15}{Michael Hintermüller}{TBA}{abs:hintermueller}
 \prog{16:15 -- 17:00}{Barbara Kaltenbacher}{Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems}{abs:kaltenbacher}
@@ -210,12 +219,12 @@
 \noindent\begin{minipage}{\linewidth}
 \dayheading{Friday, 27 November}{Fuchs-Festsaal (O 138), Mannheim Palace}
 \begin{daytable}
-\prog{08:30 -- 08:55}{Anton Schiela}{TBA}{abs:schiela}
+\prog{08:30 -- 08:55}{Anton Schiela}{Optimal Control of Variational Problems on Manifolds}{abs:schiela}
 \prog{08:55 -- 09:40}{Luca Calatroni}{Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions}{abs:calatroni}
 \prog{09:40 -- 10:05}{Markus Haltmeier}{Locally-Supervised Global Image Reconstruction}{abs:haltmeier}
 \progbreak{10:05 -- 10:30}{Coffee break}
 \prog{10:30 -- 10:55}{Marcello Carioni}{Atomic Gradient Flows: Gradient Flows on Sparse Representations}{abs:carioni}
-\prog{10:55 -- 11:40}{Bernadette Hahn-Rigaud}{TBA}{abs:hahnrigaud}
+\prog{10:55 -- 11:40}{Bernadette Hahn-Rigaud}{Challenges in Dynamic Inverse Problems}{abs:hahnrigaud}
 \progbreak{11:40 -- 13:10}{Lunch break}
 \prog{13:10 -- 13:35}{Simon Weißmann}{Derivative-Free Bilevel Learning for Inverse Problems: From Stochastic Gradient Estimation to Multilevel Methods}{abs:weissmann}
 \prog{13:35 -- 14:20}{Bastian von Harrach}{From Inverse Problems in PDEs to Convex Semidefinite Optimization}{abs:harrach}
@@ -313,7 +322,8 @@ beyond primal-dual solutions of the discrete, finite dimensional, linear program
 problem.
 
 % ---------------------------------------------------------------------
-\tba{abs:villa}{Wednesday, 25 November \,·\, 15:05 -- 15:30}{Silvia Villa}{University of Genoa}
+\abstracttba{abs:villa}{Wednesday, 25 November \,·\, 15:05 -- 15:30}{Silvia Villa}{University of Genoa}
+  {Zeroth Order Proximal Point Algorithm}
 
 % ---------------------------------------------------------------------
 \talk{abs:dvurechensky}{Wednesday, 25 November \,·\, 15:30 -- 15:55}{Pavel Dvurechensky}
@@ -329,7 +339,8 @@ We propose LeAP-SSN (Levenberg--Marquardt Adaptive Proximal Semismooth Newton me
 \ack{This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy -- The Berlin Mathematics Research Center MATH+ (EXC-2046/1, project ID: 390685689).}
 
 % ---------------------------------------------------------------------
-\tba{abs:patrinos}{Wednesday, 25 November \,·\, 15:55 -- 16:40}{Panagiotis Patrinos}{KU Leuven}
+\abstracttba{abs:patrinos}{Wednesday, 25 November \,·\, 15:55 -- 16:40}{Panagiotis Patrinos}{KU Leuven}
+  {Nonlinear Preconditioning for Optimization and Monotone Inclusions}
 
 % ---------------------------------------------------------------------
 \talk{abs:schmidt}{Wednesday, 25 November \,·\, 17:00 -- 17:45}{Martin Schmidt}
@@ -519,10 +530,12 @@ T.~Valkonen.
 \end{thebibliography}
 
 % ---------------------------------------------------------------------
-\tba{abs:bredies}{Thursday, 26 November \,·\, 11:45 -- 12:30}{Kristian Bredies}{University of Graz}
+\abstracttba{abs:bredies}{Thursday, 26 November \,·\, 11:45 -- 12:30}{Kristian Bredies}{University of Graz}
+  {Infinite Infimal Convolution Regularization: Concepts, Models and Optimization}
 
 % ---------------------------------------------------------------------
-\tba{abs:ehrhardt}{Thursday, 26 November \,·\, 13:30 -- 14:15}{Matthias Ehrhardt}{University of Bath}
+\abstracttba{abs:ehrhardt}{Thursday, 26 November \,·\, 13:30 -- 14:15}{Matthias Ehrhardt}{University of Bath}
+  {Lifting Input-Convex Neural Network Regularizers}
 
 % ---------------------------------------------------------------------
 \talk{abs:pustelnik}{Thursday, 26 November \,·\, 14:15 -- 14:40}{Nelly Pustelnik}
@@ -534,7 +547,8 @@ T.~Valkonen.
 Classical first-order optimization methods for imaging inverse problems struggle to scale efficiently with increasing image resolution. Here, we introduce an adaptive multiresolution block coordinate Forward-Backward algorithm for image restoration. The selection of multiresolution blocks is guided by the local magnitude of the proximal update, using a stochastic, non-smooth Gauss-Southwell rule applied to the image wavelet decomposition. This adaptive approach dynamically balances updates across scales, prioritizing coarse or fine blocks based on the degradation characteristics. As a result, the proposed method automatically adjusts to varying levels of blur and noise without requiring a predefined hierarchical update scheme.
 
 % ---------------------------------------------------------------------
-\tba{abs:petra}{Thursday, 26 November \,·\, 14:40 -- 15:05}{Stefania Petra}{Heidelberg University}
+\abstracttba{abs:petra}{Thursday, 26 November \,·\, 14:40 -- 15:05}{Stefania Petra}{Heidelberg University}
+  {Riemannian Multilevel Optimization}
 
 % ---------------------------------------------------------------------
 \tba{abs:hintermueller}{Thursday, 26 November \,·\, 15:30 -- 16:15}{Michael Hintermüller}{Weierstrass Institute (WIAS), Berlin}
@@ -587,7 +601,8 @@ S.~Leyffer and P.~Manns.
 % =====================================================================
 
 % ---------------------------------------------------------------------
-\tba{abs:schiela}{Friday, 27 November \,·\, 08:30 -- 08:55}{Anton Schiela}{University of Bayreuth}
+\abstracttba{abs:schiela}{Friday, 27 November \,·\, 08:30 -- 08:55}{Anton Schiela}{University of Bayreuth}
+  {Optimal Control of Variational Problems on Manifolds}
 
 % ---------------------------------------------------------------------
 \talk{abs:calatroni}{Friday, 27 November \,·\, 08:55 -- 09:40}{Luca Calatroni}
@@ -689,7 +704,8 @@ L.~Chizat and F.~Bach.
 \end{thebibliography}
 
 % ---------------------------------------------------------------------
-\tba{abs:hahnrigaud}{Friday, 27 November \,·\, 10:55 -- 11:40}{Bernadette Hahn-Rigaud}{University of Stuttgart}
+\abstracttba{abs:hahnrigaud}{Friday, 27 November \,·\, 10:55 -- 11:40}{Bernadette Hahn-Rigaud}{University of Stuttgart}
+  {Challenges in Dynamic Inverse Problems}
 
 % ---------------------------------------------------------------------
 \talk{abs:weissmann}{Friday, 27 November \,·\, 13:10 -- 13:35}{Simon Weißmann}
