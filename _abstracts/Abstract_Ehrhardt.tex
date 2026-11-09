@@ -1,0 +1,152 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Lifting Input-Convex Neural Network Regularizers}
+
+\author{
+Matthias J. Ehrhardt\thanks{
+Department of Mathematical Sciences,
+University of Bath,
+Bath, UK\\
+\texttt{m.ehrhardt@bath.ac.uk}}
+\and
+Subhadip Mukherjee\thanks{
+Department of Electrical Engineering,
+Indian Institute of Technology Kharagpur,
+India\\
+\texttt{smukherjee@ece.iitkgp.ac.in}}
+\and
+Hok Shing Wong\thanks{
+Chair for Mathematical Foundations of Artificial Intelligence,
+Department of Mathematics,
+Ludwig-Maximilians-Universität München (LMU Munich),
+Munich, Germany\\
+\texttt{hok.wong@math.lmu.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+Variational reconstruction, Input-convex neural networks,
+Primal-dual algorithm, Convex reformulation, Image restoration
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+We consider inverse problems $y = Ax + \varepsilon$, where $y$ represents the observed data, $A$ is a known forward operator, and $\varepsilon$ is additive noise. Regularization can be approached through variational methods, i.e., we aim to solve 
+\[
+\min_{x\in X}
+\left\{
+D(Ax,y)+R_\theta(x)
+\right\},
+\]
+where $D$ represents a convex data-fidelity function and
+$R_\theta$ is an Input-Convex Neural Network (ICNN) \cite{Amos2017, Mukherjee2024}. An $L$-layer ICNN parameterizes the regularizer
+$R_\theta : X \to \mathbb{R}$ recursively via hidden layer states
+$z^\ell$, starting from $z^1=\sigma(W^0x+b^0)$, we define
+\[
+z^{\ell+1}
+=
+\sigma\!\left(
+V^\ell z^\ell + W^\ell x + b^\ell
+\right),
+\qquad
+\ell=1,\ldots,L-2,
+\]
+and then the regularizer can be evaluated as
+\[
+R_\theta(x)
+=
+\sigma\!\left(
+V^{L-1}z^{L-1}
++
+W^{L-1}x
++
+b^{L-1}
+\right).
+\]
+
+To guarantee that $R_\theta$ is globally convex with respect to its
+input $x$, the network parameters are constrained such that the
+feed-forward matrices $V^\ell$ contain only non-negative entries, and the activation function $\sigma$ is convex and non-decreasing. However, the nested compositions may lead to vanishing subgradients and difficult-to-compute proximal mappings which motivates the present work.
+
+The core contribution of this work lies in decoupling the structural constraints of the deep network architecture. Instead of treating the objective implicitly through composition, we lift the optimization space by defining auxiliary variables corresponding to the network layers. By exploiting the mathematical properties of the epigraph of
+the layer-wise convex activation functions, we show that the original nested problem is mathematically equivalent to a decoupled optimization problem over the original unknown $x$ and the full set of multi-layer activations $z=(z^1,\ldots,z^{L-2})$. Because this formulation eliminates the nested composition, the objective separates into isolated proximal-friendly terms and linear blocks.
+The optimization can be compactly cast into the standard saddle-point format and solved with standard algorithms such as the Primal-Dual Hybrid Gradient (PDHG) algorithm \cite{Chambolle2011}. Numerical experiments on image restoration tasks demonstrate that the proposed method has advantages in terms of speed and reliability over existing approaches which consider nested compositions.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+
+MJE acknowledges support from the EPSRC (EP/T026693/1, EP/V026259/1, EP/Y037286/1), STFC through the UKRI Digital Research Infrastructure programme and the European Union Horizon 2020 research and innovation programme under the Marie Skodowska-Curie grant agreement REMODEL.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{Amos2017}
+B.~Amos, L.~Xu and J.~Z.~Kolter.
+\newblock Input convex neural networks.
+\newblock In {\em Proceedings of the International Conference on Machine Learning},
+2017.
+
+\bibitem{Chambolle2011}
+A.~Chambolle and T.~Pock.
+\newblock A first-order primal-dual algorithm for convex problems with
+applications to imaging.
+\newblock {\em Journal of Mathematical Imaging and Vision},
+40(1):120--145, 2011.
+
+\bibitem{Ehrhardt2026}
+M.~J.~Ehrhardt, S.~Mukherjee and H.~S.~Wong.
+\newblock A primal-dual algorithm for image reconstruction with input-convex
+neural network regularizers.
+\newblock {\em SIAM Journal on Imaging Sciences},
+19(2):782--806, 2026.
+
+\bibitem{Mukherjee2024}
+S.~Mukherjee, S.~Dittmer, Z.~Shumaylov, S.~Lunz,
+O.~\"Oktem and C.-B.~Sch\"onlieb.
+\newblock Data-driven convex regularizers for inverse problems.
+\newblock In {\em ICASSP 2024 IEEE International Conference on Acoustics,
+Speech and Signal Processing}, pages 13386--13390, 2024.
+
+\end{thebibliography}
+
+\end{document}

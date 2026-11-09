@@ -1,0 +1,75 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Optimal Control of Variational Problems on Manifolds}
+
+\author{
+Anton Schiela\thanks{Univeristät Bayreuth,
+\texttt{anton.schiela@uni-bayreuth.de}}
+\and
+Laura Weigl\thanks{Univeristät Bayreuth,
+\texttt{laura.weigl@uni-bayreuth.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+optimization, optimal control, manifolds 
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+In PDE-constrained optimization a control is applied within a partial differential equation (PDE), e.g., as a force field, to achieve a desired configuration of the PDE solution. The objective is usually to find an optimal balance between control cost and deviation of the controlled state from the desired configuration.
+We consider this problem class in a setting, where the PDE is given by a geometric variational equation and the state is a mapping into a nonlinear manifold. We define a Lagrangian function corresponding to this geometric optimal control problem and derive first-order optimality conditions. Moreover, we present a Lagrange-Newton method for their numerical solution. We introduce an implementable algorithm using a local splitting technique and show its equivalence to Newton's method applied to the derivative of the Lagrangian. The theoretical framework is illustrated by numerical examples, including the optimal control of elastic geodesics and surfaces of minimal energy by force fields and the control of inextensible rods and shells
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+
+\bibitem{weigl2026}
+Laura Weigl and Anton Schiela.
+\newblock A Lagrange-Newton method for solving optimal control problems on manifolds.
+\newblock \url{https://arxiv.org/abs/2610.06310}
+
+
+\end{thebibliography}
+
+\end{document}

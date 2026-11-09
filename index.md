@@ -86,7 +86,6 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Silvia Villa (U Genoa)</span>
 <span>• Frank Werner (U Würzburg)</span>
 
-<span>• Simon Weißmann (U Mannheim)</span>
 
 </div>
 <br>

@@ -339,8 +339,58 @@ We propose LeAP-SSN (Levenberg--Marquardt Adaptive Proximal Semismooth Newton me
 \ack{This work was supported by the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) under Germany's Excellence Strategy -- The Berlin Mathematics Research Center MATH+ (EXC-2046/1, project ID: 390685689).}
 
 % ---------------------------------------------------------------------
-\abstracttba{abs:patrinos}{Wednesday, 25 November \,·\, 15:55 -- 16:40}{Panagiotis Patrinos}{KU Leuven}
+\talk{abs:patrinos}{Wednesday, 25 November \,·\, 15:55 -- 16:40}{Panagiotis Patrinos}
   {Nonlinear Preconditioning for Optimization and Monotone Inclusions}
+\authors{Panos Patrinos}
+\affil{}{Department of Electrical Engineering, KU Leuven}
+\contact{panos.patrinos@kuleuven.be}
+\keywords{optimization, machine learning}
+
+Many algorithms used in modern optimization, such as gradient clipping, sign-based and spectral optimizers like Muon, as well as adaptive schemes for $(L_0,L_1)$-smooth problems, can be understood through the lens of nonlinear preconditioning in the dual space. Here, the search direction is determined by passing the gradient, or more generally the operator, through the gradient of a Legendre convex reference function. In this talk I will give an overview of my group's recent work on this idea. I will start with minimization, where the theory is now well developed, thanks to tools of generalized convexity and duality \cite{pat:LauPat25,pat:OikLauPat25,pat:OikQuaLauPat25,pat:OikQuaPat25,pat:OikEtAl26,pat:BodPat25}. I will then move to monotone inclusion problems, where many basic questions are still open \cite{pat:LauPat23,pat:QuaEtAl26}.
+
+\ack{This work was supported by the Research Foundation Flanders (FWO) PhD grant 11A8T26N and research projects G081222N, G033822N, and G0A0920N; Research Council KUL grant C14/24/103.}
+
+\begin{thebibliography}{8}
+\bibitem{pat:LauPat25}
+E.~Laude and P.~Patrinos.
+\newblock Anisotropic proximal gradient.
+\newblock {\em Mathematical Programming}, 214 (2025), 801--845.
+
+\bibitem{pat:OikLauPat25}
+K.~Oikonomidis, E.~Laude and P.~Patrinos.
+\newblock Forward-backward splitting under the light of generalized convexity.
+\newblock arXiv:2503.18098, 2025.
+
+\bibitem{pat:OikQuaLauPat25}
+K.~Oikonomidis, J.~Quan, E.~Laude and P.~Patrinos.
+\newblock Nonlinearly preconditioned gradient methods under generalized smoothness.
+\newblock {\em ICML}, 42 (2025), 47132--47154.
+
+\bibitem{pat:OikQuaPat25}
+K.~Oikonomidis, J.~Quan and P.~Patrinos.
+\newblock Nonlinearly preconditioned gradient methods: Momentum and stochastic analysis.
+\newblock {\em NeurIPS}, 38 (2025), 38957--38988.
+
+\bibitem{pat:OikEtAl26}
+K.~Oikonomidis, J.~Quan, K.~Antonakopoulos, A.~Silveti-Falls, V.~Cevher and P.~Patrinos.
+\newblock Constrained stochastic spectral preconditioning converges for nonconvex objectives.
+\newblock arXiv:2605.11850, 2026.
+
+\bibitem{pat:BodPat25}
+A.~Bodard and P.~Patrinos.
+\newblock Escaping saddle points without Lipschitz smoothness: the power of nonlinear preconditioning.
+\newblock {\em NeurIPS}, 38 (2025), 124173--124208.
+
+\bibitem{pat:LauPat23}
+E.~Laude and P.~Patrinos.
+\newblock Anisotropic proximal point algorithm.
+\newblock arXiv:2312.09834, 2023.
+
+\bibitem{pat:QuaEtAl26}
+J.~Quan, K.~Oikonomidis, A.~Bodard and P.~Patrinos.
+\newblock Dual-space preconditioning for variational inequalities and root-finding problems.
+\newblock Submitted, 2026.
+\end{thebibliography}
 
 % ---------------------------------------------------------------------
 \talk{abs:schmidt}{Wednesday, 25 November \,·\, 17:00 -- 17:45}{Martin Schmidt}
@@ -530,12 +580,83 @@ T.~Valkonen.
 \end{thebibliography}
 
 % ---------------------------------------------------------------------
-\abstracttba{abs:bredies}{Thursday, 26 November \,·\, 11:45 -- 12:30}{Kristian Bredies}{University of Graz}
+\talk{abs:bredies}{Thursday, 26 November \,·\, 11:45 -- 12:30}{Kristian Bredies}
   {Infinite Infimal Convolution Regularization: Concepts, Models and Optimization}
+\authors{Kristian Bredies}
+\affil{}{Department of Mathematics and Scientific Computing, University of Graz}
+\contact{kristian.bredies@uni-graz.at}
+\keywords{optimization, inverse problems, regularization functionals, infimal convolution}
+
+Variational methods are a well-established, powerful framework for solving inverse problems. Typically, they combine a discrepancy term that models the forward problem and noise with a regularization term that incorporates prior knowledge. A wide range of regularizers has been proposed in the literature, from classical Tikhonov penalties to modern data-driven and learned functionals. In this context, the infimal convolution of regularization functionals is a well-established tool to balance finitely many such penalties.
+
+In this talk, we introduce infinite infimal convolution as a way to select from a continuum of regularization penalties. This leads to a flexible, data-adaptive model selection mechanism based on an infinite, parameterized family of regularizers. We formulate infinite infimal convolution regularization as a variational problem over Banach-space valued Radon measures and analyze well-posedness and convergence in the setting of linear inverse problems. The framework covers various modeling scenarios, including regularization across smoothness scales and parameterized families of functionals \cite{bre:BCHKS25}. We further illustrate its use in less direct applications, such as relaxed bilinear inverse problems and the learning of certain classes of regularization functionals. On the optimization side, we show how inverse problems with infinite infimal convolution regularization can be solved using generalized conditional gradient methods \cite{bre:BCHKS25,bre:BCFW24}. Finally, we explain how the arising subproblems can be treated efficiently via extremal point techniques, yielding practical algorithms with convergence guarantees.
+
+This is joint work with Marcello Carioni, Silvio Fanzon, Martin Holler, Yury Korolev, Carola-Bibiane Schönlieb, and Daniel Walter.
+
+\ack{This work was supported by the Christian Doppler Research Association (CDG) and Austrian Science Fund (FWF) through projects PIR-27 and P-29192. Furthermore, NAWI Graz (\url{https://www.nawigraz.at/en/}) and BioTechMed Graz (\url{https://biotechmedgraz.at/en/}) are acknowledged.}
+
+\begin{thebibliography}{2}
+\bibitem{bre:BCHKS25}
+K.~Bredies, M.~Carioni, M.~Holler, Y.~Korolev and C.-B.~Schönlieb.
+\newblock A sparse optimization approach to infinite infimal convolution regularization.
+\newblock {\em Numerische Mathematik}, 157 (2025), 41--96. doi:10.1007/s00211-024-01439-2
+
+\bibitem{bre:BCFW24}
+K.~Bredies, M.~Carioni, S.~Fanzon and D.~Walter.
+\newblock Asymptotic linear convergence of fully-corrective generalized conditional gradient methods.
+\newblock {\em Mathematical Programming}, 205(1--2) (2024), 135--202. doi:10.1007/s10107-023-01975-z
+\end{thebibliography}
 
 % ---------------------------------------------------------------------
-\abstracttba{abs:ehrhardt}{Thursday, 26 November \,·\, 13:30 -- 14:15}{Matthias Ehrhardt}{University of Bath}
+\talk{abs:ehrhardt}{Thursday, 26 November \,·\, 13:30 -- 14:15}{Matthias Ehrhardt}
   {Lifting Input-Convex Neural Network Regularizers}
+\authors{\underline{Matthias J. Ehrhardt}\textsuperscript{1}, Subhadip Mukherjee\textsuperscript{2}, Hok Shing Wong\textsuperscript{3}}
+\affil{1}{Department of Mathematical Sciences, University of Bath, UK}
+\affil{2}{Department of Electrical Engineering, Indian Institute of Technology Kharagpur, India}
+\affil{3}{Chair for Mathematical Foundations of Artificial Intelligence, Department of Mathematics, LMU Munich, Germany}
+\contact{m.ehrhardt@bath.ac.uk}
+\keywords{variational reconstruction, input-convex neural networks, primal-dual algorithm, convex reformulation, image restoration}
+
+We consider inverse problems $y = Ax + \varepsilon$, where $y$ represents the observed data, $A$ is a known forward operator, and $\varepsilon$ is additive noise. Regularization can be approached through variational methods, i.e., we aim to solve
+\[
+\min_{x\in X} \left\{ D(Ax,y)+R_\theta(x) \right\},
+\]
+where $D$ represents a convex data-fidelity function and $R_\theta$ is an Input-Convex Neural Network (ICNN) \cite{ehr:Amos2017,ehr:Mukherjee2024}. An $L$-layer ICNN parameterizes the regularizer $R_\theta : X \to \mathbb{R}$ recursively via hidden layer states $z^\ell$: starting from $z^1=\sigma(W^0x+b^0)$, we define
+\[
+z^{\ell+1} = \sigma\!\left( V^\ell z^\ell + W^\ell x + b^\ell \right), \qquad \ell=1,\ldots,L-2,
+\]
+and then the regularizer can be evaluated as
+\[
+R_\theta(x) = \sigma\!\left( V^{L-1}z^{L-1} + W^{L-1}x + b^{L-1} \right).
+\]
+To guarantee that $R_\theta$ is globally convex with respect to its input $x$, the network parameters are constrained such that the feed-forward matrices $V^\ell$ contain only non-negative entries, and the activation function $\sigma$ is convex and non-decreasing. However, the nested compositions may lead to vanishing subgradients and difficult-to-compute proximal mappings, which motivates the present work.
+
+The core contribution of this work lies in decoupling the structural constraints of the deep network architecture. Instead of treating the objective implicitly through composition, we lift the optimization space by defining auxiliary variables corresponding to the network layers. By exploiting the mathematical properties of the epigraph of the layer-wise convex activation functions, we show that the original nested problem is mathematically equivalent to a decoupled optimization problem over the original unknown $x$ and the full set of multi-layer activations $z=(z^1,\ldots,z^{L-2})$. Because this formulation eliminates the nested composition, the objective separates into isolated proximal-friendly terms and linear blocks. The optimization can be compactly cast into the standard saddle-point format and solved with standard algorithms such as the Primal-Dual Hybrid Gradient (PDHG) algorithm \cite{ehr:Chambolle2011}. Numerical experiments on image restoration tasks demonstrate that the proposed method has advantages in terms of speed and reliability over existing approaches which consider nested compositions.
+
+\ack{MJE acknowledges support from the EPSRC (EP/T026693/1, EP/V026259/1, EP/Y037286/1), STFC through the UKRI Digital Research Infrastructure programme and the European Union Horizon 2020 research and innovation programme under the Marie Sk\l{}odowska-Curie grant agreement REMODEL.}
+
+\clearpage
+\begin{thebibliography}{4}
+\bibitem{ehr:Amos2017}
+B.~Amos, L.~Xu and J.~Z.~Kolter.
+\newblock Input convex neural networks.
+\newblock In {\em Proceedings of the International Conference on Machine Learning}, 2017.
+
+\bibitem{ehr:Chambolle2011}
+A.~Chambolle and T.~Pock.
+\newblock A first-order primal-dual algorithm for convex problems with applications to imaging.
+\newblock {\em Journal of Mathematical Imaging and Vision}, 40(1) (2011), 120--145.
+
+\bibitem{ehr:Ehrhardt2026}
+M.~J.~Ehrhardt, S.~Mukherjee and H.~S.~Wong.
+\newblock A primal-dual algorithm for image reconstruction with input-convex neural network regularizers.
+\newblock {\em SIAM Journal on Imaging Sciences}, 19(2) (2026), 782--806.
+
+\bibitem{ehr:Mukherjee2024}
+S.~Mukherjee, S.~Dittmer, Z.~Shumaylov, S.~Lunz, O.~\"Oktem and C.-B.~Sch\"onlieb.
+\newblock Data-driven convex regularizers for inverse problems.
+\newblock In {\em ICASSP 2024 -- IEEE International Conference on Acoustics, Speech and Signal Processing}, 2024, 13386--13390.
+\end{thebibliography}
 
 % ---------------------------------------------------------------------
 \talk{abs:pustelnik}{Thursday, 26 November \,·\, 14:15 -- 14:40}{Nelly Pustelnik}
@@ -547,8 +668,23 @@ T.~Valkonen.
 Classical first-order optimization methods for imaging inverse problems struggle to scale efficiently with increasing image resolution. Here, we introduce an adaptive multiresolution block coordinate Forward-Backward algorithm for image restoration. The selection of multiresolution blocks is guided by the local magnitude of the proximal update, using a stochastic, non-smooth Gauss-Southwell rule applied to the image wavelet decomposition. This adaptive approach dynamically balances updates across scales, prioritizing coarse or fine blocks based on the degradation characteristics. As a result, the proposed method automatically adjusts to varying levels of blur and noise without requiring a predefined hierarchical update scheme.
 
 % ---------------------------------------------------------------------
-\abstracttba{abs:petra}{Thursday, 26 November \,·\, 14:40 -- 15:05}{Stefania Petra}{Heidelberg University}
+\talk{abs:petra}{Thursday, 26 November \,·\, 14:40 -- 15:05}{Stefania Petra}
   {Riemannian Multilevel Optimization}
+\authors{Stefania Petra}
+\affil{}{IWR, Heidelberg University}
+\contact{petra@math.uni-heidelberg.de}
+\keywords{Riemannian optimization, multilevel optimization, constrained energy minimization}
+
+Multilevel optimization methods are highly effective for discretized energy minimization problems, but their Euclidean formulation does not directly apply to manifold constraints. We introduce a Riemannian extension of multilevel optimization based on a coarse model that is first-order coherent with the fine-level objective and yields descent directions under mild retraction-convexity assumptions. The framework includes metric-compatible vector transfer operators for passing first-order information between levels, covering both intrinsic and extrinsic constructions. We formulate two-level and multilevel algorithms and establish global convergence using a Riemannian Zoutendijk-type argument. Applications to Kohn--Sham density functional theory, Gross--Pitaevskii ground-state computation, and binary continuous cuts demonstrate the method on Stiefel, ellipsoid, and Bernoulli manifolds. Numerical experiments show significant reductions in computational time compared with single-level Riemannian optimization.
+
+This talk is based on joint work with Yara Elshiaty, Jonas P\"uschel, Tatjana Stykel, and Ferdinand-Joseph Vanmaele; see \cite{pet:ElshiatyEtAl2026}.
+
+\begin{thebibliography}{1}
+\bibitem{pet:ElshiatyEtAl2026}
+Y.~Elshiaty, S.~Petra, J.~P\"uschel, T.~Stykel and F.-J.~Vanmaele.
+\newblock Riemannian multilevel optimization with application to constrained energy minimization problems.
+\newblock arXiv:2607.09517, 2026.
+\end{thebibliography}
 
 % ---------------------------------------------------------------------
 \tba{abs:hintermueller}{Thursday, 26 November \,·\, 15:30 -- 16:15}{Michael Hintermüller}{Weierstrass Institute (WIAS), Berlin}
@@ -601,8 +737,21 @@ S.~Leyffer and P.~Manns.
 % =====================================================================
 
 % ---------------------------------------------------------------------
-\abstracttba{abs:schiela}{Friday, 27 November \,·\, 08:30 -- 08:55}{Anton Schiela}{University of Bayreuth}
+\talk{abs:schiela}{Friday, 27 November \,·\, 08:30 -- 08:55}{Anton Schiela}
   {Optimal Control of Variational Problems on Manifolds}
+\authors{\underline{Anton Schiela}, Laura Weigl}
+\affil{}{University of Bayreuth}
+\contact{anton.schiela@uni-bayreuth.de}
+\keywords{optimization, optimal control, manifolds}
+
+In PDE-constrained optimization a control is applied within a partial differential equation (PDE), e.g., as a force field, to achieve a desired configuration of the PDE solution. The objective is usually to find an optimal balance between control cost and deviation of the controlled state from the desired configuration. We consider this problem class in a setting where the PDE is given by a geometric variational equation and the state is a mapping into a nonlinear manifold. We define a Lagrangian function corresponding to this geometric optimal control problem and derive first-order optimality conditions. Moreover, we present a Lagrange--Newton method for their numerical solution. We introduce an implementable algorithm using a local splitting technique and show its equivalence to Newton's method applied to the derivative of the Lagrangian. The theoretical framework is illustrated by numerical examples, including the optimal control of elastic geodesics and surfaces of minimal energy by force fields and the control of inextensible rods and shells \cite{sch:WeiSch26}.
+
+\begin{thebibliography}{1}
+\bibitem{sch:WeiSch26}
+L.~Weigl and A.~Schiela.
+\newblock A Lagrange--Newton method for solving optimal control problems on manifolds.
+\newblock \url{https://arxiv.org/abs/2610.06310}, 2026.
+\end{thebibliography}
 
 % ---------------------------------------------------------------------
 \talk{abs:calatroni}{Friday, 27 November \,·\, 08:55 -- 09:40}{Luca Calatroni}
@@ -704,8 +853,20 @@ L.~Chizat and F.~Bach.
 \end{thebibliography}
 
 % ---------------------------------------------------------------------
-\abstracttba{abs:hahnrigaud}{Friday, 27 November \,·\, 10:55 -- 11:40}{Bernadette Hahn-Rigaud}{University of Stuttgart}
+\talk{abs:hahnrigaud}{Friday, 27 November \,·\, 10:55 -- 11:40}{Bernadette Hahn-Rigaud}
   {Challenges in Dynamic Inverse Problems}
+\authors{Bernadette Hahn}
+\affil{}{Department of Mathematics, University of Stuttgart}
+\contact{bernadette.hahn@imng.uni-stuttgart.de}
+\keywords{inverse problems with inexact forward operator, sequential subspace optimization, motion estimation and compensation, dynamic tomography}
+
+Dynamic inverse problems arise whenever the searched-for quantity changes during the data acquisition. They play an important role in medicine and biology, for example in imaging physiological processes or compensating for patient motion, as well as in non-destructive testing, where objects may be imaged under changing mechanical loads.
+
+Due to the dynamic behavior of the object, the resulting measurements are no longer consistent with a single static model. Ignoring this inconsistency and applying standard regularization methods typically leads to a difficult trade-off between spatial and temporal resolution. More importantly, temporal changes can manifest themselves as severe motion artefacts, potentially obscuring relevant structures and compromising further image analysis steps.
+
+In this talk, we give an overview of two complementary ways to incorporate dynamics into the regularization process. The first treats the unknown dynamics as inexactness of the forward model and is accounted for via regularized sequential subspace optimization. The second approach exploits additional information about the underlying motion, therefore requiring explicit motion estimation and compensation strategies. Both approaches will be evaluated on simulated and real data from different imaging applications.
+
+\ack{This work was supported by Deutsche Forschungsgemeinschaft (DFG) under Germany's Excellence Strategy -- EXC 2075 -- 390740016 and by the Bundesministerium für Bildung und Forschung (BMBF) under grant 05M20VSB.}
 
 % ---------------------------------------------------------------------
 \talk{abs:weissmann}{Friday, 27 November \,·\, 13:10 -- 13:35}{Simon Weißmann}

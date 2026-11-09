@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{\bfseries Riemannian Multilevel Optimization}
+
+\author{
+Stefania Petra\thanks{IWR, Heidelberg University,
+\texttt{petra@math.uni-heidelberg.de}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+Riemannian optimization, multilevel optimization, constrained energy minimization
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+
+Multilevel optimization methods are highly effective for discretized energy minimization problems, but their Euclidean formulation does not directly apply to manifold constraints. We introduce a Riemannian extension of multilevel optimization based on a coarse model that is first-order coherent with the fine-level objective and yields descent directions under mild retraction-convexity assumptions. The framework includes metric-compatible vector transfer operators for passing first-order information between levels, covering both intrinsic and extrinsic constructions.
+We formulate two-level and multilevel algorithms and establish global convergence using a Riemannian Zoutendijk-type argument. Applications to Kohn–Sham density functional theory, Gross–Pitaevskii ground-state computation, and binary continuous cuts demonstrate the method on Stiefel, ellipsoid, and Bernoulli manifolds. Numerical experiments show significant reductions in computational time compared with single-level Riemannian optimization.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This talk is based on joint work with Yara Elshiaty, Jonas P\"uschel, Tatjana Stykel, and Ferdinand-Joseph Vanmaele; see \cite{ElshiatyEtAl2026}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\begin{thebibliography}{9}
+
+\bibitem{ElshiatyEtAl2026}
+Y.~Elshiaty, S.~Petra, J.~Püschel, T.~Stykel, and F.-J.~Vanmaele,
+\newblock 
+{{Riemannian Multilevel Optimization with Application to Constrained Energy Minimization Problems}},
+\newblock \emph{arXiv:2607.09517}, 2026.
+
+\end{thebibliography}
+
+\end{document}

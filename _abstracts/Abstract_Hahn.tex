@@ -1,0 +1,86 @@
+\documentclass[11pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue
+}
+
+%------------------------------------------------
+% Title Information
+%------------------------------------------------
+
+\title{{\bfseries Challenges in dynamic inverse problems}}
+
+\author{
+Bernadette Hahn\thanks{Department of Mathematics, University of Stuttgart,
+\texttt{bernadette.hahn@imng.uni-stuttgart.de}}
+%\and
+%Second Author\thanks{Institute of Applied Mathematics, University B,
+%\texttt{second.author@university.edu}}
+}
+
+\date{}
+
+%------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+\vspace{-1em}
+
+\noindent
+\textbf{Keywords:}
+inverse problems with inexact forward operator, sequential subspace optimization, motion estimation and compensation, dynamic tomography
+
+\vspace{0.5em}
+
+
+\vspace{1em}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Abstract}
+ 
+
+Dynamic inverse problems arise whenever the searched-for quantity changes during the data acquisition. They play an important role in medicine and biology, for example in imaging physiological processes or compensating for patient motion, as well as in non-destructive testing, where objects may be imaged under changing mechanical loads. 
+
+Due to the dynamic behavior of the object, the resulting measurements are no longer consistent with a single static model. %This introduces additional challenges for the reconstruction and regularization of the inverse problem.
+Ignoring this inconsistency and applying standard regularization methods typically leads to a difficult trade-off between spatial and temporal resolution. More importantly, temporal changes can manifest themselves as severe motion artefacts, potentially obscuring relevant structures and compromising further image analysis steps.
+
+In this talk, we give an overview of two complementary ways to incorporate dynamics into the regularization process. The first treats the unknown dynamics as inexactness of the forward model and is accounted for via regularized sequential subspace optimization. The second approach exploits additional information about the underlying motion, therefore requiring explicit motion estimation and compensation strategies. Both approaches will be evaluated on simulated and real data from different imaging applications.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+\noindent
+\textbf{Acknowledgements.}
+This work was supported by Deutsche Forschungsgemeinschaft (DFG) under Germany’s Excellence Strategy -- EXC 2075 -- 390740016 and by the Bundesministerium für Bildung und Forschung (BMBF) under grant 05M20VSB.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{1em}
+
+%\begin{thebibliography}{9}
+%
+%\bibitem{Attouch2013}
+%H.~Attouch, J.~Bolte and B.~Svaiter.
+%\newblock Convergence of descent methods for semi-algebraic and tame problems.
+%\newblock {\em Mathematical Programming}, 137 (2013), 91--129.
+%
+%\bibitem{Nesterov2018}
+%Y.~Nesterov.
+%\newblock {\em Lectures on Convex Optimization}.
+%\newblock Springer, 2018.
+%
+%\end{thebibliography}
+
+\end{document}

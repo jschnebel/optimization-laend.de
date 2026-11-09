@@ -53,4 +53,5 @@ exclude:
   - "_abstracts/*.aux"
   - "_abstracts/*.log"
   - "_abstracts/*.out"
-  - "_abstracts/Abstract_Pauwels.pdf"
+  - "_abstracts/*.zip"
+  - "_abstracts/Abstract_*.pdf"
