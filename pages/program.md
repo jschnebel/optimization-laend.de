@@ -269,7 +269,7 @@ Abstracts of all talks are collected in the Book of Abstracts.
 <h2 class="program-section-title">Detailed program</h2>
 
 <div class="day-heading">Wednesday, November 25</div>
-<p class="day-room">Room 008.1, B6 30–32</p>
+<p class="day-room">Hörsaal B243, A5, 6</p>
 <table class="schedule-table long-table">
   <colgroup><col class="col-time"><col class="col-speaker"><col class="col-title"></colgroup>
   <thead>

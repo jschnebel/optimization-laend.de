@@ -99,23 +99,23 @@ permalink: /venue/
 <div class="venue-section">
   <h2>Wednesday, November 25</h2>
   <div class="venue-info-box">
-    <strong>Room:</strong> 008.1<br>
-    <strong>Building:</strong> B6, 30–32<br>
-    <strong>Address:</strong> B6 30–32, 68159 Mannheim, Germany<br>
+    <strong>Room:</strong> Hörsaal B243 (part B, 2nd floor)<br>
+    <strong>Building:</strong> A5, 6<br>
+    <strong>Address:</strong> A5, 6, 68159 Mannheim, Germany<br>
     <strong>Tram stop:</strong> Mannheim Schloss, two stops from Mannheim Hauptbahnhof
   </div>
   <p>
-    On Wednesday, the workshop takes place in <strong>Room 008.1</strong> in the University of Mannheim building <strong>B6, 30–32</strong>, in the city centre just a few steps from the palace.
+    On Wednesday, the workshop takes place in <strong>Hörsaal B243</strong> in the University of Mannheim building <strong>A5, 6</strong>, in the city centre just a few steps from the palace.
   </p>
   <div class="map-container">
     <iframe
-      src="https://maps.google.com/maps?q=B6%2030-32%2C%2068159%20Mannheim&z=17&output=embed"
+      src="https://maps.google.com/maps?q=A5%2C%206%2C%2068159%20Mannheim&z=17&output=embed"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
-  <a class="venue-map-link" href="https://www.google.com/maps/search/?api=1&query=B6%2030-32%2C%2068159%20Mannheim" target="_blank">Open in Google Maps &rarr;</a>
+  <a class="venue-map-link" href="https://www.google.com/maps/search/?api=1&query=A5%2C%206%2C%2068159%20Mannheim" target="_blank">Open in Google Maps &rarr;</a>
 </div>
 
 <div class="venue-section">
