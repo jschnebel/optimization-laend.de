@@ -196,7 +196,7 @@
 \noindent\begin{minipage}{\linewidth}
 \dayheading{Thursday, 26 November}{Fuchs-Festsaal (O 138), Mannheim Palace}
 \begin{daytable}
-\prog{08:35 -- 09:00}{Jalal Fadili}{TBA}{abs:fadili}
+\prog{08:35 -- 09:00}{Jalal Fadili}{Differentiating Minimal-Norm Solutions to Parametric Optimization Problems}{abs:fadili}
 \prog{09:00 -- 09:45}{Radu Ioan Boţ}{On the Interplay Between Continuous- and Discrete-Time Methods in Convex Optimization and Monotone Inclusions}{abs:bot}
 \prog{09:45 -- 10:10}{Behzad Azmi}{Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}{abs:azmi}
 \progbreak{10:10 -- 10:35}{Coffee break}
@@ -493,7 +493,15 @@ Economics}, pp.~243--260, Springer, 2026.
 % =====================================================================
 
 % ---------------------------------------------------------------------
-\tba{abs:fadili}{Thursday, 26 November \,·\, 08:35 -- 09:00}{Jalal Fadili}{ENSICAEN, Normandie Université, Caen}
+\talk{abs:fadili}{Thursday, 26 November \,·\, 08:35 -- 09:00}{Jalal Fadili}
+  {Differentiating Minimal-Norm Solutions to Parametric Optimization Problems}
+\authors{Jalal Fadili}
+\affil{}{ENSICAEN, Normandie Université, Caen}
+\vspace{1em}
+
+Differentiating through parametric optimization problems is central to bilevel programming and meta-learning, often accomplished using approximate implicit differentiation. The implicit function theorem requires inverting a partial Jacobian of the optimality condition, which fails when there are many solutions. Nonetheless, in such cases it is possible to relax invertibility to a strictly weaker uniform range condition, under which it is shown that the minimal-norm solution mapping admits generalized derivatives by using a limiting Tikhonov regularization argument and conservative set-valued field theory. With additional control on the eigenvalues of the generalized Hessians, a pseudoinverse formula is rigorously justified. This is established for a class of smooth convex objectives and extended to nonsmooth composite problems. These assumptions are verified for many problems of interest in data science and machine learning, including Least-Squares, Huber regression and LASSO.
+
+This is joint work with Antonio Silveti-Falls and Baptiste Plaquevent-Jourdain.
 
 % ---------------------------------------------------------------------
 \talk{abs:bot}{Thursday, 26 November \,·\, 09:00 -- 09:45}{Radu Ioan Boţ}
