@@ -208,7 +208,7 @@
 \prog{14:15 -- 14:40}{Nelly Pustelnik}{Adaptive Block-Coordinate Forward-Backward: Particular Case of Multilevel Block Strategy for Image Reconstruction}{abs:pustelnik}
 \prog{14:40 -- 15:05}{Stefania Petra}{Riemannian Multilevel Optimization}{abs:petra}
 \progbreak{15:05 -- 15:30}{Coffee break}
-\prog{15:30 -- 16:15}{Michael Hintermüller}{TBA}{abs:hintermueller}
+\prog{15:30 -- 16:15}{Michael Hintermüller}{Layerwise Goal-Oriented Adaptivity for Neural ODEs: An Optimal Control Perspective}{abs:hintermueller}
 \prog{16:15 -- 17:00}{Barbara Kaltenbacher}{Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems}{abs:kaltenbacher}
 \progbreak{17:00 -- 17:10}{Short break}
 \prog{17:10 -- 18:10}{Panel: Jürgen Hesser}{Point Cloud Registration With Machine Learning}{abs:hesser}
@@ -695,7 +695,15 @@ Y.~Elshiaty, S.~Petra, J.~P\"uschel, T.~Stykel and F.-J.~Vanmaele.
 \end{thebibliography}
 
 % ---------------------------------------------------------------------
-\tba{abs:hintermueller}{Thursday, 26 November \,·\, 15:30 -- 16:15}{Michael Hintermüller}{Weierstrass Institute (WIAS), Berlin}
+\talk{abs:hintermueller}{Thursday, 26 November \,·\, 15:30 -- 16:15}{Michael Hintermüller}
+  {Layerwise Goal-Oriented Adaptivity for Neural ODEs: An Optimal Control Perspective}
+\authors{Michael Hintermüller}
+\affil{}{Weierstrass Institute (WIAS), Berlin}
+\vspace{1em}
+
+In this work, we propose a novel layerwise adaptive construction method for neural network architectures. Our approach is based on a goal-oriented dual-weighted residual technique for the optimal control of neural differential equations. This leads to an ordinary differential equation constrained optimization problem with controls acting as coefficients and a specific loss function. We implement our approach on the basis of a DG(0) Galerkin discretization of the neural ODE, leading to an explicit Euler time marching scheme. For the optimization we use steepest descent. Finally, we apply our method to the construction of neural networks for the classification of data sets, where we present results for a selection of well known examples from the literature.
+
+This talk is based on joint work with M.~Hinze (Koblenz) and D.~Korolev (WIAS).
 
 % ---------------------------------------------------------------------
 \talk{abs:kaltenbacher}{Thursday, 26 November \,·\, 16:15 -- 17:00}{Barbara Kaltenbacher}

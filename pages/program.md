@@ -310,7 +310,7 @@ Abstracts of all talks are collected in the Book of Abstracts.
     <tr class="row-talk"><td class="time">14:15 – 14:40</td><td class="speaker">Nelly Pustelnik</td><td class="title">Adaptive Block-Coordinate Forward-Backward: Particular Case of Multilevel Block Strategy for Image Reconstruction</td></tr>
     <tr class="row-talk"><td class="time">14:40 – 15:05</td><td class="speaker">Stefania Petra</td><td class="title">Riemannian Multilevel Optimization</td></tr>
     <tr class="row-break"><td class="time">15:05 – 15:30</td><td colspan="2">Coffee break</td></tr>
-    <tr class="row-plenary"><td class="time">15:30 – 16:15</td><td class="speaker">Michael Hintermüller</td><td class="title tba">TBA</td></tr>
+    <tr class="row-plenary"><td class="time">15:30 – 16:15</td><td class="speaker">Michael Hintermüller</td><td class="title">Layerwise Goal-Oriented Adaptivity for Neural ODEs: An Optimal Control Perspective</td></tr>
     <tr class="row-plenary"><td class="time">16:15 – 17:00</td><td class="speaker">Barbara Kaltenbacher</td><td class="title">Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems</td></tr>
     <tr class="row-break"><td class="time">17:00 – 17:10</td><td colspan="2">Short break</td></tr>
     <tr class="row-event"><td class="time">17:10 – 18:10</td><td class="speaker">Panel: Jürgen Hesser</td><td class="title">Point Cloud Registration With Machine Learning</td></tr>
