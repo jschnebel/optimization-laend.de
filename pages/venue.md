@@ -167,3 +167,66 @@ permalink: /venue/
     </li>
   </ul>
 </div>
+
+<div class="venue-section">
+  <h2>Restaurant Recommendations</h2>
+  <p>Places we like for lunch and dinner around the venues (with links to Google Maps):</p>
+  <h3>Lunch</h3>
+  <ul class="hotel-list">
+    <li>
+      <strong>Safran</strong> &mdash; Afghan<br>
+      <a href="https://www.google.de/maps/place/Restaurant+Safran+-+Mannheim/@49.48571,8.4641806,641m/data=!3m1!1e3!4m6!3m5!1s0x4797cc22fd928b2d:0xb09696b17747253c!8m2!3d49.4854311!4d8.4660957!16s%2Fg%2F12qhgtyd5" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Café Sammo</strong> &mdash; Sandwiches, cake<br>
+      <a href="https://www.google.de/maps/place/Caf%C3%A9+Sammo+-+Mannheim/@49.4857035,8.4586211,641m/data=!3m1!1e3!4m6!3m5!1s0x4797cc22d0b36285:0xbf40d3c18f0db9ed!8m2!3d49.4859553!4d8.464286!16s%2Fg%2F11b5pj9w_l" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Restaurant Yi Xiang Yuan</strong> &mdash; Chinese noodles<br>
+      <a href="https://www.google.de/maps/place/Restaurant+Yi+Xiang+Yuan/@49.4849995,8.4672342,110m/data=!3m2!1e3!5s0x4797cc2242e58719:0xfc84c8c501a59c5d!4m6!3m5!1s0x4797cc2242fc39ab:0xc585c0f15d7c909c!8m2!3d49.48488!4d8.4674779!16s%2Fg%2F11dynbncsw" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>An Nam Vietnam Fusion</strong> &mdash; Vietnamese fusion<br>
+      <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4797cd1a0471a96f:0xa9667cdeab215881?sa=X&amp;ved=1t:8290&amp;ictx=111" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Costello Feinkost</strong> &mdash; Focaccia<br>
+      <a href="https://www.google.de/maps/place/Costello+Feinkost/@49.4909218,8.4618847,641m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4797cd1ba1ca0e8d:0xe343df343be500ed!8m2!3d49.4909183!4d8.4644596!16s%2Fg%2F11v_3c8667" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Café Sammo Zén</strong> &mdash; Sandwiches, cake<br>
+      <a href="https://www.google.de/maps/place/Caf%C3%A9+Sammo+Z%C3%A9n/@49.4857035,8.4586211,641m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4797cc3d104edebb:0x4451e79e748af58f!8m2!3d49.4857!4d8.461196!16s%2Fg%2F12hs8xfmg" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Baguelette Café &amp; Frühstück</strong> &mdash; Café, breakfast<br>
+      <a href="https://www.google.de/maps/place/Baguelette+Caf%C3%A9+%26+Fr%C3%BChst%C3%BCck/@49.4860324,8.462857,641m/data=!3m1!1e3!4m6!3m5!1s0x4797cd338a31fd8f:0x8658a7ee2459921c!8m2!3d49.487157!4d8.4624899!16s%2Fg%2F11qm37s9qs" target="_blank">Google Maps</a>
+    </li>
+  </ul>
+  <h3>Dinner</h3>
+  <ul class="hotel-list">
+    <li>
+      <strong>A second by Mäz</strong> &mdash; Chinese<br>
+      <a href="https://www.google.de/maps/place/a+Second+by+M%C3%84Z+%E4%B8%89%E6%9C%88%E4%BA%8C%E5%8F%B7/@49.4854346,8.4635208,641m/data=!3m1!1e3!4m6!3m5!1s0x4797cdd8b8ab837d:0x6042f8f330778fe1!8m2!3d49.4881901!4d8.4753614!16s%2Fg%2F11y0bfrp69" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Azteca Mexicana</strong> &mdash; Mexican<br>
+      <a href="https://www.google.de/maps/place/Restaurant+Azteca+Mexicana/@49.4879737,8.466305,641m/data=!3m1!1e3!4m6!3m5!1s0x4797cc2df45b84e1:0xd09de29a6bc9f33a!8m2!3d49.4860289!4d8.4654319!16s%2Fg%2F11bwkdw2hz" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Restaurant Starks</strong> &mdash; German<br>
+      <a href="https://www.google.de/maps/place/Restaurant+Starks/@49.4857305,8.4657563,641m/data=!3m2!1e3!4b1!4m6!3m5!1s0x4797cc23b260213f:0x16651ccb370cc252!8m2!3d49.485727!4d8.4683312!16s%2Fg%2F1hbpwqjtn" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>An Nam Vietnam Fusion</strong> &mdash; Vietnamese fusion<br>
+      <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x4797cd1a0471a96f:0xa9667cdeab215881?sa=X&amp;ved=1t:8290&amp;ictx=111" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>People Restaurant</strong><br>
+      <a href="https://www.google.de/maps/place/People+Restaurant+%26+Bar+an+der+Kunsthalle+Mannheim/@49.4859348,8.4667835,641m/data=!3m2!1e3!5s0x4797cc1fff95b50f:0xf997ed40fc25b3f2!4m6!3m5!1s0x4797cc1ffebc98c7:0x2d42925fde337977!8m2!3d49.483039!4d8.4751716!16s%2Fg%2F11wn7t80r_" target="_blank">Google Maps</a>
+    </li>
+    <li>
+      <strong>Smash Burger Mannheim</strong> &mdash; Burgers<br>
+      <a href="https://www.google.de/maps/place/Smash+Burger+Mannheim/@49.4854428,8.4596646,823m/data=!3m1!1e3!4m6!3m5!1s0x4797cdcf7d01a1a5:0xf6a5c46943093b00!8m2!3d49.4859176!4d8.4624705!16s%2Fg%2F11vyr5wxk7" target="_blank">Google Maps</a>
+    </li>
+  </ul>
+</div>
