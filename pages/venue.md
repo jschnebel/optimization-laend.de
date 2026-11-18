@@ -151,7 +151,7 @@ permalink: /venue/
 <div class="venue-section">
   <h2>Getting to Mannheim</h2>
   <div class="directions-note">
-    🚂 <strong>By train:</strong> Mannheim Main Station has direct ICE/IC connections to most large cities in Germany and neighbouring countries.
+    🚂 <strong>By train:</strong> Mannheim Main Station has direct ICE/IC connections to most large cities in Germany and neighbouring countries.<br><br>
     🚗 <strong>By car:</strong> Parking is available at the Parkhaus Stadthaus N 1 (Bismarckstraße 14).<br><br>
     ✈️ <strong>By plane:</strong> The closest major airport is <strong>Frankfurt Airport (FRA)</strong>, with direct train connections to Mannheim Hauptbahnhof (approx. 30–40 minutes). <strong>Karlsruhe/Baden-Baden Airport (FKB)</strong> is also an option, reachable from Mannheim by train in approx. 1 hour.
   </div>
