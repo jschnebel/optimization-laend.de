@@ -99,23 +99,28 @@ permalink: /venue/
 <div class="venue-section">
   <h2>Wednesday, November 25</h2>
   <div class="venue-info-box">
+    <strong>Registration:</strong> Foyer of Universitätsgebäude B6, 26<br>
+    <strong>Getting to registration:</strong> directly at the bus stop <em>Universität West</em> (bus lines 60 and 61 from Mannheim Hauptbahnhof), or a 10-minute walk from the tram stop <em>Mannheim Schloss</em><br>
     <strong>Room:</strong> Hörsaal B243 (part B, 2nd floor)<br>
     <strong>Building:</strong> A5, 6<br>
     <strong>Address:</strong> A5, 6, 68159 Mannheim, Germany<br>
     <strong>Tram stop:</strong> Mannheim Schloss, two stops from Mannheim Hauptbahnhof
   </div>
   <p>
-    On Wednesday, the workshop takes place in <strong>Hörsaal B243</strong> in the University of Mannheim building <strong>A5, 6</strong>, in the city centre just a few steps from the palace.
+    On Wednesday, registration takes place in the <strong>foyer of Universitätsgebäude B6, 26</strong> (<a href="https://www.google.de/maps/place/Universit%C3%A4tsgeb%C3%A4ude+B6,+26,+B6,+68159+Mannheim/@49.4856113,8.4618636,668m/data=!3m1!1e3!4m6!3m5!1s0x4797cc3c2107112d:0x643c825a486226b6!8m2!3d49.4877232!4d8.4577793!16s%2Fg%2F11yc5lqzn9" target="_blank">Google Maps</a>). From there, we go on to <strong>Hörsaal B243</strong> in building A5, 6.
+  </p>
+  <p>
+    The workshop itself takes place in <strong>Hörsaal B243</strong> in the University of Mannheim building <strong>A5, 6</strong>, in the city centre just a few steps from the palace.
   </p>
   <div class="map-container">
     <iframe
-      src="https://maps.google.com/maps?q=A5%2C%206%2C%2068159%20Mannheim&z=17&output=embed"
+      src="https://maps.google.com/maps?q=49.4877232,8.4577793&z=17&output=embed"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
-  <a class="venue-map-link" href="https://www.google.com/maps/search/?api=1&query=A5%2C%206%2C%2068159%20Mannheim" target="_blank">Open in Google Maps &rarr;</a>
+  <a class="venue-map-link" href="https://www.google.de/maps/place/Universit%C3%A4tsgeb%C3%A4ude+B6,+26,+B6,+68159+Mannheim/@49.4856113,8.4618636,668m/data=!3m1!1e3!4m6!3m5!1s0x4797cc3c2107112d:0x643c825a486226b6!8m2!3d49.4877232!4d8.4577793!16s%2Fg%2F11yc5lqzn9" target="_blank">Open in Google Maps &rarr;</a>
 </div>
 
 <div class="venue-section">
