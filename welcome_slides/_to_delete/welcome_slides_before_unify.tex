@@ -1,0 +1,180 @@
+% Welcome & information slides -- OptiLänd Workshop 2026
+% Compile with: latexmk -pdf welcome_slides.tex
+\documentclass[aspectratio=169,11pt]{beamer}
+\usetheme[progressbar=frametitle,numbering=none]{metropolis}
+\setbeamersize{text margin left=0.9cm,text margin right=0.9cm}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{qrcode}
+\usepackage{tikz}
+\usepackage{tgheros}         % clean sans font for pdflatex
+\urlstyle{same}
+
+% colours of the website
+\definecolor{optiblue}{HTML}{4A6FA5}
+\definecolor{optinavy}{HTML}{003056}
+\definecolor{optilight}{HTML}{DCE8F7}
+\definecolor{optigrey}{HTML}{F2F2F2}
+\setbeamercolor{frametitle}{bg=optinavy,fg=white}
+\setbeamercolor{progress bar}{fg=optiblue,bg=optilight}
+\setbeamercolor{alerted text}{fg=optiblue}
+\setbeamercolor{normal text}{fg=black!85}
+
+\graphicspath{{logos/}}
+
+\newcommand{\website}{https://jschnebel.github.io/optimization-laend.de}
+\newcommand{\websiteshort}{jschnebel.github.io/optimization-laend.de}
+
+% one row type per kind of program entry
+\newcommand{\talk}[1]{\rowcolor{optilight}#1 & \textbf{Talks}\\}
+\newcommand{\brk}[2]{\rowcolor{optigrey}{\color{black!55}#1} & \leavevmode{\itshape\color{black!55}#2}\\}
+\newcommand{\evt}[2]{\rowcolor{optiblue}{\color{white}#1} & \leavevmode{\color{white}\textbf{#2}}\\}
+
+\title{Welcome to Optimization in the Länd 2026}
+\subtitle{IFIP TC7 Workshop on Optimization and Inverse Problems}
+\date{25--27 November 2026 \quad\textbullet\quad Mannheim}
+
+
+\begin{document}
+
+% ---------------------------------------------------------------- title
+{
+\setbeamertemplate{background}{%
+  % no "remember picture": works in a single pdflatex run
+  \begin{tikzpicture}
+    \clip (0,0) rectangle (\paperwidth,\paperheight);
+    \node[anchor=center,opacity=0.18,inner sep=0pt] at (0.5\paperwidth,0.5\paperheight)
+      {\includegraphics[width=\paperwidth]{schloss_mannheim.jpg}};
+  \end{tikzpicture}}
+\maketitle
+}
+
+% ---------------------------------------------------------------- program
+\begin{frame}{Program at a glance}
+\footnotesize
+\renewcommand{\arraystretch}{1.1}
+\begin{columns}[T,onlytextwidth]
+\begin{column}{0.325\textwidth}
+  \textbf{\color{optinavy}Wednesday, 25 Nov}\\
+  {\scriptsize\color{black!60}Hörsaal B243, A5,\,6}\\[3pt]
+  \begin{tabularx}{\linewidth}{@{}l >{\raggedright\arraybackslash}X@{}}
+    \brk{12:00--13:00}{Welcome}
+    \talk{13:00--14:35}
+    \brk{14:35--15:05}{Coffee break}
+    \talk{15:05--16:40}
+    \brk{16:40--17:00}{Coffee break}
+    \talk{17:00--18:10}
+  \end{tabularx}
+\end{column}
+\begin{column}{0.325\textwidth}
+  \textbf{\color{optinavy}Thursday, 26 Nov}\\
+  {\scriptsize\color{black!60}Fuchs-Festsaal (O\,138), Schloss}\\[3pt]
+  \begin{tabularx}{\linewidth}{@{}l >{\raggedright\arraybackslash}X@{}}
+    \talk{08:35--10:10}
+    \brk{10:10--10:35}{Coffee break}
+    \talk{10:35--12:30}
+    \brk{12:30--13:30}{Lunch break}
+    \talk{13:30--15:05}
+    \brk{15:05--15:30}{Coffee break}
+    \talk{15:30--17:00}
+    \brk{17:00--17:10}{Short break}
+    \evt{17:10--18:10}{Panel}
+  \end{tabularx}
+\end{column}
+\begin{column}{0.325\textwidth}
+  \textbf{\color{optinavy}Friday, 27 Nov}\\
+  {\scriptsize\color{black!60}Fuchs-Festsaal (O\,138), Schloss}\\[3pt]
+  \begin{tabularx}{\linewidth}{@{}l >{\raggedright\arraybackslash}X@{}}
+    \talk{08:30--10:05}
+    \brk{10:05--10:30}{Coffee break}
+    \talk{10:30--11:40}
+    \brk{11:40--13:10}{Lunch break}
+    \talk{13:10--15:05}
+    \evt{from 15:05}{Discussion \& Closing}
+  \end{tabularx}
+\end{column}
+\end{columns}
+
+\vfill
+
+Detailed program and Book of Abstracts: \url{\websiteshort/program/}
+\end{frame}
+
+% ---------------------------------------------------------------- venue
+\begin{frame}{Thursday \& Friday: Fuchs-Festsaal in the Palace}
+\begin{columns}[c,onlytextwidth]
+\begin{column}{0.4\textwidth}
+  \small
+  \renewcommand{\arraystretch}{1.35}
+  \begin{tabular}{@{}>{\color{optinavy}\bfseries}l@{\hspace{8pt}}l@{}}
+    Room      & Fuchs-Festsaal (O\,138)\\
+    Building  & Mannheim Palace\\
+    Address   & Carl-Theodor-Platz\\
+    Tram stop & Mannheim Schloss\\[6pt]
+    Thursday  & starts at \textbf{08:35}\\
+    Friday    & starts at \textbf{08:30}
+  \end{tabular}
+
+  \vspace{14pt}
+  \qrcode[height=1.8cm]{\website/venue/}
+\end{column}
+\begin{column}{0.57\textwidth}
+  \includegraphics[width=\linewidth]{Eingang_Castle.jpg}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------- food
+\begin{frame}{Lunch \& dinner}
+\begin{columns}[c,onlytextwidth]
+\begin{column}{0.62\textwidth}
+  Lunch and dinner are on your own -- we have collected our favourite places close to the venues on the website:
+  \begin{itemize}
+    \item[\color{optiblue}$\blacktriangleright$] \textbf{Lunch:} Afghan, Chinese noodles, Vietnamese, focaccia, sandwiches \& cake, burgers, \dots
+    \item[\color{optiblue}$\blacktriangleright$] \textbf{Dinner:} Chinese, Mexican, German, Vietnamese, \dots
+  \end{itemize}
+  \vspace{4pt}
+  {\small Lunch breaks: \quad Thu 12:30--13:30 \quad Fri 11:40--13:10}\\[8pt]
+\end{column}
+\begin{column}{0.33\textwidth}
+  \centering
+  \qrcode[height=3.4cm]{\website/venue/}\\[4pt]
+  {\scriptsize\color{black!60}Restaurant recommendations\\(bottom of the venue page)}
+\end{column}
+\end{columns}
+\end{frame}
+
+% ---------------------------------------------------------------- sponsors
+\begin{frame}{Thank you to our sponsors}
+\centering
+\vspace{6pt}
+\begin{minipage}[c]{0.3\textwidth}\centering
+  \includegraphics[width=\linewidth]{Uni-mannheim_logo.pdf}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.34\textwidth}\centering
+  \includegraphics[width=\linewidth]{WEB-Kopfgrafik-IWR_Desktop_EN.pdf}
+\end{minipage}\hfill
+\begin{minipage}[c]{0.28\textwidth}\centering
+  \includegraphics[width=\linewidth]{DFG-logo-blau.pdf}
+\end{minipage}
+
+\vspace{1.0cm}
+\begin{minipage}[c]{0.18\textwidth}\centering
+  \includegraphics[width=\linewidth]{logoIFIP.png}
+\end{minipage}%
+\hspace{0.4cm}\begin{minipage}[c]{0.5\textwidth}
+  \raggedright\small IFIP TC\,7: System Modeling and Optimization\\
+  {\footnotesize\color{black!60}WG\,7.4 Inverse Problems \textbullet\ WG\,7.8 Nonlinear Optimization}
+\end{minipage}
+
+\vfill
+{\small Also supported by the \textbf{Data Science Center} of the University of Mannheim.}
+\vspace{4pt}
+\end{frame}
+
+\end{document}

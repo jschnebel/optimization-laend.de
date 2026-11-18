@@ -103,8 +103,7 @@ permalink: /venue/
     <strong>Getting to registration:</strong> directly at the bus stop <em>Universität West</em> (bus lines 60 and 61 from Mannheim Hauptbahnhof), or a 10-minute walk from the tram stop <em>Mannheim Schloss</em><br>
     <strong>Room:</strong> Hörsaal B243 (part B, 2nd floor)<br>
     <strong>Building:</strong> A5, 6<br>
-    <strong>Address:</strong> A5, 6, 68159 Mannheim, Germany<br>
-    <strong>Tram stop:</strong> Mannheim Schloss, two stops from Mannheim Hauptbahnhof
+    <strong>Address:</strong> A5, 6, 68159 Mannheim, Germany
   </div>
   <p>
     On Wednesday, registration takes place in the <strong>foyer of Universitätsgebäude B6, 26</strong> (<a href="https://www.google.de/maps/place/Universit%C3%A4tsgeb%C3%A4ude+B6,+26,+B6,+68159+Mannheim/@49.4856113,8.4618636,668m/data=!3m1!1e3!4m6!3m5!1s0x4797cc3c2107112d:0x643c825a486226b6!8m2!3d49.4877232!4d8.4577793!16s%2Fg%2F11yc5lqzn9" target="_blank">Google Maps</a>). From there, we go on to <strong>Hörsaal B243</strong> in building A5, 6.
@@ -134,6 +133,10 @@ permalink: /venue/
   <p>
     On Thursday and Friday, the workshop takes place in the <strong>Fuchs-Festsaal (O 138)</strong> in the Mannheim Palace (<em>Schloss</em>), the University of Mannheim's main building.
   </p>
+  <figure style="margin: 1rem 0;">
+    <img src="{{ site.baseurl }}/assets/Eingang_Castle_web.jpg" alt="Aerial view of Mannheim Palace; a red arrow marks the entrance to the Fuchs-Festsaal" style="width: 100%; height: auto; border-radius: 4px;" />
+    <figcaption style="font-size: 0.85rem; color: #666; margin-top: 0.4rem;">The red arrow marks the entrance to the Fuchs-Festsaal.</figcaption>
+  </figure>
   <div class="map-container">
     <iframe
       src="https://maps.google.com/maps?q=Carl-Theodor-Platz%2C%20Mannheim&z=17&output=embed"
@@ -148,7 +151,7 @@ permalink: /venue/
 <div class="venue-section">
   <h2>Getting to Mannheim</h2>
   <div class="directions-note">
-    🚂 <strong>By train:</strong> Mannheim Hauptbahnhof has direct ICE/IC connections to most large cities in Germany and neighbouring countries. From Hauptbahnhof, both venues are two tram stops away (stop <em>Mannheim Schloss</em>) or a short walk.<br><br>
+    🚂 <strong>By train:</strong> Mannheim Main Station has direct ICE/IC connections to most large cities in Germany and neighbouring countries.
     🚗 <strong>By car:</strong> Parking is available at the Parkhaus Stadthaus N 1 (Bismarckstraße 14).<br><br>
     ✈️ <strong>By plane:</strong> The closest major airport is <strong>Frankfurt Airport (FRA)</strong>, with direct train connections to Mannheim Hauptbahnhof (approx. 30–40 minutes). <strong>Karlsruhe/Baden-Baden Airport (FKB)</strong> is also an option, reachable from Mannheim by train in approx. 1 hour.
   </div>
@@ -206,6 +209,10 @@ permalink: /venue/
       <strong>Baguelette Café &amp; Frühstück</strong> &mdash; Café, breakfast<br>
       <a href="https://www.google.de/maps/place/Baguelette+Caf%C3%A9+%26+Fr%C3%BChst%C3%BCck/@49.4860324,8.462857,641m/data=!3m1!1e3!4m6!3m5!1s0x4797cd338a31fd8f:0x8658a7ee2459921c!8m2!3d49.487157!4d8.4624899!16s%2Fg%2F11qm37s9qs" target="_blank">Google Maps</a>
     </li>
+    <li>
+      <strong>Smash Burger Mannheim</strong> &mdash; Burgers<br>
+      <a href="https://www.google.de/maps/place/Smash+Burger+Mannheim/@49.4854428,8.4596646,823m/data=!3m1!1e3!4m6!3m5!1s0x4797cdcf7d01a1a5:0xf6a5c46943093b00!8m2!3d49.4859176!4d8.4624705!16s%2Fg%2F11vyr5wxk7" target="_blank">Google Maps</a>
+    </li>
   </ul>
   <h3>Dinner</h3>
   <ul class="hotel-list">
@@ -228,10 +235,6 @@ permalink: /venue/
     <li>
       <strong>People Restaurant</strong><br>
       <a href="https://www.google.de/maps/place/People+Restaurant+%26+Bar+an+der+Kunsthalle+Mannheim/@49.4859348,8.4667835,641m/data=!3m2!1e3!5s0x4797cc1fff95b50f:0xf997ed40fc25b3f2!4m6!3m5!1s0x4797cc1ffebc98c7:0x2d42925fde337977!8m2!3d49.483039!4d8.4751716!16s%2Fg%2F11wn7t80r_" target="_blank">Google Maps</a>
-    </li>
-    <li>
-      <strong>Smash Burger Mannheim</strong> &mdash; Burgers<br>
-      <a href="https://www.google.de/maps/place/Smash+Burger+Mannheim/@49.4854428,8.4596646,823m/data=!3m1!1e3!4m6!3m5!1s0x4797cdcf7d01a1a5:0xf6a5c46943093b00!8m2!3d49.4859176!4d8.4624705!16s%2Fg%2F11vyr5wxk7" target="_blank">Google Maps</a>
     </li>
   </ul>
 </div>
