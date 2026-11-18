@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[a4paper,margin=1.8cm,top=1.6cm,bottom=1.6cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{tabularx,array}
+\usepackage{ragged2e}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+
+\definecolor{main}{HTML}{4A6FA5}
+\definecolor{plenary}{HTML}{DCE8F7}
+\definecolor{breakbg}{HTML}{F2F2F2}
+\definecolor{event}{HTML}{EEF3FA}
+\definecolor{breaktxt}{HTML}{777777}
+
+\renewcommand{\arraystretch}{1.35}
+\setlength{\tabcolsep}{6pt}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+
+% rows: time & speaker & title
+\newcommand{\talk}[3]{#1 & \textbf{#2} & #3\\\hline}
+\newcommand{\plenary}[3]{\rowcolor{plenary}#1 & \textbf{#2} & #3\\\hline}
+\newcommand{\pause}[2]{\rowcolor{breakbg}\textcolor{breaktxt}{#1} & \multicolumn{2}{l}{\textcolor{breaktxt}{\itshape #2}}\\\hline}
+\newcommand{\event}[3]{\rowcolor{event}#1 & \textbf{#2} & #3\\\hline}
+
+\newenvironment{daytable}[2]{%
+  \par\medskip\noindent\minipage{\textwidth}
+  {\large\bfseries\color{main}#1}\par\smallskip
+  \arrayrulecolor{lightgray}
+  \tabularx{\textwidth}{@{\hspace{4pt}}>{\small}p{2.25cm}>{\small}p{4.0cm}>{\small}Y}
+  \rowcolor{main}\textcolor{white}{\bfseries Time} & \textcolor{white}{\bfseries Speaker} & \textcolor{white}{\bfseries Title}\\
+}{\endtabularx\endminipage\par}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{main} OptiLänd Workshop 2026}\\[3pt]
+  {\large Program}\\[2pt]
+  {\small Mannheim, November 25--27, 2026}
+\end{center}
+
+\begin{daytable}{Wednesday, November 25}{Hörsaal B243, A5, 6}
+\pause{12:00 -- 13:00}{Welcome / Snacks}
+\plenary{13:00 -- 13:45}{Stefan Ulbrich}{Adjoint-based Methods for Optimal Control of Hyperbolic Systems of Conservation Laws}
+\talk{13:45 -- 14:10}{Peter Ochs}{Learning Optimization Algorithms with Average Case Convergence Rates}
+\talk{14:10 -- 14:35}{Edouard Pauwels}{Estimation of Monge Transport Maps with Empirical Brenier Potentials}
+\pause{14:35 -- 15:05}{Coffee break}
+\talk{15:05 -- 15:30}{Silvia Villa}{Zeroth Order Proximal Point Algorithm}
+\talk{15:30 -- 15:55}{Pavel Dvurechensky}{Semismooth Newton Methods with Global Convergence Rates}
+\plenary{15:55 -- 16:40}{Panagiotis Patrinos}{Nonlinear Preconditioning for Optimization and Monotone Inclusions}
+\pause{16:40 -- 17:00}{Coffee break}
+\plenary{17:00 -- 17:45}{Martin Schmidt}{Calmness of the Solution-Set Mapping for Linear Bilevel and Pricing Problems}
+\talk{17:45 -- 18:10}{Tristan van Leeuwen}{An Invertible Generative Model for Forward and Inverse Problems}
+\end{daytable}
+
+\vspace{7mm}
+\begin{daytable}{Thursday, November 26}{Fuchs-Festsaal (O 138), Mannheim Palace}
+\talk{08:35 -- 09:00}{Jalal Fadili}{Differentiating Minimal-Norm Solutions to Parametric Optimization Problems}
+\plenary{09:00 -- 09:45}{Radu Boţ}{On the Interplay Between Continuous- and Discrete-Time Methods in Convex Optimization and Monotone Inclusions}
+\talk{09:45 -- 10:10}{Behzad Azmi}{Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}
+\pause{10:10 -- 10:35}{Coffee break}
+\plenary{10:35 -- 11:20}{Dirk Lorenz}{How to Make (Bregman-)Kaczmarz Methods Fast}
+\talk{11:20 -- 11:45}{Tuomo Valkonen}{Point Source Localisation with Unbalanced Optimal Transport}
+\plenary{11:45 -- 12:30}{Kristian Bredies}{Infinite Infimal Convolution Regularization: Concepts, Models and Optimization}
+\pause{12:30 -- 13:30}{Lunch break}
+\end{daytable}
+
+\newpage
+\begin{daytable}{Thursday, November 26 (continued)}{Fuchs-Festsaal (O 138), Mannheim Palace}
+\plenary{13:30 -- 14:15}{Matthias Ehrhardt}{Lifting Input-Convex Neural Network Regularizers}
+\talk{14:15 -- 14:40}{Nelly Pustelnik}{Adaptive Block-Coordinate Forward-Backward: Particular Case of Multilevel Block Strategy for Image Reconstruction}
+\talk{14:40 -- 15:05}{Stefania Petra}{Riemannian Multilevel Optimization}
+\pause{15:05 -- 15:30}{Coffee break}
+\plenary{15:30 -- 16:15}{Michael Hintermüller}{Layerwise Goal-Oriented Adaptivity for Neural ODEs: An Optimal Control Perspective}
+\plenary{16:15 -- 17:00}{Barbara Kaltenbacher}{Locally-Averaged McCormick Relaxations for Discretization-Regularized Inverse Problems}
+\pause{17:00 -- 17:10}{Short break}
+\event{17:10 -- 18:10}{Panel: Jürgen Hesser}{Point Cloud Registration With Machine Learning}
+\end{daytable}
+
+\vspace{7mm}
+\begin{daytable}{Friday, November 27}{Fuchs-Festsaal (O 138), Mannheim Palace}
+\talk{08:30 -- 08:55}{Anton Schiela}{Optimal Control of Variational Problems on Manifolds}
+\plenary{08:55 -- 09:40}{Luca Calatroni}{Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions}
+\talk{09:40 -- 10:05}{Markus Haltmeier}{Locally-Supervised Global Image Reconstruction}
+\pause{10:05 -- 10:30}{Coffee break}
+\talk{10:30 -- 10:55}{Marcello Carioni}{Atomic Gradient Flows: Gradient Flows on Sparse Representations}
+\plenary{10:55 -- 11:40}{Bernadette Hahn-Rigaud}{Challenges in Dynamic Inverse Problems}
+\pause{11:40 -- 13:10}{Lunch break}
+\talk{13:10 -- 13:35}{Simon Weißmann}{Derivative-Free Bilevel Learning for Inverse Problems: From Stochastic Gradient Estimation to Multilevel Methods}
+\plenary{13:35 -- 14:20}{Bastian von Harrach}{From Inverse Problems in PDEs to Convex Semidefinite Optimization}
+\plenary{14:20 -- 15:05}{Russell Luke}{Quantitative Convergence of Proximal Splitting Iterations in Uniformly Convex Metric Spaces}
+\event{from 15:05}{Discussion / Closing}{}
+\end{daytable}
+
+\end{document}
