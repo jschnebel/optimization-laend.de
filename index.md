@@ -45,7 +45,7 @@ The workshop is planned as a joint meeting between the IFIP-TC7 working groups o
 <span>• Pontus Giselsson (U Lund)</span>
 
 <span>• Bernadette Hahn-Rigaud (U Stuttgart)</span>
-<span>• Markus Haltmeier (U Innsbruck)</span>
+<span>• Canceled: <del>Markus Haltmeier (U Innsbruck)</del></span>
 
 <span>• Bastian von Harrach (U Frankfurt)</span>
 <span>• Michael Hintermüller (WIAS Berlin)</span>

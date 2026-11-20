@@ -14,6 +14,7 @@
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{fancyhdr}
+\usepackage[normalem]{ulem}
 \usepackage{hyperref}
 
 \definecolor{accent}{HTML}{4A6FA5}
@@ -198,7 +199,7 @@
 \begin{daytable}
 \prog{08:35 -- 09:00}{Jalal Fadili}{Differentiating Minimal-Norm Solutions to Parametric Optimization Problems}{abs:fadili}
 \prog{09:00 -- 09:45}{Radu Ioan Boţ}{On the Interplay Between Continuous- and Discrete-Time Methods in Convex Optimization and Monotone Inclusions}{abs:bot}
-\prog{09:45 -- 10:10}{Behzad Azmi}{Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}{abs:azmi}
+\prog{09:45 -- 10:10}{Moved to Fri 09:40: \sout{Behzad Azmi}}{\sout{Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}}{abs:azmi}
 \progbreak{10:10 -- 10:35}{Coffee break}
 \prog{10:35 -- 11:20}{Dirk Lorenz}{How to Make (Bregman-)Kaczmarz Methods Fast}{abs:lorenz}
 \prog{11:20 -- 11:45}{Tuomo Valkonen}{Point Source Localisation with Unbalanced Optimal Transport}{abs:valkonen}
@@ -221,7 +222,8 @@
 \begin{daytable}
 \prog{08:30 -- 08:55}{Anton Schiela}{Optimal Control of Variational Problems on Manifolds}{abs:schiela}
 \prog{08:55 -- 09:40}{Luca Calatroni}{Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions}{abs:calatroni}
-\prog{09:40 -- 10:05}{Markus Haltmeier}{Locally-Supervised Global Image Reconstruction}{abs:haltmeier}
+\prog{09:40 -- 10:05}{Canceled: \sout{Markus Haltmeier}}{\sout{Locally-Supervised Global Image Reconstruction}}{abs:haltmeier}
+\prog{09:40 -- 10:05}{Behzad Azmi}{Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization (moved from Thursday)}{abs:azmi}
 \progbreak{10:05 -- 10:30}{Coffee break}
 \prog{10:30 -- 10:55}{Marcello Carioni}{Atomic Gradient Flows: Gradient Flows on Sparse Representations}{abs:carioni}
 \prog{10:55 -- 11:40}{Bernadette Hahn-Rigaud}{Challenges in Dynamic Inverse Problems}{abs:hahnrigaud}
@@ -514,19 +516,6 @@ This is joint work with Antonio Silveti-Falls and Baptiste Plaquevent-Jourdain.
 In this talk, we explore the interplay between continuous-time and discrete-time models for solving convex optimization problems and monotone inclusions. We discuss strategies for achieving faster convergence rates across the different settings, as well as issues related to the convergence of trajectories and iterates.
 
 % ---------------------------------------------------------------------
-\talk{abs:azmi}{Thursday, 26 November \,·\, 09:45 -- 10:10}{Behzad Azmi}
-  {Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}
-\authors{\underline{Behzad Azmi}\textsuperscript{1}, Alberto De Marchi\textsuperscript{2}}
-\affil{1}{Department of Mathematics and Statistics, University of Konstanz}
-\affil{2}{Department of Aerospace Engineering, University of the Bundeswehr Munich}
-\contact{behzad.azmi@uni-konstanz.de}
-\keywords{proximal methods, interior-point methods, PDE constrained optimization, complexity}
-
-We present an inexact interior-point method for a class of nonsmooth nonconvex optimization problems with conic inequality constraints. The problem is posed in a Hilbert space, while the inequality constraint is induced by an order cone in a Banach lattice. The objective combines a smooth term with a convex nonsmooth term whose proximal mapping is computable. The method is based on barrier-regularized subproblems, which are solved inexactly by a proximal-gradient scheme.
-
-We consider both logarithmic and power-type barrier functions and establish the analytical properties required for the convergence and complexity analysis. Under suitable constraint qualifications, we show that the primal iterates and the associated barrier multipliers satisfy quantitative approximate KKT conditions. Based on these estimates, we establish convergence to stationary points and derive complexity bounds for the full outer--inner scheme, combining the barrier-parameter updates with the inexact proximal-gradient solution of the subproblems. Numerical examples from finite-dimensional nonlinear optimization and PDE-constrained optimization with pointwise state constraints illustrate the theoretical results.
-
-% ---------------------------------------------------------------------
 \talk{abs:lorenz}{Thursday, 26 November \,·\, 10:35 -- 11:20}{Dirk Lorenz}
   {How to Make (Bregman-)Kaczmarz Methods Fast}
 \authors{Dirk Lorenz}
@@ -781,9 +770,9 @@ Many learning approaches to inverse problems are bilevel problems, such as learn
 This is joint work with C.~Daniele and S.~Villa (MaLGa, University of Genoa), and S.~Vaiter (CNRS).
 
 % ---------------------------------------------------------------------
-\talk{abs:haltmeier}{Friday, 27 November \,·\, 09:40 -- 10:05}{Markus Haltmeier}
+\talk{abs:haltmeier}{\textbf{CANCELED} \,·\, \sout{Friday, 27 November \,·\, 09:40 -- 10:05}}{Canceled: Markus Haltmeier}
   {Locally-Supervised Global Image Reconstruction}
-\authors{Markus Haltmeier}
+\authors{Canceled: \sout{Markus Haltmeier}}
 \affil{}{Department of Mathematics, Universität Innsbruck, Austria}
 \contact{markus.haltmeier@uibk.ac.at}
 \keywords{inverse problems, partially-supervised learning, invariances, image upsampling, photoacoustic microscopy}
@@ -831,6 +820,19 @@ L.~Krainer and M.~Haltmeier.
 \newblock {\em Inverse Problems}, 2026.
 \newblock \url{https://doi.org/10.1088/1361-6420/ae6fe1}
 \end{thebibliography}
+
+% ---------------------------------------------------------------------
+\talk{abs:azmi}{Friday, 27 November \,·\, 09:40 -- 10:05 \,·\, moved from Thursday}{Behzad Azmi}
+  {Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization}
+\authors{\underline{Behzad Azmi}\textsuperscript{1}, Alberto De Marchi\textsuperscript{2}}
+\affil{1}{Department of Mathematics and Statistics, University of Konstanz}
+\affil{2}{Department of Aerospace Engineering, University of the Bundeswehr Munich}
+\contact{behzad.azmi@uni-konstanz.de}
+\keywords{proximal methods, interior-point methods, PDE constrained optimization, complexity}
+
+We present an inexact interior-point method for a class of nonsmooth nonconvex optimization problems with conic inequality constraints. The problem is posed in a Hilbert space, while the inequality constraint is induced by an order cone in a Banach lattice. The objective combines a smooth term with a convex nonsmooth term whose proximal mapping is computable. The method is based on barrier-regularized subproblems, which are solved inexactly by a proximal-gradient scheme.
+
+We consider both logarithmic and power-type barrier functions and establish the analytical properties required for the convergence and complexity analysis. Under suitable constraint qualifications, we show that the primal iterates and the associated barrier multipliers satisfy quantitative approximate KKT conditions. Based on these estimates, we establish convergence to stationary points and derive complexity bounds for the full outer--inner scheme, combining the barrier-parameter updates with the inexact proximal-gradient solution of the subproblems. Numerical examples from finite-dimensional nonlinear optimization and PDE-constrained optimization with pointwise state constraints illustrate the theoretical results.
 
 % ---------------------------------------------------------------------
 \talk{abs:carioni}{Friday, 27 November \,·\, 10:30 -- 10:55}{Marcello Carioni}
