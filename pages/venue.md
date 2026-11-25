@@ -213,6 +213,10 @@ permalink: /venue/
       <strong>Smash Burger Mannheim</strong> &mdash; Burgers<br>
       <a href="https://www.google.de/maps/place/Smash+Burger+Mannheim/@49.4854428,8.4596646,823m/data=!3m1!1e3!4m6!3m5!1s0x4797cdcf7d01a1a5:0xf6a5c46943093b00!8m2!3d49.4859176!4d8.4624705!16s%2Fg%2F11vyr5wxk7" target="_blank">Google Maps</a>
     </li>
+    <li>
+      <strong>Viva la Pasta Da Lidia</strong> &mdash; Homemade pasta<br>
+      <a href="https://www.google.de/maps/place/Viva+la+Pasta+Da+Lidia/@49.4856435,8.4641876,17z/data=!3m1!4b1!4m6!3m5!1s0x4797cc20f94453b9:0x86173dd37e1abf68!8m2!3d49.48564!4d8.4667625!16s%2Fg%2F11c0vpz1br" target="_blank">Google Maps</a>
+    </li>
   </ul>
   <h3>Dinner</h3>
   <ul class="hotel-list">
