@@ -326,7 +326,7 @@ Abstracts of all talks are collected in the Book of Abstracts.
   </thead>
   <tbody>
     <tr class="row-talk"><td class="time">08:30 – 08:55</td><td class="speaker">Anton Schiela</td><td class="title">Optimal Control of Variational Problems on Manifolds</td></tr>
-    <tr class="row-plenary"><td class="time">08:55 – 09:40</td><td class="speaker">Luca Calatroni</td><td class="title">Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions</td></tr>
+    <tr class="row-plenary"><td class="time">08:55 – 09:40</td><td class="speaker">Luca Calatroni</td><td class="title">Deep Equilibrium Models via Mirror Descent: on the choice of the Bregman geometry</td></tr>
     <tr class="row-talk"><td class="time">09:40 – 10:05</td><td class="speaker">Canceled: <del>Markus Haltmeier</del></td><td class="title"><del>Locally-Supervised Global Image Reconstruction</del></td></tr>
     <tr class="row-talk"><td class="time">09:40 – 10:05</td><td class="speaker">Behzad Azmi</td><td class="title">Inexact Interior-Point Proximal Methods for Cone-Constrained Nonsmooth Optimization</td></tr>
     <tr class="row-break"><td class="time">10:05 – 10:30</td><td colspan="2">Coffee break</td></tr>

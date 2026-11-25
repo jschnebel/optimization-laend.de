@@ -6,17 +6,12 @@
 \begin{document}
 
 \begin{center}
-  {\Large\bfseries Algorithmic Differentiation for Bilevel Problems with Non-Unique Lower-Level Solutions}
+  {\Large\bfseries Deep Equilibrium Models via Mirror Descent: on the choice of the Bregman geometry}
 \end{center}
 
 \bigskip
 
 \noindent
-Many learning approaches to inverse problems are bilevel problems, such as learning regularization parameters or training unrolled networks. Their hypergradients are often computed by algorithmic differentiation: differentiating through the iterations of the algorithm that solves the lower-level problem. This works well when the lower-level solution is unique. In underdetermined or degenerate problems, however, many solutions exist, and the derivative depends on which one the algorithm picks. We show that algorithmic differentiation still makes sense in this case. It converges to the derivative of the solution selected by the algorithm, which reflects the algorithm's geometry and initialization. We make this precise for (preconditioned) gradient descent, discuss extensions to mirror descent for constrained problems, and illustrate the results on exemplar inverse problems.
-
-\medskip
-
-\noindent
-This is joint work with C.~Daniele and S.~Villa (MaLGa, University of Genoa), and S.~Vaiter (CNRS).
+Deep Equilibrium Models (DEQs) are popular techniques often used in the context of image reconstruction to learn image regularizers as fixed points of an optimization algorithm. Their convergence usually relies on the contractivity of Euclidean (proximal) gradient steps, but this breaks down when the data term is not Euclidean-smooth, for instance in the case of image reconstruction under Poisson noise, where the fidelity is a Kullback--Leibler divergence. In this case we turn to Mirror Descent whose iteration becomes the building block of a DEQ with a learned, nonconvex regularizer. Its convergence is studied through relative smoothness and a Kurdyka--{\L}ojasiewicz analysis adapted to non-closed domains. A central question then arises: which mirror map should one use? We discuss several common choices such as Burg's/shifted Burg's and Boltzmann--Shannon entropies, discussing for each gains and costs, both in theory and in practice.
 
 \end{document}
