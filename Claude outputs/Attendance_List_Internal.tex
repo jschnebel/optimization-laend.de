@@ -1,0 +1,73 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{combelow}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[a4paper,margin=1.6cm,top=1.4cm,bottom=1.6cm]{geometry}
+\usepackage[table]{xcolor}
+\usepackage{longtable,array}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\setlength{\parindent}{0pt}
+
+\definecolor{main}{HTML}{4A6FA5}
+\definecolor{rowalt}{HTML}{F4F7FB}
+
+\pagestyle{fancy}\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\footnotesize\color{gray} OptiLänd Workshop 2026 -- Attendance list (Internal Uni Mannheim)}
+
+\newcommand{\chk}{\framebox[4.5mm]{\rule{0pt}{2.6mm}}}
+\renewcommand{\arraystretch}{1}
+\setlength{\tabcolsep}{6pt}
+\newcolumntype{N}{>{\raggedright\arraybackslash}p{5.6cm}}
+\newcolumntype{C}{>{\centering\arraybackslash}p{1.55cm}}
+\newcolumntype{S}{>{\raggedright\arraybackslash}p{5.3cm}}
+% every row gets a fixed height so there is room to sign
+\newcommand{\rowh}{\rule[-4.1mm]{0pt}{9.6mm}}
+
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{main} OptiLänd Workshop 2026}\\[3pt]
+  {\large Attendance list (Internal Uni Mannheim)}\\[2pt]
+  {\small Universität Mannheim, November 25--27, 2026}
+\end{center}
+\vspace{1mm}
+
+\arrayrulecolor{lightgray}
+\rowcolors{2}{white}{rowalt}
+\begin{longtable}{|N|C|C|C|S|}
+\hline
+\rowcolor{main}\textcolor{white}{\bfseries Name}\rule[-2.5mm]{0pt}{9mm} &
+\textcolor{white}{\bfseries Wed}\newline\textcolor{white}{\small Nov 25} &
+\textcolor{white}{\bfseries Thu}\newline\textcolor{white}{\small Nov 26} &
+\textcolor{white}{\bfseries Fri}\newline\textcolor{white}{\small Nov 27} &
+\textcolor{white}{\bfseries Signature}\\\hline
+\endhead
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+ & \chk & \chk & \chk & \rowh\\\hline
+\end{longtable}
+\end{document}
