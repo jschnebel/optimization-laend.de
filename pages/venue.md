@@ -125,13 +125,14 @@ permalink: /venue/
 <div class="venue-section">
   <h2>Thursday &amp; Friday, November 26–27</h2>
   <div class="venue-info-box">
+    <strong>Registration:</strong> directly at the Fuchs-Festsaal (O 138)<br>
     <strong>Room:</strong> Fuchs-Festsaal (O 138)<br>
     <strong>Building:</strong> Schloss (Mannheim Palace)<br>
     <strong>Address:</strong> Carl-Theodor-Platz, Mannheim, Germany<br>
     <strong>Tram stop:</strong> Mannheim Schloss, two stops from Mannheim Hauptbahnhof
   </div>
   <p>
-    On Thursday and Friday, the workshop takes place in the <strong>Fuchs-Festsaal (O 138)</strong> in the Mannheim Palace (<em>Schloss</em>), the University of Mannheim's main building.
+    On Thursday and Friday, the workshop takes place in the <strong>Fuchs-Festsaal (O 138)</strong> in the Mannheim Palace (<em>Schloss</em>), the University of Mannheim's main building. Registration on both days takes place <strong>directly at the Fuchs-Festsaal</strong>.
   </p>
   <figure style="margin: 1rem 0;">
     <img src="{{ site.baseurl }}/assets/Eingang_Castle_web.jpg" alt="Aerial view of Mannheim Palace; a red arrow marks the entrance to the Fuchs-Festsaal" style="width: 100%; height: auto; border-radius: 4px;" />
