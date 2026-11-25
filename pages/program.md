@@ -186,9 +186,6 @@ hide_description: true
   }
 </style>
 
-All talks take place in Mannheim; see the [venue page]({{ site.baseurl }}/venue/) for the rooms.
-Abstracts of all talks are collected in the Book of Abstracts.
-
 <div style="margin: 1.2rem 0 0.5rem 0;">
   <a class="download-button" href="{{ site.baseurl }}/_abstracts/Book_of_Abstracts.pdf" download>
     &#11015; Download Book of Abstracts (PDF)
